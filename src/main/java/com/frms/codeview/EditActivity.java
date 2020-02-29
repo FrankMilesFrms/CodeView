@@ -35,6 +35,7 @@ public class EditActivity extends Activity
             codeView.setShowAuto(language);
         codeView.setText("", false);
         
+        //codeView.setText("var a = new \nhfbyubaufbub\nbfbauybfyuesbubbf\nfafbuyabuybb\nfhahdbvyb\n", false);
         // 防止遮挡文本
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         setContentView(codeView);

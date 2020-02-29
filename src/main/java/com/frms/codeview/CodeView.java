@@ -778,8 +778,8 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      */
     private void gotoPosition2(int x, int y)
     {
-        y = Math.min(y, Math.round(mHeight));
-        int line = Math.max(y/drawRowHeight, 1);
+            y = Math.max(Math.min(y, Math.round(mHeight)), drawRowHeight);
+        int line = Math.min(y/drawRowHeight, mRowCounts);
         
         mCursor[2] = line;
         drawCursorY2 = (int) (line * drawRowHeight + drawFontMetrics.bottom);// 处理文字坐标问题
@@ -824,8 +824,10 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      */
     private void gotoPosition(int x, int y)
     {
-            y = Math.min(y, Math.round(mHeight));
-        int line = Math.max(y/drawRowHeight, 1);
+                y = Math.max(Math.min(y, Math.round(mHeight)), drawRowHeight);
+        int line = Math.min(y/drawRowHeight, mRowCounts);
+        
+        
         int click = x - Xoffset + mCharLitterWidth/2;
         
         if(mSelectMode == SELECT_NONE && click < 0 && !onClickCursor) // 点击行时触发。
@@ -3053,6 +3055,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     {
         mUndoStack.empty();
         mScannerLock = false;
+        mRowCounts = 1;
         
         mChar = t.toCharArray();
         int mt = 0;
@@ -3061,7 +3064,6 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         mRowStartCounts = new int[ mChar.length + 1 ];
         mDebugLines = new boolean[ mChar.length + 1 ];
         mRowStartCounts[0] = -1;
-        int temp = 0;
         
         for(char ca : mChar)
         {
@@ -3073,12 +3075,8 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
             
             mt += drawCharWidth[ca];
             i++;
-            temp++;
-            
             if(ca == TAG.EOL)
             {
-                temp = 0;
-                
                 mWidth = Math.max(mWidth, mt);
                 mt = 0;
                 
@@ -3087,11 +3085,10 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
             }
         }
         
-        mRowCounts -= 1;
+        mRowCounts--;
+        
         Xoffset = (String.valueOf(mRowCounts).length() +1) * mCharLitterWidth;
         drawCursorX = Xoffset;
-        
-        
         
         initScroll();
         scrollTo(0, 0);
