@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../APProject.iml" filepath="$PROJECT_DIR$/../APProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lexer/Lexer.iml" filepath="$PROJECT_DIR$/../Lexer/Lexer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+    </modules>
+  </component>
+</project>
