@@ -50,7 +50,6 @@ import com.frms.codeview.tools.ThemeDark;
 import com.frms.codeview.tools.ThemeLight;
 import com.frms.codeview.tools.UndoStack;
 import com.frms.lexer.TAG;
-import com.frms.lexer.Token;
 import com.frms.lexer.language.Java;
 import com.frms.lexer.language.JavaScript;
 
@@ -3297,4 +3296,69 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         mPluginUI.canAutomaticCompletion(language);
     }
     
+    /**
+     * 获取文本
+     * @return
+     */
+    public char[] getTextChars()
+    {
+        if(length < 2)
+        {
+            return new char[0];
+        } else
+        {
+            char[] cache = new char[length - 1];
+            System.arraycopy(mChar, 0, cache, 0, cache.length);
+            return cache;
+        }
+    }
+    
+    /**
+     * 获取文本
+     * @return
+     */
+    public StringBuffer getText()
+    {
+        StringBuffer sb = new StringBuffer();
+        sb.append(getTextChars());
+        return sb;
+    }
+    
+    /**
+     * 获取光标所在位置，格式为<br>
+     *  {行，位置，行，位置}, 这个位置指的是光标后的字位置，比如空文本，其默认位置是 1，
+     *  因为其后是EOF, 所以位置是 1.
+     * @return
+     */
+    public int[] getCursorPosition()
+    {
+        return mCursor;
+    }
+    
+    /**
+     * 获取行数
+     * @return
+     */
+    public int getRowCounts()
+    {
+        return mRowCounts;
+    }
+    
+    /**
+     * 获取当前编辑器版本
+     * @return
+     */
+    public int getVersion()
+    {
+       return version;
+    }
+    
+    /**
+     * 获取文本长度
+     * @return
+     */
+    public int getTextLength()
+    {
+        return length - 1;
+    }
 }

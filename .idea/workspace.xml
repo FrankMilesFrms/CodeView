@@ -15,7 +15,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="" />
+    <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,39 +80,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="780" column="55" selection-start-line="780" selection-start-column="55" selection-end-line="780" selection-end-column="55" />
+            <state relative-caret-position="427">
+              <caret line="3356" column="13" selection-start-line="3356" selection-start-column="13" selection-end-line="3356" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#99149#101481#0" />
-                <element signature="e#101567#101568#0" expanded="true" />
-                <element signature="e#101614#101615#0" expanded="true" />
-                <element signature="e#101697#101698#0" expanded="true" />
-                <element signature="e#101726#101727#0" expanded="true" />
-                <element signature="e#101810#101811#0" expanded="true" />
-                <element signature="e#101840#101841#0" expanded="true" />
-                <element signature="e#101923#101924#0" expanded="true" />
-                <element signature="e#101957#101958#0" expanded="true" />
-                <element signature="e#102025#102026#0" expanded="true" />
-                <element signature="e#102069#102070#0" expanded="true" />
-                <element signature="e#102648#102649#0" expanded="true" />
-                <element signature="e#102681#102682#0" expanded="true" />
-                <element signature="e#102745#102746#0" expanded="true" />
-                <element signature="e#102778#102779#0" expanded="true" />
-                <element signature="e#102870#102871#0" expanded="true" />
-                <element signature="e#102903#102904#0" expanded="true" />
+                <element signature="e#104711#104712#0" expanded="true" />
+                <element signature="e#104741#104742#0" expanded="true" />
+                <element signature="e#104949#104950#0" expanded="true" />
+                <element signature="e#104982#104983#0" expanded="true" />
+                <element signature="e#105073#105074#0" expanded="true" />
+                <element signature="e#105103#105104#0" expanded="true" />
+                <element signature="e#105144#105145#0" expanded="true" />
+                <element signature="e#105177#105178#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1188">
+              <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
+            <state relative-caret-position="476">
               <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -130,7 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>:</find>
       <find>：+[]+(\n)</find>
       <find>,</find>
       <find>(</find>
@@ -160,6 +166,7 @@
       <find>Tap</find>
       <find>Position</find>
       <find>Position2</find>
+      <find>getText</find>
     </findStrings>
     <replaceStrings>
       <replace>\n\n</replace>
@@ -188,6 +195,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -220,8 +230,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/Java.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/ThemeLight.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
       </list>
     </option>
   </component>
@@ -236,38 +246,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="codeview" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582993228306</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修复BUG">
+      <created>1582993437217</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582993437217</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -445,6 +434,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48421052" visible="true" weight="0.21352583" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
@@ -458,10 +448,10 @@
       <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.49620062" weight="0.52786887" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.4942717" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50151974" side_tool="true" weight="0.38688526" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="4" sideWeight="0.49848023" visible="true" weight="0.63278687" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49848023" weight="0.53934425" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.95090014" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50227964" side_tool="true" weight="0.53846157" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49848023" weight="0.63175124" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49772036" weight="0.53934425" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" weight="0.95090014" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49848023" weight="0.38688526" />
       <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.3289689" />
@@ -825,17 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="156" column="48" selection-start-line="156" selection-start-column="48" selection-end-line="156" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -904,39 +883,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="780" column="55" selection-start-line="780" selection-start-column="55" selection-end-line="780" selection-end-column="55" />
+        <state relative-caret-position="476">
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#99149#101481#0" />
-            <element signature="e#101567#101568#0" expanded="true" />
-            <element signature="e#101614#101615#0" expanded="true" />
-            <element signature="e#101697#101698#0" expanded="true" />
-            <element signature="e#101726#101727#0" expanded="true" />
-            <element signature="e#101810#101811#0" expanded="true" />
-            <element signature="e#101840#101841#0" expanded="true" />
-            <element signature="e#101923#101924#0" expanded="true" />
-            <element signature="e#101957#101958#0" expanded="true" />
-            <element signature="e#102025#102026#0" expanded="true" />
-            <element signature="e#102069#102070#0" expanded="true" />
-            <element signature="e#102648#102649#0" expanded="true" />
-            <element signature="e#102681#102682#0" expanded="true" />
-            <element signature="e#102745#102746#0" expanded="true" />
-            <element signature="e#102778#102779#0" expanded="true" />
-            <element signature="e#102870#102871#0" expanded="true" />
-            <element signature="e#102903#102904#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="-1188">
+          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="3356" column="13" selection-start-line="3356" selection-start-column="13" selection-end-line="3356" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#104711#104712#0" expanded="true" />
+            <element signature="e#104741#104742#0" expanded="true" />
+            <element signature="e#104949#104950#0" expanded="true" />
+            <element signature="e#104982#104983#0" expanded="true" />
+            <element signature="e#105073#105074#0" expanded="true" />
+            <element signature="e#105103#105104#0" expanded="true" />
+            <element signature="e#105144#105145#0" expanded="true" />
+            <element signature="e#105177#105178#0" expanded="true" />
           </folding>
         </state>
       </provider>
