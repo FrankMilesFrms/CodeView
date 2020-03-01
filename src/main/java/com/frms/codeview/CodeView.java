@@ -84,7 +84,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     /**
      * 控件版本
      */
-    private static final int version = 0x0003;
+    private static final int version = 0x1000;
     
     private static final int UNKNOWN  = -1;
     
@@ -3361,4 +3361,5 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     {
         return length - 1;
     }
+    
 }
