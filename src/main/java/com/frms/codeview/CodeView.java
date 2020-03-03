@@ -1706,6 +1706,87 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         }
     }
     
+    /**
+     * 如果可以上移光标，则上移，会主动更新视图。
+     */
+    public void gotoCursorUp()
+    {
+        int bl;
+        if(mSelectMode == CodeView.SELECT_NONE && (bl = mCursor[0]) > 1)
+        {
+            int l = mRowStartCounts[bl] - mRowStartCounts[bl - 1];
+            
+            mCursor[0] -= 1;
+            
+            if (l >= mCursor[1] - mRowStartCounts[bl] - 1)
+            {
+                mCursor[1] -= l;
+                drawCursorX = getLineWidth(mCursor[0], mCursor[1]) + Xoffset;
+                drawCursorY -= drawRowHeight;
+            } else
+            {
+                mCursor[1] = mRowStartCounts[bl];
+                drawCursorY -= drawRowHeight;
+                drawCursorX = getLineWidth(mCursor[0]) + Xoffset;
+            }
+    
+            if(drawCursorY <= mDrawClip.top)
+            {
+                scrollBy(0, -drawRowHeight);
+            }else
+            {
+                postInvalidate(mDrawClip.left, drawCursorY - drawRowHeight, mDrawClip.right, drawCursorY);
+            }
+        }
+    }
+    
+    /**
+     * 如果可以下移光标，则下移，会主动更新视图。
+     */
+    public void gotoCursorDown()
+    {
+        int bl;
+        if(mSelectMode == CodeView.SELECT_NONE && (bl = mCursor[0]) < mRowCounts)
+        {
+            // 一行中，光标前的字符数
+            int cl = mCursor[1] - mRowStartCounts[bl] - 1;
+            // 光标下一行字符总数
+            int nl;
+            // 光标所在行字符数
+            int cnl = mRowStartCounts[bl + 1] - mRowStartCounts[bl];
+            
+            if(bl + 1 == mRowCounts)
+            {
+                nl = length - 1 - mRowStartCounts[bl + 1];
+            } else
+            {
+                nl = mRowStartCounts[bl + 2] - mRowStartCounts[bl + 1];
+            }
+            
+            mCursor[0] += 1;
+    
+            if (cl < nl)
+            {
+                mCursor[1] += cnl;
+                drawCursorX = getLineWidth(mCursor[0], mCursor[1]) + Xoffset;
+                drawCursorY += drawRowHeight;
+            } else
+            {
+                mCursor[1] = mRowStartCounts[bl + 1] + nl;
+                drawCursorY += drawRowHeight;
+                drawCursorX = getLineWidth(mCursor[0]) + Xoffset;
+            }
+    
+            if(drawCursorY >= mDrawClip.bottom)
+            {
+                scrollBy(0, drawRowHeight);
+            }else
+            {
+                postInvalidate(mDrawClip.left, drawCursorY - drawRowHeight, mDrawClip.right, drawCursorY);
+            }
+        }
+    }
+    
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
     {
@@ -2096,16 +2177,19 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                    break;
                    
                case KeyEvent.KEYCODE_DPAD_LEFT :
-                   if(mCodeView.mSelectMode == CodeView.SELECT_NONE)mCodeView.gotoCursorLeft();
+                   mCodeView.gotoCursorLeft();
                    break;
                    
                case KeyEvent.KEYCODE_DPAD_RIGHT:
-                   if(mCodeView.mSelectMode == CodeView.SELECT_NONE)mCodeView.gotoCursorRight();
+                   mCodeView.gotoCursorRight();
                    break;
-//               case KeyEvent.KEYCODE_DPAD_UP:
-//                   break;
-//                case KeyEvent.KEYCODE_DPAD_DOWN:
-//                   break;
+                   
+               case KeyEvent.KEYCODE_DPAD_UP:
+                   mCodeView.gotoCursorUp();
+                   break;
+                case KeyEvent.KEYCODE_DPAD_DOWN:
+                    mCodeView.gotoCursorDown();
+                   break;
                default:
                {
                   Kit.printout("Unknown : sendKeyEvent =" + event.toString());
