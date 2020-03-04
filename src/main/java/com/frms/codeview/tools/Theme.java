@@ -41,13 +41,24 @@ public abstract class Theme
     {
         switch (sign)
         {
-            case TAG.CONSTANT:return CONSTANT;
+            case TAG.CONSTANT :return CONSTANT;
+            
             case TAG.INTENGER:return INTENGER;
+            
             case TAG.KEYWORD:return KEYWORD;
-            case TAG.STRING:return STRING;
+            
+            case TAG.ZHUSHI_DOC:
+            case TAG.STRING:
+                return STRING;
+            
             case TAG.SYMBOL:return SYMBOL;
-            case TAG.ZHUSHI:return ZHUSHI;
+            
+            case TAG.ZHUSHI_BLOCK:
+            case TAG.ZHUSHI_LINE :
+                return ZHUSHI;
+                
             case TAG.COMMON:return COMMON;
+            
             case TAG.UNKNOW:
             default:
                 return UNKOWN;

@@ -1772,7 +1772,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                 drawCursorY += drawRowHeight;
             } else
             {
-                mCursor[1] = mRowStartCounts[bl + 1] + nl;
+                mCursor[1] = mRowStartCounts[bl + 1] + nl + 1;
                 drawCursorY += drawRowHeight;
                 drawCursorX = getLineWidth(mCursor[0]) + Xoffset;
             }
