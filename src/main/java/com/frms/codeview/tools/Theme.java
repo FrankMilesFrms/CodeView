@@ -47,7 +47,7 @@ public abstract class Theme
             
             case TAG.KEYWORD:return KEYWORD;
             
-            case TAG.ZHUSHI_DOC:
+            case 0x103:
             case TAG.STRING:
                 return STRING;
             
