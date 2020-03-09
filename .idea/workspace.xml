@@ -15,13 +15,10 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="修复BUG">
-      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/Java.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/Java.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" afterDir="false" />
+    <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +32,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="LP015062002701" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -84,11 +81,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1201">
-              <caret line="2329" column="22" selection-start-line="2329" selection-start-column="19" selection-end-line="2329" selection-end-column="22" />
+            <state relative-caret-position="220">
+              <caret line="3124" column="38" selection-start-line="3124" selection-start-column="38" selection-end-line="3124" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#10594#11215#0" />
@@ -105,6 +102,57 @@
                 <element signature="e#16712#16818#0" />
                 <element signature="e#16712#17129#0" />
                 <element signature="e#17139#19587#0" />
+                <element signature="e#27177#31373#0" />
+                <element signature="e#31383#36942#0" />
+                <element signature="e#36952#40707#0" />
+                <element signature="e#45027#45288#0" />
+                <element signature="e#69904#70045#1" />
+                <element signature="e#70093#71652#1" />
+                <element signature="e#71666#72478#1" />
+                <element signature="e#76496#78933#1" />
+                <element signature="e#76808#76877#1" />
+                <element signature="e#82729#82924#1" />
+                <element signature="e#82960#83682#1" />
+                <element signature="e#85472#87895#1" />
+                <element signature="e#85944#86013#1" />
+                <element signature="e#88069#88731#1" />
+                <element signature="e#90671#93118#1" />
+                <element signature="e#96234#96865#1" />
+                <element signature="e#97004#97556#1" />
+                <element signature="e#97721#98228#1" />
+                <element signature="e#98602#99073#1" />
+                <element signature="e#106583#106905#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../sources/android-29/android/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="15626" selection-start-line="15626" selection-end-line="15626" />
+              <folding>
+                <element signature="e#638294#638295#0" expanded="true" />
+                <element signature="e#638325#638326#0" expanded="true" />
+                <element signature="e#638716#638717#0" expanded="true" />
+                <element signature="e#638747#638748#0" expanded="true" />
+                <element signature="e#638946#638947#0" expanded="true" />
+                <element signature="e#638983#638984#0" expanded="true" />
+                <element signature="e#683472#683473#0" expanded="true" />
+                <element signature="e#683524#683525#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="534">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,16 +161,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1932">
-              <caret line="432" column="76" selection-start-line="432" selection-start-column="76" selection-end-line="432" selection-end-column="76" />
+            <state relative-caret-position="220">
+              <caret line="1012" column="21" selection-start-line="1012" selection-start-column="21" selection-end-line="1012" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#12306#12352#0" />
-                <element signature="method#JavaScript#0;class#JavaScript#0" />
-                <element signature="e#17231#17232#0" expanded="true" />
-                <element signature="e#17262#17263#0" expanded="true" />
+                <element signature="method#token#0;class#JavaScript#0" />
                 <element signature="method#scanText#0;class#JavaScript#0" />
-                <element signature="class#Module#0;class#JavaScript#0" />
+                <element signature="e#33573#33574#0" expanded="true" />
+                <element signature="e#33610#33611#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,16 +177,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="323">
               <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="833">
               <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
             </state>
           </provider>
@@ -149,7 +195,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="374">
               <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -258,18 +304,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/ThemeLight.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/Java.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" />
-        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java" />
+        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="753" />
     <option name="height" value="728" />
@@ -280,42 +326,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
-              <item name="language" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -514,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583337981855</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added new features &amp; Fixed errors.">
+      <created>1583416703676</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583416703676</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -527,10 +548,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48421052" visible="true" weight="0.21352583" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48421052" weight="0.21352583" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
       <window_info id="Favorites" order="2" sideWeight="0.51578945" side_tool="true" weight="0.21352583" />
       <window_info id="Captures" order="3" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
@@ -635,7 +656,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修复BUG" />
     <MESSAGE value="增加方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加方法" />
+    <MESSAGE value="Added new features &amp; Fixed errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new features &amp; Fixed errors." />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="moduleJs.second" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app$Test.ic" NAME="Test Coverage Results" MODIFIED="1582639401453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -691,12 +720,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/LRUCache.java" />
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/automatic_completion.xml" />
@@ -716,12 +745,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/ScannerJavaScript.java" />
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Pair.java" />
     <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/lang/AbstractStringBuilder.class">
@@ -809,19 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12070">
-          <caret line="800" column="13" selection-start-line="800" selection-start-column="13" selection-end-line="800" selection-end-column="13" />
-          <folding>
-            <element signature="e#638294#638295#0" expanded="true" />
-            <element signature="e#638325#638326#0" expanded="true" />
-            <element signature="e#638716#638717#0" expanded="true" />
-            <element signature="e#638747#638748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../sources/android-29/java/lang/StrictMath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -833,16 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/OtherActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,13 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="39" column="24" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -962,10 +961,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main1#0;class#Test#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1621">
+          <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/OtherActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="1012" column="21" selection-start-line="1012" selection-start-column="21" selection-end-line="1012" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#token#0;class#JavaScript#0" />
+            <element signature="method#scanText#0;class#JavaScript#0" />
+            <element signature="e#33573#33574#0" expanded="true" />
+            <element signature="e#33610#33611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="15626" selection-start-line="15626" selection-end-line="15626" />
+          <folding>
+            <element signature="e#638294#638295#0" expanded="true" />
+            <element signature="e#638325#638326#0" expanded="true" />
+            <element signature="e#638716#638717#0" expanded="true" />
+            <element signature="e#638747#638748#0" expanded="true" />
+            <element signature="e#638946#638947#0" expanded="true" />
+            <element signature="e#638983#638984#0" expanded="true" />
+            <element signature="e#683472#683473#0" expanded="true" />
+            <element signature="e#683524#683525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="534">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -974,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1201">
-          <caret line="2329" column="22" selection-start-line="2329" selection-start-column="19" selection-end-line="2329" selection-end-column="22" />
+        <state relative-caret-position="220">
+          <caret line="3124" column="38" selection-start-line="3124" selection-start-column="38" selection-end-line="3124" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#10594#11215#0" />
@@ -992,48 +1064,27 @@
             <element signature="e#16712#16818#0" />
             <element signature="e#16712#17129#0" />
             <element signature="e#17139#19587#0" />
+            <element signature="e#27177#31373#0" />
+            <element signature="e#31383#36942#0" />
+            <element signature="e#36952#40707#0" />
+            <element signature="e#45027#45288#0" />
+            <element signature="e#69904#70045#1" />
+            <element signature="e#70093#71652#1" />
+            <element signature="e#71666#72478#1" />
+            <element signature="e#76496#78933#1" />
+            <element signature="e#76808#76877#1" />
+            <element signature="e#82729#82924#1" />
+            <element signature="e#82960#83682#1" />
+            <element signature="e#85472#87895#1" />
+            <element signature="e#85944#86013#1" />
+            <element signature="e#88069#88731#1" />
+            <element signature="e#90671#93118#1" />
+            <element signature="e#96234#96865#1" />
+            <element signature="e#97004#97556#1" />
+            <element signature="e#97721#98228#1" />
+            <element signature="e#98602#99073#1" />
+            <element signature="e#106583#106905#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main1#0;class#Test#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1932">
-          <caret line="432" column="76" selection-start-line="432" selection-start-column="76" selection-end-line="432" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#12306#12352#0" />
-            <element signature="method#JavaScript#0;class#JavaScript#0" />
-            <element signature="e#17231#17232#0" expanded="true" />
-            <element signature="e#17262#17263#0" expanded="true" />
-            <element signature="method#scanText#0;class#JavaScript#0" />
-            <element signature="class#Module#0;class#JavaScript#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
         </state>
       </provider>
     </entry>

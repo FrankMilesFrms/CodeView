@@ -194,6 +194,8 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     
     private boolean isInActionMode;//剪贴板是否显示
     
+    public boolean setOnlyRead = false; // 设置是否只读
+    
     // 加载&缓冲
     private AsyncLoader mAsyncLoader;
     private AlertDialog loadWindow;
@@ -1002,6 +1004,8 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      */
     public void insertChar(int position, char c, boolean aboutCursor, int CLine, boolean addUndoStack)
     {
+        if(setOnlyRead)return;
+        
         removeOutRowsLength();
         mScannerLock = false;
         if(length >= mChar.length)
@@ -1130,7 +1134,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      */
     public void insert(int position, String text, boolean aboutCursor, int CLine1, int CLine2,boolean addUndoStack)
     {
-        if(text.length() < 1)return;
+        if(text.length() < 1 || setOnlyRead)return;
         
         mScannerLock = false;
         removeOutRowsLength();
@@ -1297,7 +1301,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      */
     public void deleteChar(int position, boolean aboutCursor, int CLine, boolean addUndoStack)
     {
-        if (position > 1 )
+        if (position > 1 && !setOnlyRead)
         {
             mScannerLock = false;
             int line = aboutCursor? mCursor[0] : CLine;
@@ -1396,13 +1400,14 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      */
     public void delete(int start, int end, boolean aboutCursor, int CLine, int CLine2, boolean addUndoStack)
     {
-        mScannerLock = false;
-        if(end - start < 1)
+        
+        if(end - start < 1 || setOnlyRead)
         {
             invalidate(mDrawClip);
             return;
         }
         
+        mScannerLock = false;
         int startLine = aboutCursor? mCursor[0] : CLine;
         int endLine = aboutCursor? mCursor[2] : CLine2;
         int dLength = end - start;
@@ -1615,7 +1620,11 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      * 显示键盘
      */
     public void showKeyboard() {
-        mInputMethodManager.showSoftInput(CodeView.this, 0);
+        if(!setOnlyRead)
+        {
+            mInputMethodManager.showSoftInput(CodeView.this, 0);
+        }
+        
     }
     
     /**
@@ -2301,7 +2310,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     private int[] drawCharWidth;// 字符宽度
     private char drawChar;
     private char[] drawText;// x
-    private boolean isDrawLine = false;
+    private boolean isDrawLine = false;// 所在区域是否需要绘制行号
     
     private int cacheLeft = 0;// 关于左侧绘制的缓存单元
     private int cacheWidth = 0;// 关于行缓存单元
@@ -2311,11 +2320,11 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     
     private int indexOfModules = 0;
     
-    private int hIndex = 0;
+    private int hIndex = 0;// 当前词组长度
     private int hLength = 0;
     
     private int dIndex = 0;
-    private int dLength = 0;
+    private int dLength = 0; // 要绘制文本的长度
     
     private int dWidth = -1;
     /**
@@ -2404,22 +2413,15 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
            
            if(mTokenJavaScript == null)
            {
-               // 这里处理当前对应高亮语法
+               // 这里处理当前Java对应高亮语法
                if(!mScannerLock)
                {
                    drawEndLine =  Math.min(mRowCounts, mDrawClip.bottom / drawRowHeight + drawLine - 1);
                    mScannerLock = true;
-        
-                   if(mTokenJava == null){
-                       mTokenJava.set(mChar, mRowStartCounts, length);
-                       mTokenJava.token(index, drawLine,Math.max(mRowStartCounts[drawEndLine], length) , drawEndLine);
-                       modulesJava = mTokenJava.get();
-                   } else
-                   {
-                       mTokenJava.set(mChar, mRowStartCounts, length);
-                       mTokenJava.token(index, drawLine,Math.max(mRowStartCounts[drawEndLine], length) , drawEndLine);
-                       modulesJava = mTokenJava.get();
-                   }
+                   
+                   mTokenJava.set(mChar, mRowStartCounts, length);
+                   mTokenJava.token(index, drawLine,Math.max(mRowStartCounts[drawEndLine], length) , drawEndLine);
+                   modulesJava = mTokenJava.get();
                }
                else
                {
@@ -2492,9 +2494,6 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                            }
                 
                            drawChar = mChar[index++];
-                
-                
-                
                        }
             
                        drawX = cacheWidth;
@@ -2502,7 +2501,10 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         
                    if(drawShowX <= getWidth() && drawChar != TAG.EOL)
                    {
-                       if(dWidth < 0)dWidth = drawX;
+                       if(dWidth < 0)
+                       {
+                           dWidth = drawX;
+                       }
             
                        // 中间
                        drawText[drawTextIndex++] = drawChar;
@@ -2561,7 +2563,10 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                    }
                    else
                    {
+                       drawShowX = 0;
                        dLength = 0;
+                       drawShowX = 0;
+                       drawTextIndex = 0;
                        // 绘制行号
                        if(isDrawLine)
                        {
@@ -2588,7 +2593,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                            }
                        }
                        else
-                       if(drawShowX > getWidth())
+                       //if(drawShowX > getWidth())
                        {
                 
                            mTextPaint.setColor(mTheme.getColor(moduleJava.getFirst()));
@@ -2601,6 +2606,11 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                            {
                                indexOfModules = 0;
                                hLength = 0;
+                               dWidth = -1;
+                               hIndex = 0;
+                               dIndex = 0;
+    
+                               drawX = Xoffset;
                                break main;
                            } else
                            {
@@ -2610,14 +2620,12 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                 
                 
                        }
-            
+    
                        dWidth = -1;
-                       drawShowX = 0;
-                       drawTextIndex = 0;
                        hIndex = 0;
                        dIndex = 0;
-            
                        drawX = Xoffset;
+                       
                        if(drawY >= mDrawClip.bottom || drawLine >= mRowCounts)break main;
             
                        drawY += drawRowHeight;
@@ -2628,27 +2636,22 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     
            } else
            {
-               // 这里处理当前对应高亮语法
+               // 这里处理当前JavaScript对应高亮语法
+               // 尽可能的压缩解析次数，在位置没有移动时候不会解析，比如光标移动时。
                if(!mScannerLock)
                {
                    drawEndLine =  Math.min(mRowCounts, mDrawClip.bottom / drawRowHeight + drawLine - 1);
                    mScannerLock = true;
-        
-                   if(mTokenJava == null){
-                       mTokenJavaScript.set(mChar, mRowStartCounts, length);
-                       mTokenJavaScript.token(index, drawLine,Math.max(mRowStartCounts[drawEndLine], length) , drawEndLine);
-                       modulesJs = mTokenJavaScript.get();
-                   } else
-                   {
-                       mTokenJavaScript.set(mChar, mRowStartCounts, length);
-                       mTokenJavaScript.token(index, drawLine,Math.max(mRowStartCounts[drawEndLine], length) , drawEndLine);
-                       modulesJs = mTokenJavaScript.get();
-                   }
+                   
+                   mTokenJavaScript.set(mChar, mRowStartCounts, length);
+                   mTokenJavaScript.token(index, drawLine,Math.max(mRowStartCounts[drawEndLine], length) , drawEndLine);
+                   modulesJs = mTokenJavaScript.get();
                }
                else
                {
                    indexOfModules = 0;
                }
+               
                if(modulesJs.size() > 0)
                {
                    moduleJs = modulesJs.get(indexOfModules++);
@@ -2658,6 +2661,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                }
                else
                {
+                   // 独立表示空字符状态。
                    if(isDrawLine)
                    {
             
@@ -2676,64 +2680,64 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                    return;
                }
     
-    
-    
                main :
                while(index < length && drawLine <= mRowCounts)
                {
                    drawChar = mChar[index++];
         
+                   // 左侧不可视范围只记录数值。
                    if (mDrawClip.left > drawX)
                    {
                        cacheWidth = drawX;
-            
+
                        while (cacheWidth < cacheLeft && index < length)
                        {
                            cacheWidth += drawCharWidth[drawChar];
-                
+
                            hIndex++;
                            dLength++;
-                
+
                            if(moduleJs != null && hIndex == moduleJs.getSecond())
                            {
                                hIndex = 0;
                                dLength = 0;
-                    
+
                                if(modulesJs.size() > indexOfModules)
                                {
                                    moduleJs = modulesJs.get(indexOfModules++);
                                    hLength = moduleJs.getSecond();
                                }
                            }
-                
+
                            if(drawChar == TAG.EOL)
                            {
                                cacheWidth = Xoffset;
                                drawLine++;
                                drawY += drawRowHeight;
-                    
-                               if( drawY > mDrawClip.bottom)break main;
+
+                               if(drawY > mDrawClip.bottom)break main;
                            }
-                
+
                            drawChar = mChar[index++];
-                
-                
-                
                        }
-            
+
                        drawX = cacheWidth;
+                       
                    }
-        
+                   
+                   //可视的绘制部分
                    if(drawShowX <= getWidth() && drawChar != TAG.EOL)
                    {
-                       if(dWidth < 0)dWidth = drawX;
-            
+                       if(dWidth < 0)
+                       {
+                           dWidth = drawX;
+                       }
                        // 中间
                        drawText[drawTextIndex++] = drawChar;
                        drawShowX += drawCharWidth[drawChar];
             
                        hIndex++;
-            
+                       
                        if(index == length)
                        {
                            dLength = 0;
@@ -2785,7 +2789,11 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                    }
                    else
                    {
+                       drawShowX = 0;
                        dLength = 0;
+                       drawShowX = 0;
+                       drawTextIndex = 0;
+                       
                        // 绘制行号
                        if(isDrawLine)
                        {
@@ -2812,19 +2820,24 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                            }
                        }
                        else
-                       if(drawShowX > getWidth())
+                       //if(drawShowX >= getWidth())
                        {
                 
                            mTextPaint.setColor(mTheme.getColor(moduleJs.getFirst()));
                 
                            canvas.drawText(drawText, dIndex, hIndex, dWidth, drawY, mTextPaint);
-                
+                           
                            moduleJs = mTokenJavaScript.findInCache(drawLine + 1, moduleJs);
                 
                            if(moduleJs == null)
                            {
                                indexOfModules = 0;
                                hLength = 0;
+                               dWidth = -1;
+                               hIndex = 0;
+                               dIndex = 0;
+    
+                               drawX = Xoffset;
                                break main;
                            } else
                            {
@@ -2836,12 +2849,10 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                        }
             
                        dWidth = -1;
-                       drawShowX = 0;
-                       drawTextIndex = 0;
                        hIndex = 0;
                        dIndex = 0;
-            
                        drawX = Xoffset;
+                       
                        if(drawY >= mDrawClip.bottom || drawLine >= mRowCounts)break main;
             
                        drawY += drawRowHeight;
@@ -2855,6 +2866,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
            
        } else
        {
+           // 取消高亮的绘制
            main :
            while(index < length && drawLine <= mRowCounts)
            {
@@ -3016,8 +3028,12 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                     .setIcon(R.raw.abc_ic_menu_paste_mtrl_am_alpha)
                     .setShowAsActionFlags(2);
                 
-//                menu.add(0, 4, 1, "设置")
-//                    .setShowAsActionFlags(1);
+                menu.add(0, 4, 1, "查找&替换")
+                    .setShowAsActionFlags(1);
+                menu.add(0, 4, 2, "只读/只写")
+                    .setShowAsActionFlags(1);
+                menu.add(0, 4, 3, "统计")
+                    .setShowAsActionFlags(1);
                 return true;
             }
             @Override
@@ -3093,6 +3109,22 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                             {
                                 insert(mCursor[1], str, true, UNKNOWN, UNKNOWN, true);
                             }
+                        }
+                        break;
+                    case 4:
+                        switch (item.getOrder())
+                        {
+                            case 1:
+                                // search and(or) replace
+                                break;
+                            case 2:
+                                // change mode read-only or not.
+                                break;
+                            case 3:
+                                // record
+                                break;
+                            default:
+                                hideClipboardPanel();
                         }
                         break;
                     default :
@@ -3369,6 +3401,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     public void setShowAuto(int language)
     {
         if(language == 0)return;
+        
         selectLanguage = language;
         
         if(language == 1)
@@ -3446,4 +3479,23 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         return length - 1;
     }
     
+    /**
+     * 获取编辑器读写模式，为 true 表示只读
+     * @return
+     */
+    public boolean getEditMode() {
+        return setOnlyRead;
+    }
+    
+    /**
+     * 编辑器读写模式，为 true 表示只读
+     */
+    public void setEditMode(boolean isOnlyRead)
+    {
+        setOnlyRead = isOnlyRead;
+        if(setOnlyRead)
+        {
+            hideKeyboard();
+        }
+    }
 }
