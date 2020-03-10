@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../../CodeView DOC" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../../陈琳雍/API" />
     <option name="OPTION_SCOPE" value="private" />
     <option name="OTHER_OPTIONS" value="-encoding utf-8 -charset utf-8" />
   </component>

@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.Toast;
 
+import com.frms.codeview.tools.Kit;
+
 /**
  * Demo
  * 创建人 ： Frms
@@ -82,6 +84,10 @@ public class EditActivity extends Activity
         menu.add(1, 2, 2, "Redo")
             .setIcon(R.raw.redo_w)
             .setShowAsActionFlags(2);
+        menu.add(0, 3, 1, "只读/只写")
+            .setShowAsActionFlags(1);
+        menu.add(0, 3, 2, "统计")
+            .setShowAsActionFlags(1);
         
         return super.onCreateOptionsMenu(menu);
     }
@@ -90,10 +96,34 @@ public class EditActivity extends Activity
     @Override
     public boolean onMenuItemSelected(int featureId, MenuItem item)
     {
+        switch (item.getItemId())
+        {
+            case 1:
+                codeView.undo();
+            break;
+            
+            case 2:
+                codeView.redo();
+            break;
+            
+            case 3:
+                if(item.getOrder() == 1)
+                {
+                    codeView.setChangeEditMode();
+                } else
+                {
+                    codeView.getCharsRecord();
+                }
+            break;
+            default:
+            {
+                Kit.printout("Unknown", "EditActivity");
+            }
+        }
         if(item.getItemId() == 1) {
-            codeView.undo();
+        
         } else{
-            codeView.redo();
+        
         }
         return true;
     }

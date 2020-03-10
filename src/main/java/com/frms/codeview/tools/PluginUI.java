@@ -2,6 +2,7 @@ package com.frms.codeview.tools;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
@@ -10,9 +11,13 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
+import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.frms.UI.LoadView;
 import com.frms.codeview.CodeView;
@@ -44,6 +49,9 @@ public class PluginUI
     private ListView listView;
     private String[] i;
     
+    private TextView textView;// 统计布局
+    private ScrollView recordLayout;
+    
     @SuppressLint("ResourceType")
     public PluginUI(Activity activity, int width, CodeView cv)
     {
@@ -54,6 +62,7 @@ public class PluginUI
         mShowAnimation = new AlphaAnimation(1.0f, 0.0f);
         mShowAnimation.setFillAfter(true);
         codeview = cv;
+    
         
     }
     
@@ -240,6 +249,49 @@ public class PluginUI
         LoadView.setShowAnimation(listView, 200);
         
         autoPop.showAtLocation(parent, Gravity.LEFT | Gravity.TOP, 0, sy + rowheigth + mActivity.getActionBar().getHeight());
+    }
+    
+    @SuppressLint("SetTextI18n")
+    public void showRecord(int totalLength, int totalLineCounts, int[] c)
+    {
+        int index = -2;// 这里不算 Tag.EOL
         
+        if(totalLength > 0)
+        {
+            for(int i : c)
+            {
+                if(i > 0){
+                    index++;
+                }
+            }
+        }else {
+            index = 0;
+        }
+        
+    
+        LinearLayout linearLayout = new LinearLayout(mActivity);
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+    
+        textView = new TextView(mActivity);
+        textView.setTypeface(codeview.getTypeface());
+    
+        linearLayout.addView(textView);
+    
+        HorizontalScrollView horizontalScrollView = new HorizontalScrollView(mActivity);
+        horizontalScrollView.addView(linearLayout);
+    
+        recordLayout = new ScrollView(mActivity);
+        recordLayout.addView(horizontalScrollView);
+        
+        textView.setText("总字符数 = "+ totalLength +"(约"+totalLength/1024+"KB，"+totalLength/1024/1024+"MB，非真实大小)\n" +
+                         "总记行数 = "+ totalLineCounts+"\n" +
+                         "异字符数 = "+ index+"\n");
+        
+        
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(mActivity);
+        alertDialog.setTitle("统计");
+        alertDialog.setNegativeButton("关闭", null);
+        alertDialog.setView(recordLayout);
+        alertDialog.show();
     }
 }

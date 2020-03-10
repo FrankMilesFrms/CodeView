@@ -3028,12 +3028,13 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                     .setIcon(R.raw.abc_ic_menu_paste_mtrl_am_alpha)
                     .setShowAsActionFlags(2);
                 
-                menu.add(0, 4, 1, "查找&替换")
+                
+                menu.add(0, 4, 1, "只读/只写")
                     .setShowAsActionFlags(1);
-                menu.add(0, 4, 2, "只读/只写")
+                menu.add(0, 4, 2, "统计")
                     .setShowAsActionFlags(1);
-                menu.add(0, 4, 3, "统计")
-                    .setShowAsActionFlags(1);
+//                menu.add(0, 4, 1, "查找&替换")
+//                    .setShowAsActionFlags(1);
                 return true;
             }
             @Override
@@ -3114,14 +3115,19 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                     case 4:
                         switch (item.getOrder())
                         {
+//                            case 3:
+//                                // search and(or) replace
+//                                break;
                             case 1:
-                                // search and(or) replace
+                                // change mode read-only or not.
+                                
+                                setChangeEditMode();
                                 break;
                             case 2:
-                                // change mode read-only or not.
-                                break;
-                            case 3:
                                 // record
+                                
+                                getCharsRecord();
+                                
                                 break;
                             default:
                                 hideClipboardPanel();
@@ -3497,5 +3503,27 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         {
             hideKeyboard();
         }
+    }
+    
+    /**
+     * 改变编辑器读写模式
+     */
+    public void setChangeEditMode()
+    {
+        setOnlyRead = !setOnlyRead;
+        if(setOnlyRead)
+        {
+            hideKeyboard();
+        }
+    }
+    
+    public Typeface getTypeface()
+    {
+        return mTextPaint.getTypeface();
+    }
+    
+    public void getCharsRecord()
+    {
+        mPluginUI.showRecord(length - 1, mRowCounts, drawCharWidth);
     }
 }

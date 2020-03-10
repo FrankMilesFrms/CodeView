@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">CodeView</string>
-    <string name="theme">编辑器亮主题</string>
-    <string name="lineCounts">已启用行号显示</string>
+    <string name="theme" translatable="false">编辑器亮主题</string>
+    <string name="lineCounts" translatable="false">已启用行号显示</string>
     <string name="magnifier">启用放大镜</string>
-    <string name="zoom">已启用双指放缩</string>
-    <string name="redo">已启用撤销重做</string>
+    <string name="zoom" translatable="false">已启用双指放缩</string>
+    <string name="redo" translatable="false">已启用撤销重做</string>
     <string name="about">关于</string>
     <string name="help">使用说明</string>
-    <string name="hub">开源获取地址</string>
-    <string name="start">启用编辑器</string>
+    <string name="hub" translatable="false">开源获取地址</string>
+    <string name="start" translatable="false">启用编辑器</string>
     <string name="color">配色插件：native Theme</string>
 </resources>
