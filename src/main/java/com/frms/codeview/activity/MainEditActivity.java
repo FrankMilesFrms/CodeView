@@ -157,6 +157,7 @@ public class MainEditActivity extends AppCompatActivity
     
         // 文件浏览器
         fileBrowser = findViewById(R.id.file_browse);
+        
         fileBrowser.setModules(
                                     (TextView)  findViewById(R.id.path_file),
                                     (ImageView) findViewById(R.id.back_parent),
@@ -466,7 +467,10 @@ public class MainEditActivity extends AppCompatActivity
                 "android.permission.WRITE_EXTERNAL_STORAGE");
             // 没有写的权限，去申请写的权限，会弹出对话框
             if (permission != PackageManager.PERMISSION_GRANTED)
+            {
                 ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE, REQUEST_EXTERNAL_STORAGE);
+                fileBrowser.init();
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

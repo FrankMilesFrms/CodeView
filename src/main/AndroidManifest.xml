@@ -23,7 +23,7 @@
         <activity
             android:name=".activity.MainEditActivity"
             android:theme="@style/Theme.AppCompat.DayNight"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

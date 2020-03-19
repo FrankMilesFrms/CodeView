@@ -153,6 +153,10 @@ public class FileAdapter extends ArrayAdapter<FileTypeUtil>
             file = allFiles[position];
         }
         
+        if(file == null)
+        {
+            file = new File(FileBrowser.ROOT_PATH);
+        }
         
         if(file.isDirectory())
         {
