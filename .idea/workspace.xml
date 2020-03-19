@@ -16,11 +16,151 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/CodeView.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__animated_vector_drawable_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__appcompat_v7_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__asynclayoutinflater_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__collections_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_preference_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_6_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__common_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__coordinatorlayout_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cursoradapter_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__customview_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__documentfile_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__drawerlayout_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__interpolator_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__livedata_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__livedata_core_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__loader_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__localbroadcastmanager_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__preference_v7_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__print_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__recyclerview_v7_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__runtime_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__slidingpanelayout_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_annotations_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_compat_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_core_ui_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_core_utils_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_fragment_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_vector_drawable_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__swiperefreshlayout_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__versionedparcelable_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__viewmodel_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__viewpager_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/assets/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AppCompatPreferenceActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileTypeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/ViewPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/BookmarksListView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/EditSymolBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/NoScrollViewPager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/addto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/dislike.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/file_type_java.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/file_type_js.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/file_type_txt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/file_type_unknown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/folder_hidden.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/frms_touxian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/go_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/problem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/qaa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/setting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/about_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_with_preference_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/add_file_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/collection_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/file_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/file_util_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/listview_util_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/main_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/recent_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/setting_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/top_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/menu/main_actions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/values/values.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/xml/pre_set.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lexer/Lexer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/Lexer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lexer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/Java.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/Java.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/UI/Gradual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/UI/Gradual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/UI/LoadView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/UI/LoadView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/OtherActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/OtherActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
     </list>
@@ -86,58 +226,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="3123" column="52" selection-start-line="3123" selection-start-column="52" selection-end-line="3123" selection-end-column="52" />
+            <state relative-caret-position="101">
+              <caret line="204" column="20" selection-start-line="204" selection-start-column="20" selection-end-line="204" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#101092#101093#0" expanded="true" />
-                <element signature="e#105238#105239#0" expanded="true" />
-                <element signature="e#105350#105351#0" expanded="true" />
-                <element signature="e#105464#105465#0" expanded="true" />
-                <element signature="e#105581#105582#0" expanded="true" />
-                <element signature="e#105693#105694#0" expanded="true" />
-                <element signature="e#106305#106306#0" expanded="true" />
-                <element signature="e#106402#106403#0" expanded="true" />
-                <element signature="e#106527#106528#0" expanded="true" />
-                <element signature="e#108522#108523#0" expanded="true" />
-                <element signature="e#108639#108640#0" expanded="true" />
-                <element signature="e#108755#108756#0" expanded="true" />
-                <element signature="e#108875#108876#0" expanded="true" />
-                <element signature="e#109009#109010#0" expanded="true" />
-                <element signature="e#109509#109510#0" expanded="true" />
-                <element signature="e#109559#109560#0" expanded="true" />
-                <element signature="e#109634#109635#0" expanded="true" />
+                <element signature="e#5984#8534#0" expanded="true" />
+                <element signature="e#8533#8534#0" expanded="true" />
+                <element signature="e#10267#10830#0" expanded="true" />
+                <element signature="e#10829#10830#0" expanded="true" />
+                <element signature="e#10939#11884#0" expanded="true" />
+                <element signature="e#11883#11884#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../sources/android-29/android/view/View.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259624">
-              <caret line="15626" selection-start-line="15626" selection-end-line="15626" />
-              <folding>
-                <element signature="e#638294#638295#0" expanded="true" />
-                <element signature="e#638325#638326#0" expanded="true" />
-                <element signature="e#638716#638717#0" expanded="true" />
-                <element signature="e#638747#638748#0" expanded="true" />
-                <element signature="e#638946#638947#0" expanded="true" />
-                <element signature="e#638983#638984#0" expanded="true" />
-                <element signature="e#683472#683473#0" expanded="true" />
-                <element signature="e#683524#683525#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="269">
+              <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="119" column="53" selection-start-line="119" selection-start-column="53" selection-end-line="119" selection-end-column="53" />
+            <state relative-caret-position="172">
+              <caret line="104" column="80" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,60 +265,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
+        <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="1012" column="21" selection-start-line="1012" selection-start-column="21" selection-end-line="1012" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#token#0;class#JavaScript#0" />
-                <element signature="method#scanText#0;class#JavaScript#0" />
-                <element signature="e#33573#33574#0" expanded="true" />
-                <element signature="e#33610#33611#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-            </state>
-          </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-219">
-              <caret line="256" column="22" selection-start-line="256" selection-start-column="22" selection-end-line="256" selection-end-column="22" />
+            <state relative-caret-position="122">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="311" selection-start-line="311" selection-end-line="311" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
+                <element signature="e#106993#106994#0" expanded="true" />
+                <element signature="e#107037#107038#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+            <state relative-caret-position="194">
+              <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main1#0;class#Test#0" />
               </folding>
             </state>
           </provider>
@@ -212,15 +317,12 @@
       <list>
         <option value="layoutResourceFile_vertical" />
         <option value="Class" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>(</find>
-      <find>),</find>
-      <find>grou</find>
-      <find>Group</find>
       <find>insert</find>
       <find>module</find>
       <find>Module</find>
@@ -234,7 +336,6 @@
       <find>cache</find>
       <find>onDraw</find>
       <find>mActivity</find>
-      <find>{@hide}</find>
       <find>deleteChar</find>
       <find>Kit</find>
       <find>ins</find>
@@ -247,6 +348,11 @@
       <find>getText</find>
       <find>goto</find>
       <find>onD</find>
+      <find>{@hide}</find>
+      <find>onLong</find>
+      <find>ondo</find>
+      <find />
+      <find>collectionList</find>
     </findStrings>
     <replaceStrings>
       <replace>\n\n</replace>
@@ -265,6 +371,7 @@
       <replace>mContext</replace>
       <replace>&quot;</replace>
       <replace>JavaScript.Module(</replace>
+      <replace>recentFiles</replace>
     </replaceStrings>
   </component>
   <component name="GenerateSignedApkSettings">
@@ -282,46 +389,69 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/LruCache.java" />
-        <option value="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_background.xml" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/LRUCache.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Pair.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/automatic_completion.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity.xml" />
-        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/ScannerJavaScript.java" />
-        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Pair.java" />
-        <option value="$PROJECT_DIR$/src/main/assets/Readme.txt" />
-        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Token.java" />
-        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Scanner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/ThemeDark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/UndoStack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/NoScrollViewPager.java" />
+        <option value="$PROJECT_DIR$/src/main/res/xml/preference_setting.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/xml/preference-headers.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_with_preference_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/setting_layout.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/SideslipListView.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/collection_layout.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/BookmarksListView.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/listview_util_layout.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/file_util_layout.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/recent_layout.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileTypeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AppCompatPreferenceActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/OtherActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/UI/Gradual.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/UI/LoadView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/ThemeLight.java" />
-        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/Java.java" />
-        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" />
-        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/search.xml" />
+        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" />
+        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" />
+        <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Token.java" />
+        <option value="$PROJECT_DIR$/src/main/assets/help.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/EditSymolBar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/EditView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivityWithPreferenceFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/values-v21/values.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/top_layout.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/main_layout.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/values/values.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/ViewPagerAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/xml/pre_set.xml" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="346" />
+    <option name="y" value="196" />
     <option name="width" value="753" />
-    <option name="height" value="728" />
+    <option name="height" value="688" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -338,6 +468,11 @@
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
@@ -359,7 +494,27 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="codeview" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="codeview" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="codeview" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
@@ -374,18 +529,15 @@
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="xml" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -400,7 +552,7 @@
     <property name="DEBUGGABLE_PROCESS" value="com.frms.codeview" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="LP015062002701" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-02-22T06:22:12.013Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-16T15:05:27.513Z" />
     <property name="ExportApk.ApkPath" value="C:\Users\ASUS\Desktop\APProject\app" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV1" value="true" />
@@ -410,15 +562,30 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="android.recentlyUsedThemes" value="android:Theme.Material" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/.." />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDK Location" />
-    <property name="project.structure.proportion" value="0.17" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/res/drawable" />
+    <property name="project.structure.last.edited" value="Dependencies" />
+    <property name="project.structure.proportion" value="0.16666667" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="RESOLVED_DEPENDENCIES_MINIMIZE" value="false" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.frms.codeview" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\drawable" />
       <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\raw" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\xml" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\menu" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -507,6 +674,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="app [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="app [help]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -530,9 +716,11 @@
       <item itemvalue="Android App.app" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Gradle.app [help]" />
+      <item itemvalue="Gradle.app [dependencies]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.app [dependencies]" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Gradle.app [help]" />
       </list>
@@ -605,7 +793,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583768701986</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added new features &amp; Fixed errors.">
+      <created>1583853610531</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583853610531</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -618,28 +813,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48421052" visible="true" weight="0.21352583" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4819672" visible="true" weight="0.2393617" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
-      <window_info id="Favorites" order="2" sideWeight="0.51578945" side_tool="true" weight="0.21352583" />
+      <window_info id="Favorites" order="2" sideWeight="0.5180328" side_tool="true" weight="0.21352583" />
       <window_info id="Captures" order="3" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
       <window_info id="Build Variants" order="4" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" sideWeight="0.49918166" weight="0.1762918" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.49620062" weight="0.52786887" />
-      <window_info anchor="bottom" id="TODO" order="1" weight="0.4942717" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50227964" side_tool="true" weight="0.53846157" />
-      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49848023" weight="0.2831424" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49772036" weight="0.41147542" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.95090014" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49848023" weight="0.4622951" />
-      <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.49620062" weight="0.6409836" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.49344262" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50227964" side_tool="true" weight="0.4622951" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49772036" weight="0.28196722" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49772036" visible="true" weight="0.43606558" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.9508197" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49772036" weight="0.4622951" />
+      <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.5" />
       <window_info anchor="right" id="StringPreview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" weight="0.32978722" />
@@ -653,35 +848,36 @@
       <window_info anchor="right" id="Device File Explorer" order="10" side_tool="true" weight="0.32978722" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48421052" visible="true" weight="0.21352583" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4819672" visible="true" weight="0.2393617" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
-      <window_info id="Favorites" order="2" sideWeight="0.51578945" side_tool="true" weight="0.21352583" />
+      <window_info id="Favorites" order="2" sideWeight="0.5180328" side_tool="true" weight="0.21352583" />
       <window_info id="Captures" order="3" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
       <window_info id="Build Variants" order="4" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" sideWeight="0.49918166" weight="0.1762918" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.49772036" weight="0.5286416" />
-      <window_info anchor="bottom" id="TODO" order="1" weight="0.4942717" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50227964" side_tool="true" weight="0.5286416" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49924013" weight="0.5400982" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.95090014" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49924013" weight="0.44680852" />
-      <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.3289689" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Gradle" order="1" weight="0.32978722" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Hierarchy" order="4" weight="0.32978722" />
-      <window_info anchor="right" id="Preview" order="5" />
-      <window_info anchor="right" id="Coverage" order="6" side_tool="true" weight="0.32978722" />
-      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.49620062" weight="0.6409836" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.49344262" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50227964" side_tool="true" weight="0.4622951" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49772036" weight="0.28196722" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49772036" weight="0.43606558" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.9508197" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49772036" weight="0.4622951" />
+      <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.5" />
+      <window_info anchor="right" id="StringPreview" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.32978722" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Hierarchy" order="5" weight="0.32978722" />
+      <window_info anchor="right" id="Preview" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32978722" />
       <window_info anchor="right" id="Debug" order="8" side_tool="true" weight="0.3662614" />
       <window_info anchor="right" id="Assistant" order="9" weight="0.32978722" />
+      <window_info anchor="right" id="Device File Explorer" order="10" side_tool="true" weight="0.32978722" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -759,373 +955,400 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/app/ActivityThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="5980" selection-start-line="5980" selection-end-line="5980" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/LRUCache.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/automatic_completion.xml" />
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/com/android/internal/view/IInputConnectionWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="191" column="22" selection-start-line="191" selection-start-column="22" selection-end-line="191" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/ScannerJavaScript.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Pair.java" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/lang/AbstractStringBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="529" column="33" selection-start-line="529" selection-start-column="33" selection-end-line="529" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/lang/StringBuffer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="356">
+          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
           <folding>
-            <element signature="e#1129#1130#0" expanded="true" />
-            <element signature="e#1169#1170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Pair.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/assets/Readme.txt" />
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="486" selection-start-line="486" selection-end-line="486" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/os/MessageQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#32820#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Scanner.java" />
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/graphics/Canvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="1636" selection-start-line="1636" selection-end-line="1636" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/graphics/Paint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="1543" selection-start-line="1543" selection-end-line="1543" />
-          <folding>
-            <element signature="e#17134#17135#0" expanded="true" />
-            <element signature="e#17157#17158#0" expanded="true" />
-            <element signature="e#50354#50355#0" expanded="true" />
-            <element signature="e#50391#50392#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/util/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
-          <caret line="165" column="24" selection-start-line="165" selection-start-column="24" selection-end-line="165" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="259" selection-start-line="259" selection-end-line="259" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/java/lang/StrictMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="1313" column="32" selection-start-line="1313" selection-start-column="32" selection-end-line="1313" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/UI/LoadView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2210">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-          <folding>
+            <element signature="e#0#880#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1061">
-          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/UndoStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3273">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="449">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#undo#0;class#Insert#0;class#UndoStack#0" />
+            <element signature="e#0#3721#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/ThemeLight.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileTypeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="288">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#919#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/ThemeDark.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/OtherActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/view/ViewAnimationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="170">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#3050#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/UI/Gradual.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+        <state relative-caret-position="170">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#5173#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/lang/String.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/view/inputmethod/InputConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="370" column="12" selection-start-line="370" selection-start-column="12" selection-end-line="370" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/UI/LoadView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#9904#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/Java.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="129" column="76" selection-start-line="129" selection-start-column="76" selection-end-line="129" selection-end-column="76" />
+        <state relative-caret-position="347">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#34246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#34736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#4195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#4664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#1257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assets/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1137">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+          <folding>
+            <element signature="e#2971#2977#0" expanded="true" />
+            <element signature="e#3168#3174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/add_file_layout.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/EditView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#scanText#0;class#Java#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/NoScrollViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290">
+          <caret line="22" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/EditSymolBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/menu/main_actions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/file_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/about_layout.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/7a8662486e58d91a84b2ab81e7e183ab/jars/classes.jar!/android/support/v7/app/AppCompatDelegate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sources/android-28/android/os/ParcelFileDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-239">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AppCompatPreferenceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values-v21/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/ThemeDark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/top_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/setting_layout.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/main_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/recent_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="303" selection-start-line="303" selection-end-line="303" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-219">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onKeyDown#0;class#CollectionActivity#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1621">
-          <caret line="169" column="28" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
+        <state relative-caret-position="36">
+          <caret line="155" column="66" selection-start-line="148" selection-start-column="24" selection-end-line="157" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/OtherActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259624">
-          <caret line="15626" selection-start-line="15626" selection-end-line="15626" />
-          <folding>
-            <element signature="e#638294#638295#0" expanded="true" />
-            <element signature="e#638325#638326#0" expanded="true" />
-            <element signature="e#638716#638717#0" expanded="true" />
-            <element signature="e#638747#638748#0" expanded="true" />
-            <element signature="e#638946#638947#0" expanded="true" />
-            <element signature="e#638983#638984#0" expanded="true" />
-            <element signature="e#683472#683473#0" expanded="true" />
-            <element signature="e#683524#683525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#main1#0;class#Test#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="android-dummy://C:/Users/ASUS/Desktop/APProject/app/app/Translations Editor">
-      <provider selected="true" editor-type-id="string-resource-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/search.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/android/widget/TextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="5200" column="16" selection-start-line="5200" selection-start-column="16" selection-end-line="5200" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="1012" column="21" selection-start-line="1012" selection-start-column="21" selection-end-line="1012" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#token#0;class#JavaScript#0" />
-            <element signature="method#scanText#0;class#JavaScript#0" />
-            <element signature="e#33573#33574#0" expanded="true" />
-            <element signature="e#33610#33611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-29/com/android/internal/app/AlertController.java">
+    <entry file="file://$PROJECT_DIR$/../sources/android-28/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="797" selection-start-line="797" selection-end-line="797" />
+          <caret line="259" selection-start-line="259" selection-end-line="259" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java">
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar!/android/support/annotation/Nullable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="153">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/b37f3cebd1e33decc4ae3cf45f43f50a/jars/classes.jar!/android/support/design/widget/TabLayout.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="3123" column="52" selection-start-line="3123" selection-start-column="52" selection-end-line="3123" selection-end-column="52" />
+        <state relative-caret-position="262">
+          <caret line="592" column="37" selection-start-line="592" selection-start-column="37" selection-end-line="592" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="323" column="26" selection-start-line="323" selection-start-column="26" selection-end-line="323" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/ViewPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#101092#101093#0" expanded="true" />
-            <element signature="e#105238#105239#0" expanded="true" />
-            <element signature="e#105350#105351#0" expanded="true" />
-            <element signature="e#105464#105465#0" expanded="true" />
-            <element signature="e#105581#105582#0" expanded="true" />
-            <element signature="e#105693#105694#0" expanded="true" />
-            <element signature="e#106305#106306#0" expanded="true" />
-            <element signature="e#106402#106403#0" expanded="true" />
-            <element signature="e#106527#106528#0" expanded="true" />
-            <element signature="e#108522#108523#0" expanded="true" />
-            <element signature="e#108639#108640#0" expanded="true" />
-            <element signature="e#108755#108756#0" expanded="true" />
-            <element signature="e#108875#108876#0" expanded="true" />
-            <element signature="e#109009#109010#0" expanded="true" />
-            <element signature="e#109509#109510#0" expanded="true" />
-            <element signature="e#109559#109560#0" expanded="true" />
-            <element signature="e#109634#109635#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+            <element signature="e#2537#2538#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="119" column="53" selection-start-line="119" selection-start-column="53" selection-end-line="119" selection-end-column="53" />
+        <state relative-caret-position="-953">
+          <caret line="72" column="47" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="104" column="80" selection-start-line="104" selection-start-column="16" selection-end-line="104" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1134,14 +1357,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="256" column="22" selection-start-line="256" selection-start-column="22" selection-end-line="256" selection-end-column="22" />
+        <state relative-caret-position="269">
+          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="204" column="20" selection-start-line="204" selection-start-column="20" selection-end-line="204" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
+            <element signature="e#5984#8534#0" expanded="true" />
+            <element signature="e#8533#8534#0" expanded="true" />
+            <element signature="e#10267#10830#0" expanded="true" />
+            <element signature="e#10829#10830#0" expanded="true" />
+            <element signature="e#10939#11884#0" expanded="true" />
+            <element signature="e#11883#11884#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#106993#106994#0" expanded="true" />
+            <element signature="e#107037#107038#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>CodeView</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

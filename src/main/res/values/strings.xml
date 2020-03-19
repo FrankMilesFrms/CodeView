@@ -10,4 +10,49 @@
     <string name="hub" translatable="false">开源获取地址</string>
     <string name="start" translatable="false">启用编辑器</string>
     <string name="color">配色插件：native Theme</string>
+    
+    <string-array name="language">
+        <item>Text</item>
+        <item>Java</item>
+        <item>JavaScript</item>
+    </string-array>
+
+    <string-array name="language_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="typeface">
+        <item>DejaVuSansMono</item>
+        <item>Monospace</item>
+        <item>Sans Serif</item>
+        <item>Serif</item>
+    </string-array>
+
+    <string-array name="typeface_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="save_file">
+        <item>30 s</item>
+        <item>1 min</item>
+        <item>3 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>仅手动保存</item>
+    </string-array>
+
+    <string-array name="save_file_time">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
 </resources>

@@ -3,9 +3,12 @@ package com.frms.codeview.tools;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
@@ -21,6 +24,7 @@ import android.widget.TextView;
 
 import com.frms.UI.LoadView;
 import com.frms.codeview.CodeView;
+import com.frms.codeview.activity.MainEditActivity;
 import com.frms.lexer.TAG;
 
 import java.util.ArrayList;
@@ -36,7 +40,7 @@ public class PluginUI
     private final AlphaAnimation mShowAnimation;
     private final CodeView codeview;
     private int width;
-    private final Activity mActivity;
+    private final AppCompatActivity mActivity;
     private View parent;
     
     private int rowheigth;
@@ -47,13 +51,13 @@ public class PluginUI
     private boolean isShowAuto = false;
     private PopupWindow autoPop;
     private ListView listView;
-    private String[] i;
+    private String[] i, newLetter;
     
     private TextView textView;// 统计布局
     private ScrollView recordLayout;
     
     @SuppressLint("ResourceType")
-    public PluginUI(Activity activity, int width, CodeView cv)
+    public PluginUI(AppCompatActivity activity, int width, CodeView cv)
     {
         mActivity = activity;
         this.width = width;
@@ -62,8 +66,16 @@ public class PluginUI
         mShowAnimation = new AlphaAnimation(1.0f, 0.0f);
         mShowAnimation.setFillAfter(true);
         codeview = cv;
-    
         
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
+        String s = sharedPreferences.getString("preference_auto_text", "");
+        if(s.contains("\n") && MainEditActivity.mAuto)
+        {
+            newLetter = s.split("\n");
+        }else
+        {
+            newLetter = new String[0];
+        }
     }
     
     /**
@@ -163,7 +175,7 @@ public class PluginUI
         
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(mActivity, android.R.layout.simple_list_item_1,  cache);
         listView.setAdapter(adapter);
-        listView.setBackgroundColor(Color.DKGRAY);
+        
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
             @Override
@@ -225,6 +237,16 @@ public class PluginUI
             if(o.toLowerCase().contains(t.toLowerCase()))
                 string.add(o);
         }
+    
+        if(newLetter.length > 0)
+        {
+            for(String o : newLetter)
+            {
+                if(o.toLowerCase().contains(t.toLowerCase()))
+                    string.add(o);
+            }
+        }
+        
         
         if(string.size() == 0)return;
         
@@ -248,7 +270,7 @@ public class PluginUI
         
         LoadView.setShowAnimation(listView, 200);
         
-        autoPop.showAtLocation(parent, Gravity.LEFT | Gravity.TOP, 0, sy + rowheigth + mActivity.getActionBar().getHeight());
+        autoPop.showAtLocation(parent, Gravity.LEFT | Gravity.TOP, 0, sy + rowheigth * 2 + mActivity.getSupportActionBar().getHeight() );
     }
     
     @SuppressLint("SetTextI18n")

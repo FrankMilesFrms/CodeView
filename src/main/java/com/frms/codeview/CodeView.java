@@ -1,3 +1,19 @@
+/*
+ * Copyright Frms
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.frms.codeview;
 
 import java.util.ArrayList;
@@ -20,6 +36,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.text.TextPaint;
 import android.util.AttributeSet;
@@ -32,6 +49,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.GestureDetector;
+import android.view.WindowManager;
 import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.CorrectionInfo;
 import android.view.inputmethod.EditorInfo;
@@ -74,7 +92,8 @@ import com.frms.lexer.language.JavaScript;
  * @author  ： Frms, 3505826836@qq.com
  * 创建时间 ： 2020/2/8 16:26(ydt)
  */
-public class CodeView extends View implements GestureDetector.OnGestureListener
+public class CodeView extends View implements 
+    GestureDetector.OnGestureListener
 {
     /**
      *  控件标识
@@ -90,13 +109,13 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     
     /**
      * <p>左光标标识</p>
-     * {@hide}
+     * 
      */
     private static final int CURSOR_LEFT = 0x0005;
     
     /**
      * <p>右光标标识</p>
-     * {@hide}
+     * 
      */
     private static final int CURSOR_RIGHT = 0x0006;
     
@@ -105,6 +124,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     /**
      * 默认字体大小
      */
+    @SuppressLint("all")
     private final int BASE_TEXT_SIZE = 50;
     
     /**
@@ -142,18 +162,11 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      */
     public static final int SERIF = 0x1008;
     
-    
-    private Activity mActivity;
-    
-    // 滑动模块
-    private OverScroller mOverScroller;
-    
-    // 手势
-    private GestureDetector mGestureDetector;
-    
+    private final AppCompatActivity mActivity;
     
     // 绘制区域
     private Rect mDrawClip;
+    
     // 绘制
     private TextPaint mTextPaint, mLinePaint, mOtherPaint;
     
@@ -174,26 +187,17 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     
     // 基本文字存储
     private int length = 0; // 注意，文本会自动追加一个EOF标志，这会增加一个字节。
-
     private char[] mChar = new char[0];// 存储字符区
-    
     private int[] mRowStartCounts = new int[10]; // 每行开始位置引索, 这里记录的行开始时EOL后的一个字符位置，错位对应。
-    
     private int mRowCounts = 1;// 行数
-    
     private int mCharLitterWidth, mCharChineseWidth; // 单元宽度。
     
     
     private boolean[] mDebugLines = new boolean[2]; // 断点记录
-    
     private boolean isShowCursor = false;// 是否显示完整光标
-    
     private boolean isErrorTouchMode = false; // 防误触模式，他会取消部分光标跳转。
-    
     private int[] mCursor = new int[4]; // 光标位置
-    
     private boolean isInActionMode;//剪贴板是否显示
-    
     public boolean setOnlyRead = false; // 设置是否只读
     
     // 加载&缓冲
@@ -202,6 +206,11 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     private CodeViewInputConnection mInputConnection;
     private InputMethodManager mInputMethodManager;
     private DisplayMetrics mDisplayMetrics;
+    
+    
+    private OverScroller mOverScroller;// 滑动模块
+    private GestureDetector mGestureDetector; // 手势
+    
     
     private ActionMode.Callback mCallback;
     private ActionMode mActionMode;
@@ -217,17 +226,17 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     private boolean mScannerLock = true;
     private boolean isUseLanguage = false;
     
-    /**
-     *  0 = Text;
-     *  1 = JavaScript
-     *  2 = Java
-     */
+    private onDebugListener onDebugListener;
+    
+    
+    @SuppressLint("all")
     private int selectLanguage = 0;
     
-    public CodeView(Activity activity)
+    public CodeView(AppCompatActivity activity)
     {
         super(activity);
         mActivity = activity;
+        activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         init(activity);
     }
     
@@ -262,7 +271,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      * 则必须调用此方法。
      * @param cx
      */
-    @SuppressLint("ResourceAsColor")
+    @SuppressLint("all")
     public void init(Activity cx)
     {
         mUndoStack = new UndoStack(this);
@@ -337,6 +346,15 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         mPluginUI = new PluginUI(mActivity, mDisplayMetrics.widthPixels, this);
         mPluginUI.setRowheigth(drawRowHeight);
         
+        
+        onDebugListener = new onDebugListener()
+        {
+            @Override
+            public void run(int line, boolean nowMode)
+            {
+        
+            }
+        };
     }
     
     /**
@@ -628,7 +646,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         if(length < 2)return;
         
         mSelectMode = SELECT_ING;
-            y = Math.min(y, Math.round(mHeight - drawRowHeight));
+            y = Math.min(y, Math.round(mHeight));
         int line = Math.max(y/drawRowHeight, 1);
     
         mCursor[0] = line;
@@ -671,7 +689,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
             } else
             {
                 mCursor[1] =index + 2;
-                break beforeSearch;
+                break;
             }
         }
        
@@ -788,7 +806,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         int clickIndex = mRowStartCounts[line];
         int drawP = Xoffset;
     
-        click :
+        
         while(drawP < mDrawClip.right && clickIndex < length)
         {
             if(Math.abs(drawP - x) < mCharLitterWidth/2
@@ -799,7 +817,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                 drawCursorX2 = drawP;
                 isShowCursor = true;
             
-                break click;
+                break;
             }
             drawP += drawCharWidth[mChar[clickIndex++]];
         }
@@ -833,7 +851,8 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         
         if(mSelectMode == SELECT_NONE && click < 0 && !onClickCursor) // 点击行时触发。
         {
-            mDebugLines[line] = !mDebugLines[line];
+            onDebugListener.run(line, (mDebugLines[line] = !mDebugLines[line]));
+            
             postInvalidate(0, y-drawRowHeight, mCharChineseWidth, y);
         }
         else
@@ -844,7 +863,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
             int clickIndex = mRowStartCounts[line];
             int drawP = Xoffset;
 
-            click :
+            
             while(drawP < mDrawClip.right && clickIndex < length)
             {
                 if(Math.abs(drawP - x) < mCharLitterWidth/2
@@ -855,7 +874,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                     drawCursorX = drawP;
                     isShowCursor = true;
 
-                    break click;
+                    break;
                 }
                 drawP += drawCharWidth[mChar[clickIndex++]];
             }
@@ -1525,7 +1544,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     
     /**
      * 用二分法查找position所在行。
-     * {@hide}
+     * 
      * @param position 位置
      * @return 符合条件的行数
      */
@@ -1819,13 +1838,14 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     /**
      * 返回输入操作的实例
      */
+    @SuppressLint("all")
     public CodeViewInputConnection getInputClass() {return mInputConnection;}
     
     private static class CodeViewInputConnection implements InputConnection
     {
         private CodeView mCodeView;
         
-        public CodeViewInputConnection(CodeView codeView)
+        CodeViewInputConnection(CodeView codeView)
         {
             mCodeView = codeView;
         }
@@ -2278,6 +2298,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         
         }
     
+        @SuppressLint("all")
         @Override
         public boolean commitContent(InputContentInfo inputContentInfo, int flags, Bundle opts)
         {
@@ -2286,10 +2307,14 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     
     }
     
+    
     private ArrayList<JavaScript.Module> modulesJs;
     private ArrayList<Java.Module> modulesJava;
     
+    @SuppressLint("all")
     private int drawEndLine = 0;
+    
+    @SuppressLint("all")
     private int Xoffset = 0, // 左偏移量，即行号宽度
     
                 drawY = 0,
@@ -2308,24 +2333,40 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
                 index = 0 ;// 引索
     
     private int[] drawCharWidth;// 字符宽度
+    
+    @SuppressLint("all")
     private char drawChar;
     private char[] drawText;// x
+    
+    @SuppressLint("all")
     private boolean isDrawLine = false;// 所在区域是否需要绘制行号
     
+    @SuppressLint("all")
     private int cacheLeft = 0;// 关于左侧绘制的缓存单元
+    
+    @SuppressLint("all")
     private int cacheWidth = 0;// 关于行缓存单元
     
+    @SuppressLint("all")
     private JavaScript.Module moduleJs;
+    
+    @SuppressLint("all")
     private Java.Module moduleJava;
     
+    @SuppressLint("all")
     private int indexOfModules = 0;
     
+    @SuppressLint("all")
     private int hIndex = 0;// 当前词组长度
+    @SuppressLint("all")
     private int hLength = 0;
     
     private int dIndex = 0;
+    
+    @SuppressLint("all")
     private int dLength = 0; // 要绘制文本的长度
     
+    @SuppressLint("all")
     private int dWidth = -1;
     /**
      *  绘制：
@@ -2336,6 +2377,7 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
      * @param canvas
      */
     @Override
+    @SuppressLint("all")
     protected void onDraw(Canvas canvas)
     {
         mDrawClip.offsetTo(getScrollX(), getScrollY());
@@ -2944,9 +2986,10 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     
     class AsyncLoader extends AsyncTask<String, String, Integer>
     {
-        public boolean loadDialog = false;
-        public static final int DONE = 0;
-        public static final int FAILED = -1;
+        boolean loadDialog = false;
+        static final int DONE = 0;
+        static final int FAILED = -1;
+        
         @SuppressLint("WrongThread")
         
         protected Integer doInBackground(String... params)
@@ -3401,14 +3444,20 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
     }
     
     /**
+     *  0 = Text;
+     *  1 = JavaScript
+     *  2 = Java
+     *  -1 = Unkown
      * 启用自动补全和高亮，注意，这里可以进行扩展、修改。
-     * @param language
+     * @param language{#}
      */
     public void setShowAuto(int language)
     {
-        if(language == 0)return;
+        
         
         selectLanguage = language;
+        
+        if(language < 1)return;
         
         if(language == 1)
             mTokenJavaScript = new JavaScript();
@@ -3417,6 +3466,15 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         
         isUseLanguage = true;
         mPluginUI.canAutomaticCompletion(language);
+    }
+    
+    /**
+     * 获取语言规则
+     * @return
+     */
+    public int getSelectLanguage()
+    {
+        return selectLanguage;
     }
     
     /**
@@ -3517,13 +3575,52 @@ public class CodeView extends View implements GestureDetector.OnGestureListener
         }
     }
     
+    /**
+     * 获取编辑器字体
+     * @return
+     */
     public Typeface getTypeface()
     {
         return mTextPaint.getTypeface();
     }
     
+    /**
+     * 调用统计ui
+     */
     public void getCharsRecord()
     {
         mPluginUI.showRecord(length - 1, mRowCounts, drawCharWidth);
     }
+    
+    
+    /**
+     * 断点接口
+     */
+    public interface onDebugListener
+    {
+        /**
+         * @param line 改变的行
+         * @param nowMode 改变后的模式
+         */
+        void run(int line, boolean nowMode);
+    }
+    
+    /**
+     * 断点接口
+     * @param onDl
+     */
+    public void setOnDebugListener(onDebugListener onDl)
+    {
+        onDebugListener = onDl;
+    }
+    
+//    /**
+//     * 只处理用户编辑操作
+//     */
+//    public interface onEditTextListener
+//    {
+//        void onDelete(int position);
+//
+//        void onAdd(int position)
+//    }
 }

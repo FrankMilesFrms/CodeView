@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <android.support.v4.widget.DrawerLayout
+
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.widget.DrawerLayout
+
+                android:id="@+id/drawer_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <com.frms.codeview.activity.view.NoScrollViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TabLayout
+                                android:id="@+id/tab_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:tabIndicatorColor="#43A047"
+                                app:tabMode="scrollable" />
+
+                        </com.frms.codeview.activity.view.NoScrollViewPager>
+                    </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="#ffffffff">
+
+                    <include layout="@layout/file_layout" />
+
+                </RelativeLayout>
+
+            </android.support.v4.widget.DrawerLayout>
+
+        </FrameLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/left_drawer"
+
+            android:layout_width="220dp"
+
+            android:layout_height="match_parent"
+
+            android:layout_gravity="left"
+
+            android:background="#ffffffff"
+
+            android:gravity="center_horizontal">
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navigation_view"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:filterTouchesWhenObscured="true"
+                app:headerLayout="@layout/top_layout"
+                app:menu="@menu/main_actions" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</LinearLayout>

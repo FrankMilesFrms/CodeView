@@ -1,3 +1,19 @@
+/*
+ * Copyright Frms
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.frms.codeview;
 
 import android.annotation.SuppressLint;
@@ -30,16 +46,24 @@ public class EditActivity extends Activity
         int language = getIntent().getExtras().getInt ("lang");
         
         
-        codeView = new CodeView(this);
-        codeView.setTheme(MainActivity.isDarkTheme);
-        codeView.setTypeface(CodeView.DEJAVUSANSMONO + MainActivity.typeface);
-        if(MainActivity.isAuto)
-            codeView.setShowAuto(language);
-        codeView.setText("", false);
-        codeView.setEditMode(false);
-        // 防止遮挡文本
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
-        setContentView(codeView);
+//        codeView = new CodeView(this);
+//        codeView.setTheme(MainActivity.isDarkTheme);
+//        codeView.setTypeface(CodeView.DEJAVUSANSMONO + MainActivity.typeface);
+//        if(MainActivity.isAuto)
+//            codeView.setShowAuto(language);
+//        codeView.setText("", false);
+//        codeView.setEditMode(false);
+//        codeView.setOnDebugListener(new CodeView.onDebugListener()
+//        {
+//            @Override
+//            public void run(int line, boolean nowMode)
+//            {
+//                Kit.printout(line, nowMode);
+//            }
+//        });
+//        // 防止遮挡文本
+//        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
+//        setContentView(codeView);
     }
     
     @Override
@@ -84,7 +108,7 @@ public class EditActivity extends Activity
         menu.add(1, 2, 2, "Redo")
             .setIcon(R.raw.redo_w)
             .setShowAsActionFlags(2);
-        menu.add(0, 3, 1, "只读/只写")
+        menu.add(0, 3, 1, "只读/写")
             .setShowAsActionFlags(1);
         menu.add(0, 3, 2, "统计")
             .setShowAsActionFlags(1);

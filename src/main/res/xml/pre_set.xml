@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:visibility="invisible">
+    <PreferenceCategory android:title="编辑器设置（重启生效）">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="preference_theme"
+            android:summary="可能存在部分颜色冲突"
+            android:title="暗主题" />
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="默认语言"
+            android:entries="@array/language"
+            android:entryValues="@array/language_value"
+            android:key="preference_language"
+            android:summary="Text"
+            android:title="默认未知格式文本语言" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="字体设置"
+            android:entries="@array/typeface"
+            android:entryValues="@array/typeface_value"
+            android:key="preference_typeface"
+            android:summary="DejaVuSansMono"
+            android:title="字体设置" />
+
+        <EditTextPreference
+            android:defaultValue="14"
+            android:inputType="number"
+            android:key="preference_text_size"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:summary="仅作用于默认文本打开时大小"
+            android:title="字体大小" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:summary="根据语法补全代码"
+            android:key="preference_switch_auto_text"
+            android:title="自动补全" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="preference_auto_text"
+            android:selectAllOnFocus="false"
+            android:inputType="none"
+            android:singleLine="false"
+            android:summary="自定义追加的内容"
+            android:title="追加自动补全内容(分行分开)" />
+
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:summary="长按文本拖动时可显示"
+            android:key="preference_auxiliary_keyboard"
+            android:title="放大镜功能" />
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
