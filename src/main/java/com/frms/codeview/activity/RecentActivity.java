@@ -20,10 +20,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
@@ -54,19 +56,32 @@ public class RecentActivity extends AppCompatActivity
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recent_layout);
+    
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
         
-        listView = findViewById(R.id.recent);
         if (MainEditActivity.mTheme) {
             setTheme(R.style.frms_Dark);
-            setTitleColor(0xff555555);
-            listView.setBackgroundColor(0xff555555);
         } else {
             setTheme(android.support.v7.appcompat.R.style.Theme_AppCompat_Light_NoActionBar);
         }
+        
+        setContentView(R.layout.recent_layout);
+        
+        Toolbar toolbar = findViewById(R.id.recent_toolbar);
+        
+        setSupportActionBar(toolbar);
+        
+        listView = findViewById(R.id.recent);
+        
+        
+        if(MainEditActivity.mTheme)
+        {
+            listView.setBackgroundColor(0xff555555);
+        }
     
     
-        setTitle("最近打开文件");
+        setTitle("最近打开的文件");
     
         
         

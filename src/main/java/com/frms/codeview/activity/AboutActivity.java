@@ -41,6 +41,10 @@ public class AboutActivity extends AppCompatActivity
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        
         SharedPreferences sharedPreferences = getSharedPreferences("info", MODE_PRIVATE);
         int mTheme = sharedPreferences.getInt("theme", 0);
     

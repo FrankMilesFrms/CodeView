@@ -19,6 +19,8 @@ package com.frms.codeview.activity;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.WindowManager;
 
 import com.frms.codeview.R;
 
@@ -33,17 +35,21 @@ public class PreferenceActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_with_preference_fragment);
     
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        
         if (MainEditActivity.mTheme) {
             setTheme(R.style.frms_Dark);
-            
         } else {
             setTheme(android.support.v7.appcompat.R.style.Theme_AppCompat_Light_NoActionBar);
         }
+        
+        setContentView(R.layout.activity_with_preference_fragment);
+        
+        
     
-    
-        setTitle("设置");
+        setSupportActionBar((Toolbar) findViewById(R.id.set_toolbar));
         
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fl, new SettingsFragment()).commit();

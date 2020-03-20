@@ -23,10 +23,12 @@ package com.frms.codeview.activity.utils;
  * 创建时间 ：2020/3/16 20:23(ydt)
  */
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -34,12 +36,16 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.io.RandomAccessFile;
 import java.io.Writer;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 
 public class FileUtils {
     
+    static final int BUFFER_SIZE = 0x300000;// 缓冲区大小为3M
     /**
      * 从输入流中读取string
      * @param inputStream
@@ -408,6 +414,28 @@ public class FileUtils {
 		}
 		System.out.println("info:"+url+" download success");*/
         return inputStream;
+    }
+    
+    /**
+     * 读取大文本文件
+     * @param file
+     * @return
+     * @throws Exception
+     */
+    public static String readBigFile(String file) throws Exception
+    {
+        StringBuffer sb = new StringBuffer();
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(new File(file)));
+        BufferedReader in = new BufferedReader(new InputStreamReader(bis, "utf-8"), BUFFER_SIZE);
+        
+        while (in.ready()) {
+            String line = in.readLine();
+            sb.append(line);
+            sb.append("\n");
+        }
+        in.close();
+        
+        return sb.substring(0, sb.length() - 1);
     }
 }
 

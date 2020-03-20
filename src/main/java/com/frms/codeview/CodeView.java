@@ -42,7 +42,6 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.ActionMode;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -60,6 +59,7 @@ import android.view.inputmethod.InputContentInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.OverScroller;
 import android.widget.ProgressBar;
+import android.support.v7.view.ActionMode;
 
 import com.frms.codeview.tools.Kit;
 import com.frms.codeview.tools.PluginUI;
@@ -212,7 +212,7 @@ public class CodeView extends View implements
     private GestureDetector mGestureDetector; // 手势
     
     
-    private ActionMode.Callback mCallback;
+    private android.support.v7.view.ActionMode.Callback mCallback;
     private ActionMode mActionMode;
     private ClipboardManager mClipboardManager;
     private PluginUI mPluginUI;
@@ -241,7 +241,7 @@ public class CodeView extends View implements
     }
     
     
-    public CodeView(Context context,  AttributeSet attrs, Activity mActivity) throws Throwable
+    public CodeView(Context context,  AttributeSet attrs, Activity mActivity)
     {
         super(context, attrs);
         this.mActivity = null;
@@ -267,7 +267,7 @@ public class CodeView extends View implements
     }
     
     /**
-     * 内包含初始化数据、释放资源，在启用控件其他方法前，如果不是使用构造函数{@link #CodeView(Activity)}
+     * 内包含初始化数据、释放资源，在启用控件其他方法前，如果不是使用构造函数
      * 则必须调用此方法。
      * @param cx
      */
@@ -331,7 +331,7 @@ public class CodeView extends View implements
         
         mAsyncLoader = new AsyncLoader();
         loadWindow = new AlertDialog.Builder(getContext()).create();
-        loadWindow.setTitle("Loading...");
+        loadWindow.setTitle("数据处理中...");
         loadWindow.setView(new ProgressBar(getContext()));
         loadWindow.setCancelable(false);// 设置是否可以通过点击Back键取消
         
@@ -3043,7 +3043,8 @@ public class CodeView extends View implements
     public void showClipboardPanel()
     {
         if (mCallback == null) {initCP();}
-        mActionMode = startActionMode(mCallback);
+        
+        mActionMode = mActivity.startSupportActionMode(mCallback);
         isInActionMode = true;
     }
     
@@ -3072,10 +3073,10 @@ public class CodeView extends View implements
                     .setShowAsActionFlags(2);
                 
                 
-                menu.add(0, 4, 1, "只读/只写")
-                    .setShowAsActionFlags(1);
-                menu.add(0, 4, 2, "统计")
-                    .setShowAsActionFlags(1);
+//                menu.add(0, 4, 1, "只读/只写")
+//                    .setShowAsActionFlags(1);
+//                menu.add(0, 4, 2, "统计")
+//                    .setShowAsActionFlags(1);
 //                menu.add(0, 4, 1, "查找&替换")
 //                    .setShowAsActionFlags(1);
                 return true;
@@ -3623,4 +3624,27 @@ public class CodeView extends View implements
 //
 //        void onAdd(int position)
 //    }
+    
+    public ArrayList<String> getDebugsList()
+    {
+        
+        ArrayList<String> arrayList = new ArrayList<>();
+        
+        for(int i =0; i< mRowCounts; i++)
+        {
+            if(mDebugLines[i])
+            {
+                arrayList.add("行 " + i);
+            }
+        }
+        return arrayList;
+    }
+    
+    public void scrollToLine(int line)
+    {
+        if(line > 0 && line <= mRowCounts)
+        {
+            scrollTo(getScrollX(), drawRowHeight * (line -1));
+        }
+    }
 }

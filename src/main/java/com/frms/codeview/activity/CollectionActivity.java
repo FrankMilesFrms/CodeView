@@ -21,10 +21,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
@@ -60,18 +62,28 @@ public class CollectionActivity extends AppCompatActivity
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.collection_layout);
-        setTitle("收藏集");
-        listView = findViewById(R.id.collection);
-        if (MainEditActivity.mTheme) {
+    
+    
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        
+        
+        if (MainEditActivity.mTheme)
+        {
             setTheme(R.style.frms_Dark);
-            setTitleColor(0xff555555);
-            listView.setBackgroundColor(0xff555555);
         } else {
             setTheme(android.support.v7.appcompat.R.style.Theme_AppCompat_Light_NoActionBar);
         }
+        
+        setContentView(R.layout.collection_layout);
+        
+        listView = findViewById(R.id.collection);
+        if(MainEditActivity.mTheme)
+        {
+            listView.setBackgroundColor(0xff555555);
+        }
     
-    
+        setSupportActionBar((Toolbar) findViewById(R.id.collection_bar));
         
         
         readCollection = MainEditActivity.readCollection;

@@ -27,6 +27,8 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -80,7 +82,7 @@ public class MainEditActivity extends AppCompatActivity
             "android.permission.WRITE_EXTERNAL_STORAGE"
         };
     @SuppressLint("SdCardPath")
-    private static final String CACHE_FILE_PATH = "/sdcard/cacheFile.txt";
+    private static final String CACHE_FILE_PATH = FileBrowser.ROOT_PATH + "/cacheFile.txt";
     
     public static boolean mTheme;
     
@@ -124,21 +126,21 @@ public class MainEditActivity extends AppCompatActivity
         asyncLoader.doInBackground("init");
         
         
-        loadWindow = new AlertDialog.Builder(this).create();
-        loadWindow.setTitle("Loading...");
-        loadWindow.setView(new ProgressBar(this));
-        loadWindow.setCancelable(false);// 设置是否可以通过点击Back键取消
+        
     
         if (mTheme) {
             setTheme(R.style.frms_Dark);
         } else {
-            setTheme(android.support.v7.appcompat.R.style.Theme_AppCompat_Light_NoActionBar);
+            setTheme(R.style.frms_Night);
         }
-    
-    
+        
+        
         setContentView(R.layout.main_layout);
         
+        
+        
         tabLayout = findViewById(R.id.tab_layout);
+        
         Toolbar toolbar = findViewById(R.id.toolbar);
     
         if(mTheme)
@@ -151,7 +153,6 @@ public class MainEditActivity extends AppCompatActivity
         drawerLayout = findViewById(R.id.drawer_layout);
         drawerLayout1 = findViewById(R.id.drawer_layout1);
         navigationView = findViewById(R.id.navigation_view);
-        
     
         navigationView.setNavigationItemSelectedListener(this);
     
@@ -224,8 +225,8 @@ public class MainEditActivity extends AppCompatActivity
                     }
                 }
                 
-                asyncLoader.doInBackground("read", file.getAbsolutePath());
-                codeView.setText(text, false);
+                
+                codeView.setText("", false);
                 codeView.setEditMode(false);
                 
                 if(mMagnifier)
@@ -237,13 +238,16 @@ public class MainEditActivity extends AppCompatActivity
                 drawerLayout1.closeDrawers();
                 viewPagerAdapter.notifyDataSetChanged();
                 viewPager.setCurrentItem(index);
+                
+                closeIndex = tabEditView.size() - 1;
+                asyncLoader.doInBackground("read", file.getAbsolutePath());
             }
         });
         
         //if(tabFileName == null)
         {
             tabFileName = new ArrayList<>();
-            tabFileName.add("Cache File");
+            tabFileName.add("Cache File.txt");
             nowFiles.add(CACHE_FILE_PATH);
         }
         
@@ -256,7 +260,7 @@ public class MainEditActivity extends AppCompatActivity
             codeView.setTypeface(CodeView.DEJAVUSANSMONO +mTypeface);
             if(mAuto)
                 codeView.setShowAuto(mDefaultLanguage);
-            codeView.setText(text, text.length() > 0xffff);
+            codeView.setText("", text.length() > 0xffff);
             codeView.setEditMode(false);
             
             tabEditView.add(codeView);
@@ -363,6 +367,29 @@ public class MainEditActivity extends AppCompatActivity
     
                         break;
                     case 4:
+                        
+                        ArrayList<String> arrayList = codeView.getDebugsList();
+                        final String[] arr = new String[arrayList.size()];
+                        arrayList.toArray(arr);
+                        if(arr.length > 0)
+                        {
+                            new AlertDialog.Builder(MainEditActivity.this)
+                                .setTitle("标签列表")
+                                .setItems(arr, new DialogInterface.OnClickListener()
+                                {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which)
+                                    {
+                                        codeView.scrollToLine(Integer.parseInt(arr[which].substring(2)));
+                                    }
+                                })
+                                .setNegativeButton("关闭", null)
+                                .show();
+                        }else
+                        {
+                            Snackbar.make(drawerLayout, "没有行标签", Snackbar.LENGTH_SHORT).show();
+                        }
+                    case 5:
                         if(menuItem.getOrder() == 1)
                         {
                             codeView.setChangeEditMode();
@@ -379,7 +406,6 @@ public class MainEditActivity extends AppCompatActivity
                 return false;
             }
         });
-    
     }
     
     /**
@@ -387,20 +413,6 @@ public class MainEditActivity extends AppCompatActivity
      */
     private void initData()
     {
-        File file = new File(CACHE_FILE_PATH);
-        
-        
-        try {
-            if(file.exists())
-            {
-                text = FileUtils.readFileContent(CACHE_FILE_PATH);
-            } else {
-                FileUtils.newFile(CACHE_FILE_PATH, "");
-            }
-            
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         nowFiles = new ArrayList<>();
         readCollection = getSharedPreferences("collection", MODE_PRIVATE);
         Gson gson = new Gson();
@@ -441,18 +453,22 @@ public class MainEditActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         menu.add(1, 1, 1, "Undo")
-            .setIcon(R.raw.undo_w)
+            .setIcon(R.raw.undo)
             .setShowAsActionFlags(2);
         menu.add(1, 2, 1, "Redo")
-            .setIcon(R.raw.redo_w)
+            .setIcon(R.raw.redo)
             .setShowAsActionFlags(2);
         menu.add(1, 3, 1, "save")
             .setIcon(R.drawable.save)
             .setShowAsActionFlags(2);
         
-        menu.add(0, 4, 1, "只读/写")
+        menu.add(1, 4, 1, "debugs list")
+            .setIcon(R.raw.favoriteslist)
+            .setShowAsActionFlags(2);
+        
+        menu.add(0, 5, 1, "只读、写")
             .setShowAsActionFlags(1);
-        menu.add(0, 4, 2, "统计")
+        menu.add(0, 5, 2, "统计")
             .setShowAsActionFlags(1);
         
         return super.onCreateOptionsMenu(menu);
@@ -504,29 +520,25 @@ public class MainEditActivity extends AppCompatActivity
         return false;
     }
     
+    
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
+    protected void onDestroy()
     {
+        SharedPreferences.Editor editor =  readCollection.edit();
     
-        if(event.getAction() == KeyEvent.KEYCODE_BACK)
-        {
-            SharedPreferences.Editor editor =  readCollection.edit();
+        editor.clear();
+        editor.putString("recent", new Gson().toJson(recentFiles));
+        editor.apply();
     
-            editor.clear();
-            editor.putString("recent", new Gson().toJson(recentFiles));
-            editor.apply();
-    
-            Toast.makeText(this, "书签数据已保存", Toast.LENGTH_SHORT).show();
-        }
-        return super.onKeyDown(keyCode, event);
+        Toast.makeText(this, "书签数据已保存", Toast.LENGTH_SHORT).show();
+        super.onDestroy();
     }
     
     /*
-        读取数据
-     */
+            读取数据
+         */
     class AsyncLoader extends AsyncTask<String, String, Integer>
     {
-        
         @Override
         protected Integer doInBackground(String... strings)
         {
@@ -536,11 +548,14 @@ public class MainEditActivity extends AppCompatActivity
                     initData();
                 break;
                 case "read":
+                   
                     try {
-                        text = FileUtils.readFileContent(strings[1]);
-                    } catch (IOException e) {
+                        text = FileUtils.readBigFile(strings[1]);
+                    } catch (Throwable e) {
                         text = "文件读取错误:\n"+Arrays.toString(e.getStackTrace());
                     }
+                    
+                    tabEditView.get(closeIndex).setText(text, false);
                 break;
             }
             return 1;
@@ -550,10 +565,18 @@ public class MainEditActivity extends AppCompatActivity
         protected void onPreExecute()
         {
             super.onPreExecute();
-            if(!loadWindow.isShowing())
+            
+            if(loadWindow == null)
             {
-                loadWindow.show();
+                loadWindow = new AlertDialog.Builder(MainEditActivity.this).create();
+                loadWindow.setTitle("读取中...");
+                loadWindow.setView(new ProgressBar(MainEditActivity.this));
+                loadWindow.setCancelable(false);// 设置是否可以通过点击Back键取消
             }
+            
+            loadWindow.show();
+            
+            Kit.printout("onPre");
         }
         
         @Override
@@ -561,6 +584,7 @@ public class MainEditActivity extends AppCompatActivity
         {
             super.onPostExecute(integer);
             loadWindow.cancel();
+            Kit.printout("onPost");
         }
         
     }
@@ -569,10 +593,32 @@ public class MainEditActivity extends AppCompatActivity
     public void onWindowFocusChanged(boolean hasFocus)
     {
         super.onWindowFocusChanged(hasFocus);
+        
         if(hasFocus && mMagnifier)
         {
             tabEditView.get(0).showMagnifier();
         }
+    }
+    
+    
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+        File file = new File(CACHE_FILE_PATH);
+        try {
+            if(file.exists())
+            {
+                closeIndex = 0;
+                asyncLoader.doInBackground("read", CACHE_FILE_PATH);
+            } else {
+                FileUtils.newFile(CACHE_FILE_PATH, "");
+            }
+        
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
     }
     
 }

@@ -53,6 +53,7 @@
                                 app:tabMode="scrollable" />
 
                         </com.frms.codeview.activity.view.NoScrollViewPager>
+
                     </LinearLayout>
 
                 <RelativeLayout
