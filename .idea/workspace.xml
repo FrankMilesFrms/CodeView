@@ -16,25 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/res/layout-v21/activity_with_preference_fragment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/raw/favoriteslist.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/assets/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_with_preference_fragment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/collection_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/collection_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/main_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/main_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/recent_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/recent_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/top_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/top_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/values.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -159,10 +141,20 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="169">
-              <caret line="3006" column="17" lean-forward="true" selection-start-line="3006" selection-start-column="17" selection-end-line="3007" selection-end-column="25" />
+              <caret line="3006" column="17" selection-start-line="3006" selection-start-column="17" selection-end-line="3007" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -293,7 +285,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/recent_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_with_preference_fragment.xml" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/collection_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout-v21/activity_with_preference_fragment.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/top_layout.xml" />
@@ -309,12 +300,13 @@
         <option value="$PROJECT_DIR$/src/main/assets/help.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="346" />
-    <option name="y" value="196" />
+    <option name="x" value="210" />
+    <option name="y" value="41" />
     <option name="width" value="753" />
     <option name="height" value="688" />
   </component>
@@ -679,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584634350837</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added a lot of new features &amp; Fixed errors.">
+      <created>1584718689697</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1584718689698</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -971,14 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/collection_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1175,7 +1166,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="3006" column="17" lean-forward="true" selection-start-line="3006" selection-start-column="17" selection-end-line="3007" selection-end-column="25" />
+          <caret line="3006" column="17" selection-start-line="3006" selection-start-column="17" selection-end-line="3007" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1232,6 +1223,14 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
   </component>
   <component name="masterDetails">

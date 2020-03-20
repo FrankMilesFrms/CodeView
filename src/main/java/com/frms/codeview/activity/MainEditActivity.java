@@ -210,10 +210,10 @@ public class MainEditActivity extends AppCompatActivity
     
                         switch (type) {
                             case "java":
-                                codeView.setShowAuto(1);
+                                codeView.setShowAuto(2);
                                 break;
                             case "js":
-                                codeView.setShowAuto(2);
+                                codeView.setShowAuto(1);
                                 break;
                             case "txt":
                             case "TXT":

@@ -3466,6 +3466,7 @@ public class CodeView extends View implements
             mTokenJava = new Java();
         
         isUseLanguage = true;
+        
         mPluginUI.canAutomaticCompletion(language);
     }
     

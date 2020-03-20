@@ -435,6 +435,11 @@ public class FileUtils {
         }
         in.close();
         
+        if(sb.length() < 1)
+        {
+            return sb.toString();
+        }
+        
         return sb.substring(0, sb.length() - 1);
     }
 }
