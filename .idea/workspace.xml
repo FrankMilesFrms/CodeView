@@ -17,6 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +31,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="LP015062002701" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -82,13 +83,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="522" column="4" selection-start-line="522" selection-start-column="4" selection-end-line="522" selection-end-column="4" />
+            <state relative-caret-position="346">
+              <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#9484:12093" />
-                <element signature="e#14042#14466#0" expanded="true" />
-                <element signature="e#14465#14466#0" expanded="true" />
                 <element signature="method#initData#0;class#MainEditActivity#0" />
                 <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
                 <element signature="method#onWindowFocusChanged#0;class#MainEditActivity#0" />
@@ -98,50 +96,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/recent_layout.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
           <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/assets/help.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
+            <state relative-caret-position="1105">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="428" column="97" selection-start-line="428" selection-start-column="97" selection-end-line="428" selection-end-column="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="3006" column="17" selection-start-line="3006" selection-start-column="17" selection-end-line="3007" selection-end-column="25" />
+            <state relative-caret-position="118">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,10 +118,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="67" column="59" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6919">
+              <caret line="439" column="33" selection-start-line="439" selection-start-column="33" selection-end-line="439" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56287">
+              <caret line="3468" column="8" selection-start-line="3468" selection-start-column="8" selection-end-line="3468" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="255">
               <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
             </state>
           </provider>
@@ -162,7 +163,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
+            <state relative-caret-position="306">
               <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -281,7 +282,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/ViewPagerAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/res/xml/pre_set.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/recent_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_with_preference_fragment.xml" />
@@ -292,15 +292,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/main_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileReadBig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/assets/help.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/xml/pre_set.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" />
       </list>
     </option>
   </component>
@@ -319,8 +320,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -331,11 +330,6 @@
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
@@ -362,33 +356,13 @@
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="codeview" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="raw" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="app" type="1abcf292:AndroidViewProjectNode" />
@@ -396,10 +370,18 @@
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="xml" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -430,19 +412,19 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\drawable" />
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\raw" />
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\layout-v21" />
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\xml" />
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\menu" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.frms.codeview" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\drawable" />
       <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\raw" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\drawable" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\raw" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\layout-v21" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\xml" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\menu" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -678,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584718689698</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed errors.">
+      <created>1584719124557</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1584719124557</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -709,7 +698,7 @@
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50227964" side_tool="true" weight="0.4622951" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49772036" weight="0.28150573" />
       <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49772036" weight="0.43606558" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.9508197" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" weight="0.9508197" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49772036" weight="0.4622951" />
       <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.5" />
@@ -803,7 +792,8 @@
     <MESSAGE value="增加方法" />
     <MESSAGE value="Added new features &amp; Fixed errors." />
     <MESSAGE value="Added a lot of new features &amp; Fixed errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a lot of new features &amp; Fixed errors." />
+    <MESSAGE value="Fixed errors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -842,16 +832,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/file_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/about_layout.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/7a8662486e58d91a84b2ab81e7e183ab/jars/classes.jar!/android/support/v7/app/AppCompatDelegate.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -883,15 +873,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/setting_layout.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="155" column="66" selection-start-line="148" selection-start-column="24" selection-end-line="157" selection-end-column="67" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../sources/android-28/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -955,14 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../sources/android-28/android/preference/PreferenceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -971,12 +946,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/collection_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -989,20 +964,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout-v21/activity_with_preference_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout-v21/activity_with_preference_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1025,12 +992,12 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/top_layout.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/7a8662486e58d91a84b2ab81e7e183ab/jars/classes.jar!/android/support/v7/view/ActionMode.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1094,38 +1061,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/main_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1139,23 +1086,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileReadBig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="428" column="97" selection-start-line="428" selection-start-column="97" selection-end-line="428" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileReadBig.java" />
     <entry file="file://$PROJECT_DIR$/../sources/android-28/android/os/AsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1163,23 +1094,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/recent_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="3006" column="17" selection-start-line="3006" selection-start-column="17" selection-end-line="3007" selection-end-column="25" />
+        <state relative-caret-position="102">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="36">
+          <caret line="155" column="66" selection-start-line="148" selection-start-column="24" selection-end-line="157" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -1192,13 +1128,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="522" column="4" selection-start-line="522" selection-start-column="4" selection-end-line="522" selection-end-column="4" />
+        <state relative-caret-position="346">
+          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#9484:12093" />
-            <element signature="e#14042#14466#0" expanded="true" />
-            <element signature="e#14465#14466#0" expanded="true" />
             <element signature="method#initData#0;class#MainEditActivity#0" />
             <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
             <element signature="method#onWindowFocusChanged#0;class#MainEditActivity#0" />
@@ -1206,18 +1139,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/recent_layout.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        <state relative-caret-position="6919">
+          <caret line="439" column="33" selection-start-line="439" selection-start-column="33" selection-end-line="439" selection-end-column="33" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
+        <state relative-caret-position="56287">
+          <caret line="3468" column="8" selection-start-line="3468" selection-start-column="8" selection-end-line="3468" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1225,12 +1157,50 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="255">
           <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="67" column="59" selection-start-line="67" selection-start-column="59" selection-end-line="67" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

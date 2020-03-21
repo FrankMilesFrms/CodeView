@@ -52,7 +52,7 @@ public class AboutActivity extends AppCompatActivity
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
         
         setContentView(R.layout.about_layout);
-        ((TextView)findViewById(R.id.about_tv)).setText("\n\n编辑器开发人员\n" +
+        ((TextView)findViewById(R.id.about_tv)).setText("\n\n当前版本：\nCode Editor2020.3.21\n\n开发人员\n" +
                                                         "\n" +
                                                         "Frms（3505-8268-36@qq.com）\n" +
                                                         "\n" +
@@ -65,10 +65,11 @@ public class AboutActivity extends AppCompatActivity
                                                         "\n" +
                                                         "字体\n" +
                                                         "DejaVuSansMono.ttf\n" +
-                                                        "图标\n" +
+                                                        "图片\n" +
+                                                        "虚青海儿(1575-1571-46@qq.com)\n" +
                                                         "阿里巴巴矢量图标库\n" +
                                                         "AIDE\n" +
-                                                        "ES\n\n\n时间\n2020年3月19日傍晚");
+                                                        "ES\n\n\n时间\n2020年3月21日");
     }
     
     public boolean onCreateOptionsMenu(Menu menu) {
