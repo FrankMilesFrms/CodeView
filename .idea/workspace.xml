@@ -16,92 +16,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__android_arch_core_common_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__android_arch_lifecycle_livedata_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__animated_vector_drawable_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__annotations_java5_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__appcompat_v7_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__asynclayoutinflater_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__collections_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_asynclayoutinflater_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_cardview_v7_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_collections_28_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_coordinatorlayout_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_cursoradapter_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_customview_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_design_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_documentfile_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_drawerlayout_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_interpolator_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_loader_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_localbroadcastmanager_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_preference_v7_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_print_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_recyclerview_v7_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_slidingpanelayout_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_support_annotations_28_0_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_support_compat_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_support_core_ui_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_support_core_utils_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_support_media_compat_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_support_v4_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_support_vector_drawable_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_swiperefreshlayout_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_transition_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_versionedparcelable_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_android_support_viewpager_28_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_6_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__common_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__coordinatorlayout_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__cursoradapter_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__customview_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__de_hdodenhof_circleimageview_3_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__documentfile_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__drawerlayout_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__interpolator_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__junit_junit_4_13_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__livedata_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__livedata_core_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__loader_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__localbroadcastmanager_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__preference_v7_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__print_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__recyclerview_v7_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__runtime_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__slidingpanelayout_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__support_annotations_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__support_compat_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__support_core_ui_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__support_core_utils_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__support_fragment_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__support_vector_drawable_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__swiperefreshlayout_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__versionedparcelable_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__viewmodel_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/libraries/Gradle__viewpager_28_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lexer/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APProject-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lexer/Lexer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/Lexer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/release/app-release.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +38,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="LP015062002701" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -164,79 +87,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/assets/help.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="3" selection-start-line="16" selection-end-line="150" selection-end-column="7" />
-              <folding>
-                <element signature="e#617#3844#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../settings.gradle">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="56" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2771">
-              <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+            <state relative-caret-position="5712">
+              <caret line="401" column="35" selection-start-line="401" selection-start-column="35" selection-end-line="401" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initData#0;class#MainEditActivity#0" />
+                <element signature="method#verifyStoragePermissions#0;class#MainEditActivity#0" />
                 <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
+                <element signature="method#onDestroy#0;class#MainEditActivity#0" />
+                <element signature="class#AsyncLoader#0;class#MainEditActivity#0" />
                 <element signature="method#onWindowFocusChanged#0;class#MainEditActivity#0" />
+                <element signature="method#onStart#0;class#MainEditActivity#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6919">
-              <caret line="439" column="33" selection-start-line="439" selection-start-column="33" selection-end-line="439" selection-end-column="33" />
+            <state relative-caret-position="2040">
+              <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="204">
+              <caret line="2473" column="60" selection-start-line="2473" selection-start-column="60" selection-end-line="2473" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#63718#63719#0" expanded="true" />
+                <element signature="e#63754#63755#0" expanded="true" />
+                <element signature="e#65066#67707#0" />
+                <element signature="e#72004#73563#1" />
+                <element signature="e#73577#74389#1" />
+                <element signature="e#85337#92412#1" />
+                <element signature="e#92476#94945#1" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="194">
+              <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -244,23 +149,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="425">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
             </state>
           </provider>
           <provider editor-type-id="android-manifest" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -276,15 +169,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>module</find>
-      <find>Module</find>
-      <find>signL</find>
-      <find>Pair</find>
       <find>pair</find>
       <find>System</find>
       <find>onDra</find>
       <find>ond</find>
-      <find>onDr</find>
       <find>cache</find>
       <find>onDraw</find>
       <find>mActivity</find>
@@ -306,6 +194,11 @@
       <find />
       <find>collectionList</find>
       <find>只</find>
+      <find>getCursorCapsMode</find>
+      <find>全选</find>
+      <find>16908332</find>
+      <find>mh</find>
+      <find>onDr</find>
     </findStrings>
     <replaceStrings>
       <replace>\n\n</replace>
@@ -365,11 +258,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/EditSymolBar.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/EditView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivityWithPreferenceFragment.java" />
-        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values-v21/values.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/ViewPagerAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/recent_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_with_preference_fragment.xml" />
@@ -377,26 +268,28 @@
         <option value="$PROJECT_DIR$/src/main/res/layout-v21/activity_with_preference_fragment.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/top_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/res/values/values.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/main_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileReadBig.java" />
         <option value="$PROJECT_DIR$/src/main/assets/help.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/xml/pre_set.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" />
         <option value="$PROJECT_DIR$/../MyApplication2/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/../Test/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="210" />
     <option name="y" value="41" />
     <option name="width" value="753" />
@@ -410,34 +303,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Lexer" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -744,10 +612,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47965115" visible="true" weight="0.2393617" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47965115" visible="true" weight="0.12386018" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
       <window_info id="Favorites" order="2" sideWeight="0.52034885" side_tool="true" weight="0.2393617" />
       <window_info id="Captures" order="3" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
@@ -756,13 +624,13 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" sideWeight="0.49918166" weight="0.1762918" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.49620062" weight="0.6409836" />
+      <window_info anchor="bottom" id="Logcat" order="0" sideWeight="0.49544072" weight="0.56557375" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.49344262" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32786885" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50227964" side_tool="true" weight="0.4622951" />
-      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49772036" weight="0.28150573" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5045593" side_tool="true" weight="0.56557375" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49772036" weight="0.28032786" />
       <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49772036" weight="0.43606558" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" weight="0.9508197" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.5786885" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49772036" weight="0.4622951" />
       <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.5" />
@@ -858,7 +726,8 @@
     <MESSAGE value="Added a lot of new features &amp; Fixed errors." />
     <MESSAGE value="Fixed errors." />
     <MESSAGE value="new doc be added!" />
-    <option name="LAST_COMMIT_MESSAGE" value="new doc be added!" />
+    <MESSAGE value="Fixed bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -889,53 +758,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/7a8662486e58d91a84b2ab81e7e183ab/jars/classes.jar!/android/support/v7/app/AppCompatDelegate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-28/android/os/ParcelFileDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="117" column="28" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Theme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values-v21/values.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/ThemeDark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/setting_layout.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-28/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="259" selection-start-line="259" selection-end-line="259" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar!/android/support/annotation/Nullable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/b37f3cebd1e33decc4ae3cf45f43f50a/jars/classes.jar!/android/support/design/widget/TabLayout.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -999,16 +821,6 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout-v21/activity_with_preference_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -1016,9 +828,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../sources/android-28/android/view/ActionMode.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1045,13 +854,6 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/7a8662486e58d91a84b2ab81e7e183ab/jars/classes.jar!/android/support/v7/view/ActionMode.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/51f62548ab3d44e5ef34a31c2e996af8/res/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1066,16 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/values.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
-          <folding>
-            <element signature="e#39#644#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/drawable/addto.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1086,27 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AppCompatPreferenceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="43" column="65" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="67" column="56" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onKeyDown#0;class#CollectionActivity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/main_layout.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -1114,16 +885,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileTypeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1148,30 +909,12 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="83" column="23" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="155" column="66" selection-start-line="148" selection-start-column="24" selection-end-line="157" selection-end-column="67" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/HelperActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1193,16 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/assets/help.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" selection-start-line="16" selection-end-line="150" selection-end-column="7" />
-          <folding>
-            <element signature="e#617#3844#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1213,30 +946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initData#0;class#MainEditActivity#0" />
-            <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
-            <element signature="method#onWindowFocusChanged#0;class#MainEditActivity#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6919">
           <caret line="439" column="33" selection-start-line="439" selection-start-column="33" selection-end-line="439" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
@@ -1254,20 +967,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AppCompatPreferenceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="43" column="65" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assets/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="150" column="7" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
+          <folding>
+            <element signature="e#617#3844#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/SettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5636#5637#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/menu/main_actions.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/CollectionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="172" column="17" selection-start-line="168" selection-start-column="12" selection-end-line="172" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/PreferenceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sources/android-28/android/widget/TextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="5968" column="16" selection-start-line="5968" selection-start-column="16" selection-end-line="5968" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sources/android-28/android/text/InputType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="188" column="28" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sources/android-28/android/view/inputmethod/InputConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="123" column="17" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sources/android-28/android/inputmethodservice/InputMethodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="2584" column="20" selection-start-line="2584" selection-start-column="20" selection-end-line="2584" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sources/android-28/android/widget/AbsListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="5882" column="32" selection-start-line="5882" selection-start-column="32" selection-end-line="5882" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-5.5-rc-4/caches/transforms-2/files-2.1/7a8662486e58d91a84b2ab81e7e183ab/jars/classes.jar!/android/support/v7/view/ActionMode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5712">
+          <caret line="401" column="35" selection-start-line="401" selection-start-column="35" selection-end-line="401" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initData#0;class#MainEditActivity#0" />
+            <element signature="method#verifyStoragePermissions#0;class#MainEditActivity#0" />
+            <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
+            <element signature="method#onDestroy#0;class#MainEditActivity#0" />
+            <element signature="class#AsyncLoader#0;class#MainEditActivity#0" />
+            <element signature="method#onWindowFocusChanged#0;class#MainEditActivity#0" />
+            <element signature="method#onStart#0;class#MainEditActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/RecentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="164" column="20" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="2473" column="60" selection-start-line="2473" selection-start-column="60" selection-end-line="2473" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#63718#63719#0" expanded="true" />
+            <element signature="e#63754#63755#0" expanded="true" />
+            <element signature="e#65066#67707#0" />
+            <element signature="e#72004#73563#1" />
+            <element signature="e#73577#74389#1" />
+            <element signature="e#85337#92412#1" />
+            <element signature="e#92476#94945#1" />
           </folding>
         </state>
       </provider>

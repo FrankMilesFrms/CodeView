@@ -17,6 +17,7 @@
 package com.frms.codeview;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -342,6 +343,7 @@ public class CodeView extends View implements
         mCursor = new int[] {1, 1, 1, 1};
         drawCursorX = Xoffset;
         drawCursorY = (int) (drawRowHeight + drawFontMetrics.bottom);
+        mHeight = drawRowHeight;
         
         mPluginUI = new PluginUI(mActivity, mDisplayMetrics.widthPixels, this);
         mPluginUI.setRowheigth(drawRowHeight);
@@ -646,7 +648,7 @@ public class CodeView extends View implements
         if(length < 2)return;
         
         mSelectMode = SELECT_ING;
-            y = Math.min(y, Math.round(mHeight));
+            y = Math.min(y, drawRowHeight * mRowCounts);
         int line = Math.max(y/drawRowHeight, 1);
     
         mCursor[0] = line;
@@ -1851,91 +1853,77 @@ public class CodeView extends View implements
         }
     
         /**
-         * {@deprecated}
-         * 已过时
          * 取得当前光标位置前的 n 个字符文本，仅未选择时有效。
          * 本此方法在输入连接无效（如线程冲突）或客户端等待时间过长（等待几秒返回）时可能会失败。上述情况时返回null值。
          * @param n 期望的文本长度
-         * @param flags 提供附加选项控制，控制文本如何返回, 必须是 CodeView.RUN_MODE 才执行。
+         * @param flags 提供附加选项控制，控制文本如何返回。
          * @return 返回当前光标前的文本，返回的文本长度可能小于 n
          */
         @Override
         public CharSequence getTextBeforeCursor(int n, int flags)
         {
-            if(flags == CodeView.RUN_MODE && mCodeView.mSelectMode == CodeView.SELECT_NONE && n > 0)
-            {
-                char[] c;
-                int p = mCodeView.mCursor[1];
-                int t = p - n;
-                if(t > 0)
-                {
-                    c = new char[n];
-                    System.arraycopy(mCodeView.mChar, t, c, 0, n);
-                } else {
-                    c = new char[p];
-                    System.arraycopy(mCodeView.mChar, t, c, 0, p);
-                }
-                
-                return String.valueOf(c);
-            }
+//            if(mCodeView.mSelectMode == CodeView.SELECT_NONE)
+//            {
+//                int position = Math.max(0, mCodeView.mCursor[1] - n - 1);
+//
+//                char[] c = new char[position == 0? mCodeView.mCursor[1] - 1 : n];
+//                System.arraycopy(mCodeView.mChar, position, c, 0, c.length);
+//
+//                Kit.printout("getTextBeforeCursor", n, flags);
+//                return String.valueOf(c);
+//            }
             return null;
         }
     
         /**
-         * {@deprecated}
-         * 已过时
+         * @deprecated
          * 取得当前光标位置后的 n 个字符文本，仅未选择时有效。
          * 此方法在输入连接无效时（如线程冲突）或客户端等待时间过长（等待几秒返回）时可能会失败。上述情况时返回null值。
          * @param n 期望的文本长度
-         * @param flags 提供附加选项控制，控制文本如何返回，必须是 CodeView.RUN_MODE 才执行。
+         * @param flags 提供附加选项控制，控制文本如何返回。
          * @return 返回当前光标后的文本，返回的文本长度可能小于 n
          */
         @Override
         public CharSequence getTextAfterCursor(int n, int flags)
         {
-            n = Math.min(mCodeView.length - 1, n);
-            if(flags == CodeView.RUN_MODE && mCodeView.mSelectMode == CodeView.SELECT_NONE && n > 0)
-            {
-                int p = mCodeView.mCursor[1];
-                int l = mCodeView.length;
-                char[] c;
-                if(l - p < n)
-                {
-                    c = new char[l - p];
-                    System.arraycopy(mCodeView.mChar, p, c, 0, l - p);
-                } else {
-                    c = new char[n];
-                    System.arraycopy(mCodeView.mChar, p, c, 0, n);
-                }
-                
-                return String.valueOf(c);
-            }
+//            if(mCodeView.mSelectMode == CodeView.SELECT_NONE && n > 0)
+//            {
+//                int position = Math.min(mCodeView.length, mCodeView.mCursor[1] + n);
+//
+//                char[] c = new char[position - mCodeView.mCursor[1]];
+//
+//                System.arraycopy(mCodeView.mChar, mCodeView.mCursor[1] - 1, c, 0, c.length);
+//                Kit.printout("getTextAfterCursor", n, flags);
+//                return String.valueOf(c);
+//            }
             return null;
         }
     
         /**
+         * @deprecated
          * 如果有的话取得所选的文本。
          * 此方法在输入连接无效时（如线程冲突）或客户端等待时间过长（等待几秒返回）时可能会失败。上述情况时返回null值。
-         * @param flags 只有是 CodeView.RUN_MODE 才执行。
+         * @param flags
          * @return  如果有的话返回当前选取文本，如果没有文本被选中返回null。
          */
         @Override
         public CharSequence getSelectedText(int flags)
         {
-            if(CodeView.RUN_MODE == flags && mCodeView.mSelectMode == CodeView.SELECT_ING)
+            if(mCodeView.mSelectMode == CodeView.SELECT_ING)
             {
                 int s = mCodeView.mCursor[1];
                 int e = mCodeView.mCursor[3];
-                char[] c = new char[e -s + 1];
+                char[] c = new char[e - s];
                 System.arraycopy(mCodeView.mChar, s - 1, c, 0, c.length);
+                
+                Kit.printout("getSelectedText", flags);
                 return String.valueOf(c);
             }
             return null;
         }
     
         /**
-         * {@deprecated}
-         * 已过时。
+         * @deprecated
          * 取得当前光标位置的文本的大小写状态。
          * @param reqModes  无效参数
          * @return 0
@@ -1943,7 +1931,24 @@ public class CodeView extends View implements
         @Override
         public int getCursorCapsMode(int reqModes)
         {
-            return 0;
+            Kit.printout("getCursorMode", reqModes);
+            
+            int position;
+            if((position = mCodeView.mCursor[1]) > 1)
+            {
+                char c = mCodeView.mChar[position - 2];
+                if(Character.isJavaIdentifierPart(c))
+                {
+                    return InputType.TYPE_TEXT_FLAG_CAP_WORDS;
+                } else if(Character.isDigit(c))
+                {
+                    return InputType.TYPE_TEXT_FLAG_MULTI_LINE;
+                }else
+                {
+                    return InputType.TYPE_TEXT_FLAG_AUTO_CORRECT;
+                }
+            }
+            return InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS;
         }
     
         /**
@@ -2098,9 +2103,7 @@ public class CodeView extends View implements
         }
     
         /**
-         * {@deprecated}
-         * 已过时
-         * 更改编辑模式为选择编辑，并确立开始位置和结束位置。
+         * 全选
          * @param start
          * @param end
          * @return
@@ -2122,6 +2125,7 @@ public class CodeView extends View implements
         @Override
         public boolean performEditorAction(int editorAction)
         {
+            Kit.printout("performEditorAction", editorAction);
             return false;
         }
     
@@ -2134,6 +2138,11 @@ public class CodeView extends View implements
         @Override
         public boolean performContextMenuAction(int id)
         {
+//            switch (id)
+//            {
+//                case InputConnection.
+//            }
+            Kit.printout("performContextMenuAction", id);
             return false;
         }
     
@@ -2251,7 +2260,7 @@ public class CodeView extends View implements
         }
     
         /**
-         * {@deprecated}
+         * @deprecated
          * 已过时
          * 由IME调用，通知客户端将在全屏与普通模式间切换。它在 InputMethodService的标准实现中被调用。
          * @param enabled
@@ -2462,7 +2471,7 @@ public class CodeView extends View implements
                    mScannerLock = true;
                    
                    mTokenJava.set(mChar, mRowStartCounts, length);
-                   mTokenJava.token(index, drawLine,Math.max(mRowStartCounts[drawEndLine], length) , drawEndLine);
+                   mTokenJava.token(index, drawLine,Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
                    modulesJava = mTokenJava.get();
                }
                else
@@ -2499,7 +2508,7 @@ public class CodeView extends View implements
     
     
                main :
-               while(index < length && drawLine <= mRowCounts)
+               while(index < length && drawLine <= mRowCounts && drawY < mDrawClip.bottom)
                {
                    drawChar = mChar[index++];
         
@@ -2532,7 +2541,7 @@ public class CodeView extends View implements
                                drawLine++;
                                drawY += drawRowHeight;
                     
-                               if( drawY > mDrawClip.bottom)break main;
+                               if(drawY > mDrawClip.bottom)break main;
                            }
                 
                            drawChar = mChar[index++];
@@ -2686,7 +2695,7 @@ public class CodeView extends View implements
                    mScannerLock = true;
                    
                    mTokenJavaScript.set(mChar, mRowStartCounts, length);
-                   mTokenJavaScript.token(index, drawLine,Math.max(mRowStartCounts[drawEndLine], length) , drawEndLine);
+                   mTokenJavaScript.token(index, drawLine, Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
                    modulesJs = mTokenJavaScript.get();
                }
                else
@@ -3100,7 +3109,7 @@ public class CodeView extends View implements
                             drawCursorX = Xoffset;
                             drawCursorY = (int) (drawRowHeight + drawFontMetrics.bottom);
                             drawCursorX2 = getLineWidth(mRowCounts) + Xoffset;
-                            drawCursorY2 = (int) (Math.round(mHeight) + drawFontMetrics.bottom);
+                            drawCursorY2 = (int) (mRowCounts * drawRowHeight + drawFontMetrics.bottom);
                             scrollTo(0, 0);
                             invalidate(mDrawClip);
                         }
@@ -3628,10 +3637,9 @@ public class CodeView extends View implements
     
     public ArrayList<String> getDebugsList()
     {
-        
         ArrayList<String> arrayList = new ArrayList<>();
         
-        for(int i =0; i< mRowCounts; i++)
+        for(int i =1; i <= mRowCounts; i++)
         {
             if(mDebugLines[i])
             {
@@ -3648,4 +3656,25 @@ public class CodeView extends View implements
             scrollTo(getScrollX(), drawRowHeight * (line -1));
         }
     }
+    
+//    public int[][] searchAll(String str)
+//    {
+//        if(str == null || str.length() < 1)return null;
+//
+//        char[] chars = str.toCharArray();
+//        char c = chars[0];
+//        int line = 1;
+//        int position = 0;
+//
+//        while (position < length)
+//        {
+//            if(chars[position] == c)
+//            {
+//
+//            }
+//            position++;
+//        }
+//        return null;
+//    }
+//
 }

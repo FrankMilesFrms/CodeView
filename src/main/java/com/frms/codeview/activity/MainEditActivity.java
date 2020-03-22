@@ -45,6 +45,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -181,6 +183,7 @@ public class MainEditActivity extends AppCompatActivity
                 if(index >= 0)
                 {
                     viewPager.setCurrentItem(index);
+                    Snackbar.make(drawerLayout, "这个文件已被打开过了", Snackbar.LENGTH_SHORT).show();
                     return;
                 } else
                 {
@@ -190,9 +193,6 @@ public class MainEditActivity extends AppCompatActivity
                 if( (index = recentFiles.indexOf(file.getAbsolutePath())) < 0)
                 {
                     recentFiles.add(file.getAbsolutePath());
-                }else
-                {
-                    return;
                 }
                 
                 tabFileName.add(file.getName());
@@ -370,9 +370,10 @@ public class MainEditActivity extends AppCompatActivity
                         
                         ArrayList<String> arrayList = codeView.getDebugsList();
                         final String[] arr = new String[arrayList.size()];
-                        arrayList.toArray(arr);
+                        
                         if(arr.length > 0)
                         {
+                            arrayList.toArray(arr);
                             new AlertDialog.Builder(MainEditActivity.this)
                                 .setTitle("标签列表")
                                 .setItems(arr, new DialogInterface.OnClickListener()
@@ -390,17 +391,50 @@ public class MainEditActivity extends AppCompatActivity
                             Snackbar.make(drawerLayout, "没有行标签", Snackbar.LENGTH_SHORT).show();
                         }
                     case 5:
-                        if(menuItem.getOrder() == 1)
+                        switch (menuItem.getOrder())
                         {
-                            codeView.setChangeEditMode();
-                        } else
-                        {
-                            codeView.getCharsRecord();
+                            case 1:
+                                codeView.setChangeEditMode();
+                                break;
+                            case 2:
+                                codeView.getCharsRecord();
+                                break;
+                            case 3:
+                                if(codeView.getRowCounts() > 1)
+                                {
+                                    final EditText editText = new EditText(MainEditActivity.this);
+                                    editText.setInputType(EditorInfo.TYPE_CLASS_NUMBER);
+                                    editText.setHint("(1..."+codeView.getRowCounts()+")");
+                                    
+                                    new AlertDialog.Builder(MainEditActivity.this)
+                                        .setTitle("定位行")
+                                        .setView(editText)
+                                        .setNegativeButton("定位", new DialogInterface.OnClickListener()
+                                        {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which)
+                                            {
+                                                if(editText.getText().length() > 0)
+                                                {
+                                                    int line = Math.min(Integer.parseInt(editText.getText().toString()), codeView.getRowCounts());
+                                                    codeView.scrollToLine(line);
+                                                }else
+                                                {
+                                                    codeView.hideKeyboard();
+                                                    Snackbar.make(drawerLayout, "不能留空", Snackbar.LENGTH_SHORT).show();
+                                                }
+                                                
+                                            }
+                                        })
+                                        .setPositiveButton("取消", null)
+                                        .show();
+                                }
+                                
                         }
                         break;
                     default:
                     {
-                        Kit.printout("Unknown", "EditActivity");
+                        Kit.printout("Unknown", "MainEditActivity");
                     }
                 }
                 return false;
@@ -470,6 +504,8 @@ public class MainEditActivity extends AppCompatActivity
             .setShowAsActionFlags(1);
         menu.add(0, 5, 2, "统计")
             .setShowAsActionFlags(1);
+        menu.add(0, 5, 3, "定位行")
+            .setShowAsActionFlags(1);
         
         return super.onCreateOptionsMenu(menu);
     }
@@ -535,8 +571,8 @@ public class MainEditActivity extends AppCompatActivity
     }
     
     /*
-            读取数据
-         */
+        读取数据
+    */
     class AsyncLoader extends AsyncTask<String, String, Integer>
     {
         @Override
@@ -576,7 +612,6 @@ public class MainEditActivity extends AppCompatActivity
             
             loadWindow.show();
             
-            Kit.printout("onPre");
         }
         
         @Override
@@ -584,7 +619,6 @@ public class MainEditActivity extends AppCompatActivity
         {
             super.onPostExecute(integer);
             loadWindow.cancel();
-            Kit.printout("onPost");
         }
         
     }

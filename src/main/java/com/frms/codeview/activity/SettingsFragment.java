@@ -44,7 +44,7 @@ public class SettingsFragment extends PreferenceFragment
                Preference.OnPreferenceClickListener
 {
     static String[] language_value = {
-        "Text", "Java", "JavaScript"
+        "Text", "JavaScript", "Java"
     };
     
     static String[] typeface_value =

@@ -103,16 +103,7 @@ public class RecentActivity extends AppCompatActivity
                 MainEditActivity.fileBrowser.gotoPath(new File(recentFiles.get(position)).getParent());
                 MainEditActivity.drawerLayout1.openDrawer(Gravity.RIGHT);
             
-                //if(isChange)
-                {
-                    SharedPreferences.Editor editor =  readCollection.edit();
                 
-                    editor.clear();
-                    editor.putString("recent", new Gson().toJson(recentFiles));
-                    editor.apply();
-                
-                    Toast.makeText(RecentActivity.this, "数据已保存", Toast.LENGTH_SHORT).show();
-                }
                 finish();
             }
         });
@@ -165,8 +156,10 @@ public class RecentActivity extends AppCompatActivity
                 @Override
                 public void onClick(View v)
                 {
+                    
                     isChange = true;
                     recentFiles.remove(pos);
+                    
                     if(recentFiles.size() == 0)
                     {
                         Toast.makeText(RecentActivity.this, "现在啥都没有哦", Toast.LENGTH_SHORT).show();
@@ -186,11 +179,11 @@ public class RecentActivity extends AppCompatActivity
     }
     
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
+    public void onDestroy()
     {
-        if(event.getKeyCode() == KeyEvent.KEYCODE_BACK
-           //&& isChange
-        )
+        super.onDestroy();
+        
+        if(isChange)
         {
             
             SharedPreferences.Editor editor =  readCollection.edit();
@@ -201,7 +194,6 @@ public class RecentActivity extends AppCompatActivity
             
             Toast.makeText(this, "数据已保存", Toast.LENGTH_SHORT).show();
         }
-        return super.onKeyDown(keyCode, event);
     }
     
 }

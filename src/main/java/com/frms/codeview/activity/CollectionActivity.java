@@ -103,36 +103,26 @@ public class CollectionActivity extends AppCompatActivity
                 MainEditActivity.fileBrowser.gotoPath(collectionList.get(position));
                 MainEditActivity.drawerLayout1.openDrawer(Gravity.RIGHT);
                 
-                if(isChange)
-                {
-                    SharedPreferences.Editor editor =  readCollection.edit();
-    
-                    editor.clear();
-                    editor.putString("data", new Gson().toJson(collectionList));
-                    editor.apply();
-    
-                    Toast.makeText(CollectionActivity.this, "书签数据已保存", Toast.LENGTH_SHORT).show();
-                }
                 finish();
             }
         });
     }
     
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
+    protected void onDestroy()
     {
-        if(event.getKeyCode() == KeyEvent.KEYCODE_BACK && isChange)
+        super.onDestroy();
+    
+        if(isChange)
         {
-            
             SharedPreferences.Editor editor =  readCollection.edit();
-            
+        
             editor.clear();
             editor.putString("data", new Gson().toJson(collectionList));
             editor.apply();
-            
-            Toast.makeText(this, "书签数据已保存", Toast.LENGTH_SHORT).show();
+        
+            Toast.makeText(CollectionActivity.this, "书签数据已保存", Toast.LENGTH_SHORT).show();
         }
-        return super.onKeyDown(keyCode, event);
     }
     
     private class mCollectionAdapter extends BaseAdapter

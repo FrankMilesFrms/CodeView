@@ -13,8 +13,8 @@
     
     <string-array name="language">
         <item>Text</item>
-        <item>Java</item>
         <item>JavaScript</item>
+        <item>Java</item>
     </string-array>
 
     <string-array name="language_value">
