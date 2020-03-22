@@ -58,6 +58,7 @@ public class AboutActivity extends AppCompatActivity
                                                         "\n" +
                                                         "特别感谢\n" +
                                                         "\n" +
+                                                        "饭饭(2971-6835-15@qq.com)\n"+
                                                         "虚青海儿(1575-1571-46@qq.com)\n" +
                                                         "《致》开源组(QQ 781-097-903)\n" +
                                                         "\n" +
