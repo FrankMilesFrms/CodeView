@@ -87,6 +87,7 @@ public class MainEditActivity extends AppCompatActivity
     private static final String CACHE_FILE_PATH = FileBrowser.ROOT_PATH + "/cacheFile.txt";
     
     public static boolean mTheme;
+    private static boolean canNotPermission = false;
     
     private ArrayList<String> tabFileName;
     private ArrayList<CodeView> tabEditView;
@@ -512,7 +513,8 @@ public class MainEditActivity extends AppCompatActivity
     /**
      * android 动态权限申请
      */
-    public static void verifyStoragePermissions(Activity activity) {
+    public static void verifyStoragePermissions(Activity activity)
+    {
         try {
             //检测是否有写的权限
             int permission = ActivityCompat.checkSelfPermission(activity,
@@ -520,8 +522,12 @@ public class MainEditActivity extends AppCompatActivity
             // 没有写的权限，去申请写的权限，会弹出对话框
             if (permission != PackageManager.PERMISSION_GRANTED)
             {
+                canNotPermission = true;
                 ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE, REQUEST_EXTERNAL_STORAGE);
                 fileBrowser.init();
+            }else
+            {
+                canNotPermission = false;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -584,7 +590,17 @@ public class MainEditActivity extends AppCompatActivity
                     initData();
                 break;
                 case "read":
-                   
+                   if(canNotPermission)
+                   {
+                       verifyStoragePermissions(MainEditActivity.this);
+                       
+                       if(canNotPermission)
+                       {
+                           Snackbar.make(drawerLayout1, "你还没有给予权限，请给予后重启本应用", Snackbar.LENGTH_LONG).show();
+                           break;
+                       }
+                       
+                   }
                     try {
                         text = FileUtils.readBigFile(strings[1]);
                     } catch (Throwable e) {
