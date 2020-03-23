@@ -165,7 +165,24 @@ public class PluginUI
      */
     public void canAutomaticCompletion(int language)
     {
-        cache = language == 1? TAG.JavaScript_keyWords : (language == 2)? TAG.JAVA_KEYWORD : TAG.C_KEYWORD;
+//        cache = switch (language)
+//        {
+//            case CodeView.LANGUAGE_NATIVE_JAVA -> TAG.JavaScript_keyWords;
+//            case CodeView.LANGUAGE_NATIVE_JAVASCRIPT -> TAG.JAVA_KEYWORD;
+//        }
+        
+        switch (language)
+        {
+            case CodeView.LANGUAGE_NATIVE_JAVA:
+                cache = TAG.JAVA_KEYWORD;
+                break;
+            case CodeView.LANGUAGE_NATIVE_JAVASCRIPT:
+                cache = TAG.JavaScript_keyWords;
+                break;
+            default:
+                cache = new String[]{};
+        }
+        
         isShowAuto = true;
         string = new ArrayList<>();
         string.add("");
@@ -173,19 +190,15 @@ public class PluginUI
     
         listView = new ListView(mActivity);
         
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(mActivity, android.R.layout.simple_list_item_1,  cache);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(mActivity, android.R.layout.simple_list_item_1, cache);
         listView.setAdapter(adapter);
         
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        listView.setOnItemClickListener((parent, view, p, id) ->
         {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int p, long id)
-            {
-                autoPop.dismiss();
-                codeview.delete(position - length , position, false, line, line, true);
-                codeview.insert(position - length , i[p], false, line, line, true);
-                
-            }
+            autoPop.dismiss();
+            codeview.delete(position - length , position, false, line, line, true);
+            codeview.insert(position - length , i[p], false, line, line, true);
+            
         });
     
         autoPop = new PopupWindow();

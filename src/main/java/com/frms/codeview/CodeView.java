@@ -163,6 +163,21 @@ public class CodeView extends View implements
      */
     public static final int SERIF = 0x1008;
     
+    /**
+     * JavaScript 语法规则
+     */
+    public static final int LANGUAGE_NATIVE_JAVASCRIPT = 1;
+    
+    /**
+     * 无语法规则
+     */
+    public static final int LANGUAGE_NATIVE_NONE = 0;
+    
+    /**
+     * Java 语法规则
+     */
+    public static final int LANGUAGE_NATIVE_JAVA = 2;
+    
     private final AppCompatActivity mActivity;
     
     // 绘制区域
@@ -2391,7 +2406,7 @@ public class CodeView extends View implements
     {
         mDrawClip.offsetTo(getScrollX(), getScrollY());
     
-        drawLine   = mDrawClip.top / drawRowHeight + 1;// 将要被绘制行。
+        drawLine   = Math.min(mRowCounts, mDrawClip.top / drawRowHeight + 1);// 将要被绘制行。
         drawY      = drawLine * drawRowHeight; // base line
         index      = mRowStartCounts[drawLine];// 绘制引索
         drawX      = Xoffset;
@@ -2462,7 +2477,7 @@ public class CodeView extends View implements
            hIndex = 0;
            dWidth = -1;
            
-           if(mTokenJavaScript == null)
+           if(selectLanguage == LANGUAGE_NATIVE_JAVA)
            {
                // 这里处理当前Java对应高亮语法
                if(!mScannerLock)
@@ -2471,7 +2486,7 @@ public class CodeView extends View implements
                    mScannerLock = true;
                    
                    mTokenJava.set(mChar, mRowStartCounts, length);
-                   mTokenJava.token(index, drawLine,Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
+                   mTokenJava.token(index, drawLine, drawLine == 1? length : Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
                    modulesJava = mTokenJava.get();
                }
                else
@@ -2695,7 +2710,7 @@ public class CodeView extends View implements
                    mScannerLock = true;
                    
                    mTokenJavaScript.set(mChar, mRowStartCounts, length);
-                   mTokenJavaScript.token(index, drawLine, Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
+                   mTokenJavaScript.token(index, drawLine, drawEndLine == 1? length : Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
                    modulesJs = mTokenJavaScript.get();
                }
                else
@@ -3454,10 +3469,6 @@ public class CodeView extends View implements
     }
     
     /**
-     *  0 = Text;
-     *  1 = JavaScript
-     *  2 = Java
-     *  -1 = Unkown
      * 启用自动补全和高亮，注意，这里可以进行扩展、修改。
      * @param language{#}
      */
@@ -3466,15 +3477,20 @@ public class CodeView extends View implements
         
         
         selectLanguage = language;
-        
-        if(language < 1)return;
-        
-        if(language == 1)
-            mTokenJavaScript = new JavaScript();
-        else
-            mTokenJava = new Java();
-        
         isUseLanguage = true;
+        
+        switch (language)
+        {
+            case LANGUAGE_NATIVE_JAVASCRIPT:
+                mTokenJavaScript = new JavaScript();
+                break;
+            case LANGUAGE_NATIVE_JAVA:
+                mTokenJava = new Java();
+                break;
+            default:
+                isUseLanguage = false;
+        }
+        
         
         mPluginUI.canAutomaticCompletion(language);
     }

@@ -211,14 +211,14 @@ public class MainEditActivity extends AppCompatActivity
     
                         switch (type) {
                             case "java":
-                                codeView.setShowAuto(2);
+                                codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_JAVA);
                                 break;
                             case "js":
-                                codeView.setShowAuto(1);
+                                codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_JAVASCRIPT);
                                 break;
                             case "txt":
                             case "TXT":
-                                codeView.setShowAuto(0);
+                                codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_NONE);
                                 break;
                             default:
                                 codeView.setShowAuto(mDefaultLanguage);
@@ -294,33 +294,25 @@ public class MainEditActivity extends AppCompatActivity
                 {
                     new AlertDialog.Builder(MainEditActivity.this)
                         .setMessage("删除本条目？\n\n文件地址："+nowFiles.get(closeIndex))
-                        .setNeutralButton("确定", new DialogInterface.OnClickListener()
+                        .setNeutralButton("确定", (dialog, which) ->
                         {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which)
-                            {
-                                viewPagerAdapter.removeIndex(closeIndex);
-                                nowFiles.remove(closeIndex);
-                                viewPager.setAdapter(viewPagerAdapter);
-                                viewPager.setCurrentItem(viewPager.getCurrentItem());
-                            }
+                            viewPagerAdapter.removeIndex(closeIndex);
+                            nowFiles.remove(closeIndex);
+                            viewPager.setAdapter(viewPagerAdapter);
+                            viewPager.setCurrentItem(viewPager.getCurrentItem());
                         })
                         .setPositiveButton("取消", null)
-                        .setNegativeButton("保存并关闭", new DialogInterface.OnClickListener()
+                        .setNegativeButton("保存并关闭", (dialog, which) ->
                         {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which)
-                            {
-                                try {
-                                    FileUtils.newFile(nowFiles.get(closeIndex), tabEditView.get(closeIndex).getText().toString());
-                                } catch (IOException e) {
-                                    Snackbar.make(drawerLayout, "保存失败，哈希值="+e.hashCode(), Snackbar.LENGTH_SHORT).show();
-                                }
-                                viewPagerAdapter.removeIndex(closeIndex);
-                                nowFiles.remove(closeIndex);
-                                viewPager.setAdapter(viewPagerAdapter);
-                                viewPager.setCurrentItem(viewPager.getCurrentItem());
+                            try {
+                                FileUtils.newFile(nowFiles.get(closeIndex), tabEditView.get(closeIndex).getText().toString());
+                            } catch (IOException e) {
+                                Snackbar.make(drawerLayout, "保存失败，哈希值="+e.hashCode(), Snackbar.LENGTH_SHORT).show();
                             }
+                            viewPagerAdapter.removeIndex(closeIndex);
+                            nowFiles.remove(closeIndex);
+                            viewPager.setAdapter(viewPagerAdapter);
+                            viewPager.setCurrentItem(viewPager.getCurrentItem());
                         })
                     .show();
                 } else
@@ -377,14 +369,8 @@ public class MainEditActivity extends AppCompatActivity
                             arrayList.toArray(arr);
                             new AlertDialog.Builder(MainEditActivity.this)
                                 .setTitle("标签列表")
-                                .setItems(arr, new DialogInterface.OnClickListener()
-                                {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which)
-                                    {
-                                        codeView.scrollToLine(Integer.parseInt(arr[which].substring(2)));
-                                    }
-                                })
+                                .setItems(arr, (dialog, which) ->
+                                                   codeView.scrollToLine(Integer.parseInt(arr[which].substring(2))))
                                 .setNegativeButton("关闭", null)
                                 .show();
                         }else
@@ -410,22 +396,18 @@ public class MainEditActivity extends AppCompatActivity
                                     new AlertDialog.Builder(MainEditActivity.this)
                                         .setTitle("定位行")
                                         .setView(editText)
-                                        .setNegativeButton("定位", new DialogInterface.OnClickListener()
+                                        .setNegativeButton("定位", (dialog, which) ->
                                         {
-                                            @Override
-                                            public void onClick(DialogInterface dialog, int which)
+                                            if(editText.getText().length() > 0)
                                             {
-                                                if(editText.getText().length() > 0)
-                                                {
-                                                    int line = Math.min(Integer.parseInt(editText.getText().toString()), codeView.getRowCounts());
-                                                    codeView.scrollToLine(line);
-                                                }else
-                                                {
-                                                    codeView.hideKeyboard();
-                                                    Snackbar.make(drawerLayout, "不能留空", Snackbar.LENGTH_SHORT).show();
-                                                }
-                                                
+                                                int line = Math.min(Integer.parseInt(editText.getText().toString()), codeView.getRowCounts());
+                                                codeView.scrollToLine(line);
+                                            }else
+                                            {
+                                                codeView.hideKeyboard();
+                                                Snackbar.make(drawerLayout, "不能留空", Snackbar.LENGTH_SHORT).show();
                                             }
+                                            
                                         })
                                         .setPositiveButton("取消", null)
                                         .show();
@@ -519,15 +501,11 @@ public class MainEditActivity extends AppCompatActivity
             //检测是否有写的权限
             int permission = ActivityCompat.checkSelfPermission(activity,
                 "android.permission.WRITE_EXTERNAL_STORAGE");
+            canNotPermission = (permission != PackageManager.PERMISSION_GRANTED);
             // 没有写的权限，去申请写的权限，会弹出对话框
-            if (permission != PackageManager.PERMISSION_GRANTED)
+            if (canNotPermission)
             {
-                canNotPermission = true;
                 ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE, REQUEST_EXTERNAL_STORAGE);
-                fileBrowser.init();
-            }else
-            {
-                canNotPermission = false;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -596,6 +574,7 @@ public class MainEditActivity extends AppCompatActivity
                        
                        if(canNotPermission)
                        {
+                           canNotPermission = false;
                            Snackbar.make(drawerLayout1, "你还没有给予权限，请给予后重启本应用", Snackbar.LENGTH_LONG).show();
                            break;
                        }
