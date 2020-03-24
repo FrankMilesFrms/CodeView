@@ -2382,6 +2382,7 @@ public class CodeView extends View implements
     
     @SuppressLint("all")
     private int hIndex = 0;// 当前词组长度
+    
     @SuppressLint("all")
     private int hLength = 0;
     
@@ -2486,7 +2487,7 @@ public class CodeView extends View implements
                    mScannerLock = true;
                    
                    mTokenJava.set(mChar, mRowStartCounts, length);
-                   mTokenJava.token(index, drawLine, drawLine == 1? length : Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
+                   mTokenJava.token(index, drawLine, (drawLine == 1 || drawEndLine == mRowCounts)? length : Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
                    modulesJava = mTokenJava.get();
                }
                else
@@ -2710,7 +2711,7 @@ public class CodeView extends View implements
                    mScannerLock = true;
                    
                    mTokenJavaScript.set(mChar, mRowStartCounts, length);
-                   mTokenJavaScript.token(index, drawLine, drawEndLine == 1? length : Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
+                   mTokenJavaScript.token(index, drawLine, (drawLine == 1 || drawEndLine == mRowCounts)? length : Math.min(mRowStartCounts[drawEndLine], length) , drawEndLine);
                    modulesJs = mTokenJavaScript.get();
                }
                else
