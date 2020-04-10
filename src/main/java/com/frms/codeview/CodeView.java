@@ -243,7 +243,7 @@ public class CodeView extends View implements
     private boolean isUseLanguage = false;
     
     private onDebugListener onDebugListener;
-    
+    private onEditListener mOnEditListener;
     
     @SuppressLint("all")
     private int selectLanguage = 0;
@@ -364,14 +364,7 @@ public class CodeView extends View implements
         mPluginUI.setRowheigth(drawRowHeight);
         
         
-        onDebugListener = new onDebugListener()
-        {
-            @Override
-            public void run(int line, boolean nowMode)
-            {
-        
-            }
-        };
+        onDebugListener = (line, nowMode) -> {};
     }
     
     /**
@@ -1041,6 +1034,12 @@ public class CodeView extends View implements
     public void insertChar(int position, char c, boolean aboutCursor, int CLine, boolean addUndoStack)
     {
         if(setOnlyRead)return;
+    
+        if(SELECT_NONE != mSelectMode)
+        {
+            mSelectMode = SELECT_NONE;
+            hideClipboardPanel();
+        }
         
         removeOutRowsLength();
         mScannerLock = false;
@@ -1060,6 +1059,10 @@ public class CodeView extends View implements
         
         if(addUndoStack)
         {
+            if(mOnEditListener != null)
+            {
+                mOnEditListener.addText(position, String.valueOf(c));
+            }
             mUndoStack.addCommand(position, String.valueOf(c), line, UNKNOWN, System.currentTimeMillis(), true);
         }
         
@@ -1171,6 +1174,12 @@ public class CodeView extends View implements
     public void insert(int position, String text, boolean aboutCursor, int CLine1, int CLine2,boolean addUndoStack)
     {
         if(text.length() < 1 || setOnlyRead)return;
+    
+        if(SELECT_NONE != mSelectMode)
+        {
+            mSelectMode = SELECT_NONE;
+            hideClipboardPanel();
+        }
         
         mScannerLock = false;
         removeOutRowsLength();
@@ -1210,6 +1219,10 @@ public class CodeView extends View implements
     
         if(addUndoStack)
         {
+            if(mOnEditListener != null)
+            {
+                mOnEditListener.addText(position, text);
+            }
             mUndoStack.addCommand(position, text, line, addLine + line, System.currentTimeMillis(), true);
         }
         
@@ -1339,6 +1352,12 @@ public class CodeView extends View implements
     {
         if (position > 1 && !setOnlyRead)
         {
+            if(SELECT_NONE != mSelectMode)
+            {
+                mSelectMode = SELECT_NONE;
+                hideClipboardPanel();
+            }
+            
             mScannerLock = false;
             int line = aboutCursor? mCursor[0] : CLine;
             char dc = mChar[position - 2];
@@ -1347,6 +1366,10 @@ public class CodeView extends View implements
 
             if(addUndoStack)
             {
+                if(mOnEditListener != null)
+                {
+                    mOnEditListener.deleteText(position, UNKNOWN, String.valueOf(dc));
+                }
                 mUndoStack.addCommand(position - 1, String.valueOf(dc), line - (dc == TAG.EOL?1:0), UNKNOWN, System.currentTimeMillis(), false);
             }
             
@@ -1443,6 +1466,12 @@ public class CodeView extends View implements
             return;
         }
         
+        if(SELECT_NONE != mSelectMode)
+        {
+            mSelectMode = SELECT_NONE;
+            hideClipboardPanel();
+        }
+        
         mScannerLock = false;
         int startLine = aboutCursor? mCursor[0] : CLine;
         int endLine = aboutCursor? mCursor[2] : CLine2;
@@ -1452,8 +1481,13 @@ public class CodeView extends View implements
         if(addUndoStack)
         {
             char[] chars = new char[dLength];
+            String str = String.valueOf(chars);
+            if(mOnEditListener != null)
+            {
+                mOnEditListener.deleteText(start, end, str);
+            }
             System.arraycopy(mChar, start - 1, chars, 0, dLength);
-            mUndoStack.addCommand(start, String.valueOf(chars), startLine, endLine, System.currentTimeMillis(), false);
+            mUndoStack.addCommand(start, str, startLine, endLine, System.currentTimeMillis(), false);
         }
         
         System.arraycopy(mChar, end -1, mChar, start - 1, length - end + 1);
@@ -3620,6 +3654,32 @@ public class CodeView extends View implements
         mPluginUI.showRecord(length - 1, mRowCounts, drawCharWidth);
     }
     
+    /**
+     * 编辑接口
+     */
+    public interface onEditListener
+    {
+        /**
+         * 添加文本
+         * @param cursorPosition 光标位置
+         * @param text 将要被添加的文本
+         */
+        void addText(int cursorPosition, String text);
+    
+        /**
+         * 删除文本
+         * @param cursorPosition 光标位置，如果是多选的话，表示第一个光标位置。
+         * @param endCursorPosition 第二个光标位置，如果不是选择状态，则返回-1。
+         * @param text 如果有文本删除，就会返回选择区内文本，否则返回null。
+         */
+        void deleteText(int cursorPosition, int endCursorPosition, String text);
+    }
+    
+    public void setOnEditListener(onEditListener mOnEditListener)
+    {
+        this.mOnEditListener = mOnEditListener;
+    }
+    
     
     /**
      * 断点接口
@@ -3652,6 +3712,10 @@ public class CodeView extends View implements
 //        void onAdd(int position)
 //    }
     
+    /**
+     * 获取断点行。
+     * @return
+     */
     public ArrayList<String> getDebugsList()
     {
         ArrayList<String> arrayList = new ArrayList<>();
@@ -3666,6 +3730,10 @@ public class CodeView extends View implements
         return arrayList;
     }
     
+    /**
+     * 跳转到某行。
+     * @param line
+     */
     public void scrollToLine(int line)
     {
         if(line > 0 && line <= mRowCounts)
