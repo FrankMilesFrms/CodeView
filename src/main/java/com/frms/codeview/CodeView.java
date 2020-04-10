@@ -242,8 +242,8 @@ public class CodeView extends View implements
     private boolean mScannerLock = true;
     private boolean isUseLanguage = false;
     
-    private onDebugListener onDebugListener;
-    private onEditListener mOnEditListener;
+    private onDebugListener onDebugListener; // 断点接口。
+    private onEditListener mOnEditListener; // 文本编辑接口。
     
     @SuppressLint("all")
     private int selectLanguage = 0;
