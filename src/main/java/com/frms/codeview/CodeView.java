@@ -1793,7 +1793,7 @@ public class CodeView extends View implements
         int bl;
         if(mSelectMode == CodeView.SELECT_NONE && (bl = mCursor[0]) > 1)
         {
-            int l = mRowStartCounts[bl] - mRowStartCounts[bl - 1];
+            int l = mRowStartCounts[bl] - mRowStartCounts[bl - 1]-1;
             
             mCursor[0] -= 1;
             
