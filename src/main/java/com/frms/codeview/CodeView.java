@@ -1793,11 +1793,11 @@ public class CodeView extends View implements
         int bl;
         if(mSelectMode == CodeView.SELECT_NONE && (bl = mCursor[0]) > 1)
         {
-            int l = mRowStartCounts[bl] - mRowStartCounts[bl - 1]-1;
+            int l = mRowStartCounts[bl] - mRowStartCounts[bl - 1];
             
             mCursor[0] -= 1;
             
-            if (l >= mCursor[1] - mRowStartCounts[bl] - 1)
+            if (l > mCursor[1] - mRowStartCounts[bl] - 1)
             {
                 mCursor[1] -= l;
                 drawCursorX = getLineWidth(mCursor[0], mCursor[1]) + Xoffset;
@@ -1839,7 +1839,7 @@ public class CodeView extends View implements
                 nl = length - 1 - mRowStartCounts[bl + 1];
             } else
             {
-                nl = mRowStartCounts[bl + 2] - mRowStartCounts[bl + 1];
+                nl = mRowStartCounts[bl + 2] - mRowStartCounts[bl + 1]-1;
             }
             
             mCursor[0] += 1;
