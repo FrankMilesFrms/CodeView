@@ -24,6 +24,7 @@ import android.widget.TextView;
 
 import com.frms.UI.LoadView;
 import com.frms.codeview.CodeView;
+import com.frms.codeview.R;
 import com.frms.codeview.activity.MainEditActivity;
 import com.frms.lexer.TAG;
 
@@ -55,7 +56,9 @@ public class PluginUI
     
     private TextView textView;// 统计布局
     private ScrollView recordLayout;
+    private ImageView mVerticalScrollIMG;
     
+    private int mCompensationValue = -1;// 显示位置的补偿值
     @SuppressLint("ResourceType")
     public PluginUI(AppCompatActivity activity, int width, CodeView cv)
     {
@@ -69,17 +72,24 @@ public class PluginUI
         
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
         String s = sharedPreferences.getString("preference_auto_text", "");
+        
         if(s.contains("\n") && MainEditActivity.mAuto)
         {
-            newLetter = s.split("\n");
+            //TODO @Error? '[\n]' > '\n'
+            newLetter = s.split("[\n]");
         }else
         {
             newLetter = new String[0];
         }
+    
+        if(mCompensationValue < 0)
+        {
+            mCompensationValue = rowheigth * 2 + mActivity.getSupportActionBar().getHeight();
+        }
     }
     
     /**
-     * 启用放大镜
+     * 启用放大镜，一定要放在加载完布局后调用！
      */
     public void canShowMagnifier()
     {
@@ -145,7 +155,6 @@ public class PluginUI
     
     
     /**
-     * 自动补全：
      * @param view
      * @param duration
      */
@@ -160,7 +169,7 @@ public class PluginUI
     private int length = 0, position = 0, line ;
     
     /**
-     * 加载提示框
+     * 加载提示框，一定要放在加载完布局后调用！
      * @param language
      */
     public void canAutomaticCompletion(int language)
@@ -283,13 +292,19 @@ public class PluginUI
         
         LoadView.setShowAnimation(listView, 200);
         
-        autoPop.showAtLocation(parent, Gravity.LEFT | Gravity.TOP, 0, sy + rowheigth * 2 + mActivity.getSupportActionBar().getHeight() );
+        autoPop.showAtLocation(parent, Gravity.LEFT | Gravity.TOP, 0, sy + mCompensationValue);
     }
     
+    /**
+     * 显示统计记录
+     * @param totalLength
+     * @param totalLineCounts
+     * @param c
+     */
     @SuppressLint("SetTextI18n")
     public void showRecord(int totalLength, int totalLineCounts, int[] c)
     {
-        int index = -2;// 这里不算 Tag.EOL
+        int index = -2;// 这里不算 TAG.EOL
         
         if(totalLength > 0)
         {
@@ -328,5 +343,64 @@ public class PluginUI
         alertDialog.setNegativeButton("关闭", null);
         alertDialog.setView(recordLayout);
         alertDialog.show();
+    }
+    
+    private PopupWindow mVerticalScrollBar;
+    
+    /**
+     * 已过时
+     * 创建垂直显示条，一定要放在加载完布局后调用！
+     */
+    public void canVerticalScrollBar()
+    {
+        mVerticalScrollBar = new PopupWindow();
+        mVerticalScrollIMG = new ImageView(mActivity);
+        mVerticalScrollIMG.setBackgroundResource(R.drawable.a_ve);
+        
+        mVerticalScrollBar.setFocusable(false);
+        mVerticalScrollBar.setHeight(codeview.getHeight() / 8);
+        mVerticalScrollBar.setWidth(codeview.getWidth() / 16);
+        mVerticalScrollBar.setContentView(mVerticalScrollIMG);
+        // mVerticalScrollBar.showAtLocation(parent, Gravity.RIGHT | Gravity.LEFT, 0, 0);
+        mVerticalScrollBar.showAtLocation(parent,
+            Gravity.RIGHT | Gravity.TOP,
+            codeview.getHeight() / 8,
+            mCompensationValue);
+    }
+    
+    /**
+     * 已过时
+     * 更新位置
+     * @param position
+     */
+    public void setUpdateVerticalScrollBar(int position)
+    {
+        if(mVerticalScrollBar == null)return;
+        
+        if(mVerticalScrollBar.isShowing())
+        {
+            mVerticalScrollBar.update(
+                codeview.getCharChineseUtilWidth() * 3,
+                Math.round(codeview.getWidth() / position) * codeview.getHeight() + mCompensationValue - rowheigth * 2,
+                -1,
+                -1);
+            return;
+        }
+        
+        mVerticalScrollBar.showAtLocation(
+            parent,
+            codeview.getCharChineseUtilWidth() * 3,
+            Math.round(codeview.getWidth() / position) * codeview.getHeight() + mCompensationValue - rowheigth * 2,
+            Math.round(codeview.getWidth() / position));
+    }
+    
+    /**
+     * 已过时
+     * 关闭垂直。
+     */
+    public void dismissVerticalScrollBar()
+    {
+        if(mVerticalScrollBar == null || !mVerticalScrollBar.isShowing())return;
+        mVerticalScrollBar.dismiss();
     }
 }

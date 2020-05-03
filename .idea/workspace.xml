@@ -16,8 +16,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/a_ve.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +37,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="LP015062002701" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -80,84 +86,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/UI/Other.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="1841" column="72" selection-start-line="1841" selection-start-column="72" selection-end-line="1841" selection-end-column="72" />
+            <state relative-caret-position="302">
+              <caret line="587" column="16" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#60118#60622#0" />
+                <element signature="e#24287#26281#0" />
+                <element signature="e#27883#27884#0" expanded="true" />
+                <element signature="e#27980#27981#0" expanded="true" />
+                <element signature="e#28087#28088#0" expanded="true" />
+                <element signature="e#28335#28336#0" expanded="true" />
+                <element signature="e#28797#33308#0" />
+                <element signature="e#33318#39154#0" />
+                <element signature="e#50760#50761#0" expanded="true" />
+                <element signature="e#56515#71157#0" />
+                <element signature="e#109981#109982#0" expanded="true" />
+                <element signature="e#110093#110094#0" expanded="true" />
+                <element signature="e#110207#110208#0" expanded="true" />
+                <element signature="e#110324#110325#0" expanded="true" />
+                <element signature="e#110436#110437#0" expanded="true" />
+                <element signature="e#111048#111049#0" expanded="true" />
+                <element signature="e#111145#111146#0" expanded="true" />
+                <element signature="e#111270#111271#0" expanded="true" />
+                <element signature="e#112848#112849#0" expanded="true" />
+                <element signature="e#113586#113587#0" expanded="true" />
+                <element signature="e#113703#113704#0" expanded="true" />
+                <element signature="e#113819#113820#0" expanded="true" />
+                <element signature="e#113939#113940#0" expanded="true" />
+                <element signature="e#114073#114074#0" expanded="true" />
+                <element signature="e#114619#114620#0" expanded="true" />
+                <element signature="e#114768#114769#0" expanded="true" />
+                <element signature="e#115810#115811#0" expanded="true" />
+                <element signature="e#116721#116722#0" expanded="true" />
+                <element signature="e#116861#116862#0" expanded="true" />
+                <element signature="e#116983#116984#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../cv.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5126">
-              <caret line="521" column="9" lean-forward="true" selection-start-line="521" selection-start-column="9" selection-end-line="521" selection-end-column="9" />
+            <state relative-caret-position="245">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="72" column="82" selection-start-line="72" selection-start-column="82" selection-end-line="72" selection-end-column="82" />
+            <state relative-caret-position="359">
+              <caret line="267" column="48" selection-start-line="267" selection-start-column="48" selection-end-line="267" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
+                <element signature="method#onDestroy#0;class#MainEditActivity#0" />
+                <element signature="method#onStart#0;class#MainEditActivity#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../sources/android-28/android/text/InputType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5950">
-              <caret line="364" column="28" selection-start-line="364" selection-start-column="28" selection-end-line="364" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -165,8 +154,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="165" column="16" selection-start-line="165" selection-start-column="16" selection-end-line="165" selection-end-column="16" />
+            <state relative-caret-position="461">
+              <caret line="400" column="40" lean-forward="true" selection-start-line="400" selection-start-column="23" selection-end-line="400" selection-end-column="40" />
+              <folding>
+                <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
+                <element signature="method#canAutomaticCompletion#0;class#PluginUI#0" />
+                <element signature="method#showRecord#0;class#PluginUI#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,10 +178,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Kit</find>
-      <find>ins</find>
-      <find>Module(</find>
-      <find>getLineW</find>
       <find>Tap</find>
       <find>Position</find>
       <find>Position2</find>
@@ -214,6 +204,10 @@
       <find>void gotoC</find>
       <find>gotoC</find>
       <find>public void</find>
+      <find>ONdOWN</find>
+      <find>onSc</find>
+      <find>{@deprecated}</find>
+      <find>onScr</find>
     </findStrings>
     <replaceStrings>
       <replace>\n\n</replace>
@@ -251,10 +245,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/res/layout/listview_util_layout.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/file_util_layout.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/view/FileBrowser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileTypeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AppCompatPreferenceActivity.java" />
@@ -293,14 +283,18 @@
         <option value="$PROJECT_DIR$/src/main/res/xml/pre_set.xml" />
         <option value="$PROJECT_DIR$/src/main/assets/help.html" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
         <option value="$PROJECT_DIR$/src/main/assets/README.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Av2bv.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/UI/Other.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/CodeCompletion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
       </list>
     </option>
@@ -315,11 +309,12 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -387,8 +382,51 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="codeview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="codeview" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="codeview" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,26 +451,26 @@
     <property name="project.structure.proportion" value="0.16666667" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="PsdUISettings">
     <option name="RESOLVED_DEPENDENCIES_MINIMIZE" value="false" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\drawable" />
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\raw" />
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\layout-v21" />
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\xml" />
-      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\menu" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.frms.codeview" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\drawable" />
       <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\raw" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\drawable" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\raw" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\layout-v21" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\xml" />
+      <recent name="C:\Users\ASUS\Desktop\APProject\app\src\main\res\menu" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -781,7 +819,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587272662983</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="修复字符粘贴未能强制关闭选择状态的BUG和其他BUG，增加接口，增加文档注释。">
+      <created>1587359387116</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1587359387116</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -797,7 +842,7 @@
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47868854" visible="true" weight="0.2393617" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47868854" visible="true" weight="0.2393617" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.1762918" />
       <window_info id="Captures" order="3" sideWeight="0.50163937" side_tool="true" weight="0.1762918" />
@@ -811,8 +856,8 @@
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5037994" side_tool="true" weight="0.6032787" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49620062" weight="0.6032787" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49620062" visible="true" weight="0.43606558" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" weight="0.5786885" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49620062" weight="0.43606558" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.5786885" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49620062" weight="0.4622951" />
       <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.5" />
@@ -952,30 +997,13 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/addto.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../sources/android-28/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/main_layout.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileTypeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -993,12 +1021,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/recent_layout.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1042,10 +1070,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/menu/main_actions.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51" />
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../sources/android-28/android/widget/TextView.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1101,20 +1129,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AppCompatPreferenceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1142,20 +1170,6 @@
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="213" column="45" selection-start-line="213" selection-start-column="45" selection-end-line="213" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
-            <element signature="method#onDestroy#0;class#MainEditActivity#0" />
-            <element signature="method#onWindowFocusChanged#0;class#MainEditActivity#0" />
-            <element signature="method#onStart#0;class#MainEditActivity#0" />
           </folding>
         </state>
       </provider>
@@ -1251,6 +1265,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../cv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8126">
+          <caret line="521" column="9" selection-start-line="521" selection-start-column="9" selection-end-line="521" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/EditActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1289,27 +1310,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="165" column="16" selection-start-line="165" selection-start-column="16" selection-end-line="165" selection-end-column="16" />
+        <state relative-caret-position="441">
+          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../cv.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5126">
-          <caret line="521" column="9" lean-forward="true" selection-start-line="521" selection-start-column="9" selection-end-line="521" selection-end-column="9" />
+        <state relative-caret-position="238">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="400" column="40" lean-forward="true" selection-start-line="400" selection-start-column="23" selection-end-line="400" selection-end-column="40" />
+          <folding>
+            <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
+            <element signature="method#canAutomaticCompletion#0;class#PluginUI#0" />
+            <element signature="method#showRecord#0;class#PluginUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="267" column="48" selection-start-line="267" selection-start-column="48" selection-end-line="267" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
+            <element signature="method#onDestroy#0;class#MainEditActivity#0" />
+            <element signature="method#onStart#0;class#MainEditActivity#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="1841" column="72" selection-start-line="1841" selection-start-column="72" selection-end-line="1841" selection-end-column="72" />
+        <state relative-caret-position="302">
+          <caret line="587" column="16" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#60118#60622#0" />
+            <element signature="e#24287#26281#0" />
+            <element signature="e#27883#27884#0" expanded="true" />
+            <element signature="e#27980#27981#0" expanded="true" />
+            <element signature="e#28087#28088#0" expanded="true" />
+            <element signature="e#28335#28336#0" expanded="true" />
+            <element signature="e#28797#33308#0" />
+            <element signature="e#33318#39154#0" />
+            <element signature="e#50760#50761#0" expanded="true" />
+            <element signature="e#56515#71157#0" />
+            <element signature="e#109981#109982#0" expanded="true" />
+            <element signature="e#110093#110094#0" expanded="true" />
+            <element signature="e#110207#110208#0" expanded="true" />
+            <element signature="e#110324#110325#0" expanded="true" />
+            <element signature="e#110436#110437#0" expanded="true" />
+            <element signature="e#111048#111049#0" expanded="true" />
+            <element signature="e#111145#111146#0" expanded="true" />
+            <element signature="e#111270#111271#0" expanded="true" />
+            <element signature="e#112848#112849#0" expanded="true" />
+            <element signature="e#113586#113587#0" expanded="true" />
+            <element signature="e#113703#113704#0" expanded="true" />
+            <element signature="e#113819#113820#0" expanded="true" />
+            <element signature="e#113939#113940#0" expanded="true" />
+            <element signature="e#114073#114074#0" expanded="true" />
+            <element signature="e#114619#114620#0" expanded="true" />
+            <element signature="e#114768#114769#0" expanded="true" />
+            <element signature="e#115810#115811#0" expanded="true" />
+            <element signature="e#116721#116722#0" expanded="true" />
+            <element signature="e#116861#116862#0" expanded="true" />
+            <element signature="e#116983#116984#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -229,6 +229,8 @@ public class MainEditActivity extends AppCompatActivity
                 
                 codeView.setText("", false);
                 codeView.setEditMode(false);
+                codeView.setVerticalScrollBar(true);
+                //codeView.getPluginUI().canVerticalScrollBar();
                 
                 if(mMagnifier)
                 {
@@ -263,7 +265,7 @@ public class MainEditActivity extends AppCompatActivity
                 codeView.setShowAuto(mDefaultLanguage);
             codeView.setText("", text.length() > 0xffff);
             codeView.setEditMode(false);
-            
+            codeView.setVerticalScrollBar(true);
             tabEditView.add(codeView);
             drawerLayout.closeDrawers();
         }
@@ -559,6 +561,7 @@ public class MainEditActivity extends AppCompatActivity
     */
     class AsyncLoader extends AsyncTask<String, String, Integer>
     {
+        @SuppressLint("WrongThread")
         @Override
         protected Integer doInBackground(String... strings)
         {
@@ -626,6 +629,7 @@ public class MainEditActivity extends AppCompatActivity
         if(hasFocus && mMagnifier)
         {
             tabEditView.get(0).showMagnifier();
+           // tabEditView.get(0).getPluginUI().canVerticalScrollBar();
         }
     }
     

@@ -27,7 +27,7 @@ public class Kit
      * @param y 高度
      * @return
      */
-    public static Bitmap getBitmap(Activity ctx, int res, int x, int y)
+    public static Bitmap getBitmap(Context ctx, int res, int x, int y)
     {
         Bitmap a = Bitmap.createBitmap(BitmapFactory.decodeResource(ctx.getResources(), res));
         return zoomImg(a, x, y, 0);

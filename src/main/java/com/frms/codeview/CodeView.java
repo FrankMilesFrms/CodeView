@@ -196,7 +196,7 @@ public class CodeView extends View implements
     private Paint.FontMetrics drawFontMetrics;// 绘制距离的基本参数
     
     // 光标图片资源
-    private Bitmap mBitmapCursor, mBitmapLeftCursor, mBitmapRightCursor;
+    private Bitmap mBitmapCursor, mBitmapLeftCursor, mBitmapRightCursor, mBitmapScrollBar;
     private int mBitmapSize, mBitmapSelectSize;
     private Bitmap mBitmapScreen;
     private boolean mRefreshScreen = true;
@@ -247,6 +247,9 @@ public class CodeView extends View implements
     
     @SuppressLint("all")
     private int selectLanguage = 0;
+    
+    private boolean mVerticalScrollBar; // 是否绘制垂直条
+    private boolean isShowBar; // 是否显示滚动条
     
     public CodeView(AppCompatActivity activity)
     {
@@ -517,6 +520,11 @@ public class CodeView extends View implements
     {
         if(e.getPointerCount() == 1)
         {
+            // mPluginUI.dismissVerticalScrollBar();
+            if(isShowBar = (e.getX() >= getWidth() - mBitmapScrollBar.getWidth() && e.getY() > 0))
+            {
+                scrollTo(getScrollX(), (int) (e.getY() / getHeight() * getViewHeigth()));
+            }
             // 处理选择，使其取消。
             
             int x = (int)e.getX() + mDrawClip.left;
@@ -527,6 +535,7 @@ public class CodeView extends View implements
                 gotoPosition(x, y);
                 if(x > Xoffset) {
                     showKeyboard();
+                    invalidate(mDrawClip);
                 }
             } else
             {
@@ -536,11 +545,11 @@ public class CodeView extends View implements
                 {
                     hideClipboardPanel();
                     mSelectMode = SELECT_NONE;
-                    invalidate();
                 } else
                 {
                     showKeyboard();
                 }
+                invalidate(mDrawClip);
             }
             
             
@@ -572,6 +581,14 @@ public class CodeView extends View implements
         
         if(mSelectMode == SELECT_NONE)
         {
+            if(e.getX() >= getWidth() - mBitmapScrollBar.getWidth())
+            {
+                // 为了更好的体验，所以取消了放在上一个if内。
+                if(e.getY() <= 0)return false;
+                
+                isShowBar = true;
+                scrollTo(getScrollX(), (int) (e.getY() / getHeight() * getViewHeigth()));
+            } else
             if(onClickCursor)
             {
                 // 移动关标
@@ -579,8 +596,9 @@ public class CodeView extends View implements
                 gotoCursor(x, y);
                 mPluginUI.showMagnifier(x -= mDrawClip.left, y -= mDrawClip.top, getScreenshot(x, y));
             } else {
-                
                 scrollBy((int)distanceX, (int)distanceY);
+                isShowBar = true;
+                // mPluginUI.setUpdateVerticalScrollBar(Math.round(scrollY));
             }
         }
         else if(mClickCursor > 0)
@@ -599,8 +617,8 @@ public class CodeView extends View implements
             mPluginUI.showMagnifier(x -= mDrawClip.left, y -= mDrawClip.top, getScreenshot(x, y));
             
         } else {
-            
             scrollBy((int)distanceX, (int)distanceY);
+            isShowBar = true;
         }
         return false;
     }
@@ -640,6 +658,9 @@ public class CodeView extends View implements
         // TODO: 不精确
         mOverScroller.fling(getScrollX(), getScrollY(), - (int)p3, -(int)p4,
             0, Math.round(scrollX), 0, Math.round(scrollY));
+    
+        // mPluginUI.setUpdateVerticalScrollBar(Math.round(scrollY));
+        if(!isShowBar)isShowBar = true;
         
         invalidate(mDrawClip);
         return true;
@@ -2448,6 +2469,16 @@ public class CodeView extends View implements
         isDrawLine = mDrawClip.left < Xoffset;
         cacheLeft  = mDrawClip.left - mCharChineseWidth;
         
+        if(mVerticalScrollBar && isShowBar)
+        {
+            
+            canvas.drawBitmap(
+                mBitmapScrollBar,
+                getWidth() - mBitmapScrollBar.getWidth() + getScrollX(),
+                //Math.min(
+                    mDrawClip.top + (mDrawClip.top + 1) * getHeight()  / getViewHeigth(),
+                null);
+        }
         
         // 绘制行线
         if(isDrawLine) {
@@ -3742,7 +3773,42 @@ public class CodeView extends View implements
         }
     }
     
-//    public int[][] searchAll(String str)
+    /**
+     * 获取单位字符长度。
+     * @return
+     */
+    public int getCharLitterUtilWidth()
+    {
+        return mCharLitterWidth;
+    }
+    
+    /**
+     * 获取单位字符长度。
+     * @return
+     */
+    public int getCharChineseUtilWidth()
+    {
+        return mCharChineseWidth;
+    }
+    
+    /**
+     * 获取插件类。
+     * @return
+     */
+    public PluginUI getPluginUI()
+    {
+        return mPluginUI;
+    }
+    
+    public void setVerticalScrollBar(boolean flag)
+    {
+        mVerticalScrollBar = flag;
+        if(flag && mBitmapScrollBar == null)
+        {
+            mBitmapScrollBar = Kit.getBitmap(getContext(), R.drawable.a_ve, 0.07f);
+        }
+    }
+    //    public int[][] searchAll(String str)
 //    {
 //        if(str == null || str.length() < 1)return null;
 //
