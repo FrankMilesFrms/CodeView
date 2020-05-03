@@ -3801,7 +3801,7 @@ public class CodeView extends View implements
     }
     
     /**
-     * 设置是否使用垂直滚动条
+     * 设置是否使用垂直滚动条。
      */
     public void setVerticalScrollBar(boolean flag)
     {

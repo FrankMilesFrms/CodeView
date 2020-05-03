@@ -395,7 +395,7 @@ public class PluginUI
     }
     
     /**
-     * 已过时，不可用。
+     * 已过时
      * 关闭垂直。
      */
     public void dismissVerticalScrollBar()
