@@ -15,11 +15,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/a_ve.png" afterDir="false" />
+    <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="修复错误，加入垂直滚动条。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/release/app-release.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" afterDir="false" />
@@ -89,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="587" column="16" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
+            <state relative-caret-position="213">
+              <caret line="3803" column="16" selection-start-line="3803" selection-start-column="16" selection-end-line="3803" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#24287#26281#0" />
@@ -130,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <state relative-caret-position="7">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -139,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="267" column="48" selection-start-line="267" selection-start-column="48" selection-end-line="267" selection-end-column="48" />
+            <state relative-caret-position="376">
+              <caret line="268" column="12" selection-start-line="268" selection-start-column="12" selection-end-line="268" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
@@ -154,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="400" column="40" lean-forward="true" selection-start-line="400" selection-start-column="23" selection-end-line="400" selection-end-column="40" />
+            <state relative-caret-position="410">
+              <caret line="397" column="15" selection-start-line="397" selection-start-column="15" selection-end-line="397" selection-end-column="15" />
               <folding>
                 <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
                 <element signature="method#canAutomaticCompletion#0;class#PluginUI#0" />
@@ -826,7 +824,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587359387116</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="修复错误，加入垂直滚动条。">
+      <created>1588501499699</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1588501499699</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -966,7 +971,8 @@
     <MESSAGE value="Fixed bugs" />
     <MESSAGE value="a demo be added" />
     <MESSAGE value="修复字符粘贴未能强制关闭选择状态的BUG和其他BUG，增加接口，增加文档注释。" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复字符粘贴未能强制关闭选择状态的BUG和其他BUG，增加接口，增加文档注释。" />
+    <MESSAGE value="修复错误，加入垂直滚动条。" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复错误，加入垂直滚动条。" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1329,8 +1335,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="400" column="40" lean-forward="true" selection-start-line="400" selection-start-column="23" selection-end-line="400" selection-end-column="40" />
+        <state relative-caret-position="410">
+          <caret line="397" column="15" selection-start-line="397" selection-start-column="15" selection-end-line="397" selection-end-column="15" />
           <folding>
             <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
             <element signature="method#canAutomaticCompletion#0;class#PluginUI#0" />
@@ -1339,17 +1345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="267" column="48" selection-start-line="267" selection-start-column="48" selection-end-line="267" selection-end-column="48" />
+        <state relative-caret-position="376">
+          <caret line="268" column="12" selection-start-line="268" selection-start-column="12" selection-end-line="268" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
@@ -1359,10 +1358,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="587" column="16" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
+        <state relative-caret-position="213">
+          <caret line="3803" column="16" selection-start-line="3803" selection-start-column="16" selection-end-line="3803" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#24287#26281#0" />

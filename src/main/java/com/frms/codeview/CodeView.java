@@ -3800,6 +3800,9 @@ public class CodeView extends View implements
         return mPluginUI;
     }
     
+    /**
+     * 设置是否使用垂直滚动条
+     */
     public void setVerticalScrollBar(boolean flag)
     {
         mVerticalScrollBar = flag;

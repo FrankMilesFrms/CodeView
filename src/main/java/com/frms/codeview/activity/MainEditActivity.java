@@ -266,6 +266,7 @@ public class MainEditActivity extends AppCompatActivity
             codeView.setText("", text.length() > 0xffff);
             codeView.setEditMode(false);
             codeView.setVerticalScrollBar(true);
+            
             tabEditView.add(codeView);
             drawerLayout.closeDrawers();
         }

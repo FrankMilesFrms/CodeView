@@ -21,7 +21,7 @@ public class Kit
     
     /**
      * 获取图片资源
-     * @param ctx
+     * @param ctx context
      * @param res 资源名
      * @param x 宽度
      * @param y 高度
