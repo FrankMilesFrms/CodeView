@@ -15,13 +15,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="修复错误，加入垂直滚动条。">
+    <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="修fu垂直滚动条。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/release/app-release.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +33,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="LP015062002701" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -87,39 +85,92 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="3803" column="16" selection-start-line="3803" selection-start-column="16" selection-end-line="3803" selection-end-column="16" />
+            <state relative-caret-position="306">
+              <caret line="353" column="4" selection-start-line="353" selection-start-column="4" selection-end-line="353" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#24287#26281#0" />
-                <element signature="e#27883#27884#0" expanded="true" />
-                <element signature="e#27980#27981#0" expanded="true" />
-                <element signature="e#28087#28088#0" expanded="true" />
-                <element signature="e#28335#28336#0" expanded="true" />
-                <element signature="e#28797#33308#0" />
-                <element signature="e#33318#39154#0" />
-                <element signature="e#50760#50761#0" expanded="true" />
-                <element signature="e#56515#71157#0" />
-                <element signature="e#109981#109982#0" expanded="true" />
-                <element signature="e#110093#110094#0" expanded="true" />
-                <element signature="e#110207#110208#0" expanded="true" />
-                <element signature="e#110324#110325#0" expanded="true" />
-                <element signature="e#110436#110437#0" expanded="true" />
-                <element signature="e#111048#111049#0" expanded="true" />
-                <element signature="e#111145#111146#0" expanded="true" />
-                <element signature="e#111270#111271#0" expanded="true" />
-                <element signature="e#112848#112849#0" expanded="true" />
-                <element signature="e#113586#113587#0" expanded="true" />
-                <element signature="e#113703#113704#0" expanded="true" />
-                <element signature="e#113819#113820#0" expanded="true" />
-                <element signature="e#113939#113940#0" expanded="true" />
-                <element signature="e#114073#114074#0" expanded="true" />
-                <element signature="e#114619#114620#0" expanded="true" />
-                <element signature="e#114768#114769#0" expanded="true" />
-                <element signature="e#115810#115811#0" expanded="true" />
-                <element signature="e#116721#116722#0" expanded="true" />
-                <element signature="e#116861#116862#0" expanded="true" />
-                <element signature="e#116983#116984#0" expanded="true" />
+                <element signature="e#28026#28027#0" expanded="true" />
+                <element signature="e#28068#28069#0" expanded="true" />
+                <element signature="e#28141#28142#0" expanded="true" />
+                <element signature="e#28165#28166#0" expanded="true" />
+                <element signature="e#28238#28239#0" expanded="true" />
+                <element signature="e#28272#28273#0" expanded="true" />
+                <element signature="e#28493#28494#0" expanded="true" />
+                <element signature="e#28520#28521#0" expanded="true" />
+                <element signature="e#50919#50920#0" expanded="true" />
+                <element signature="e#50946#50947#0" expanded="true" />
+                <element signature="e#110682#110683#0" expanded="true" />
+                <element signature="e#110729#110730#0" expanded="true" />
+                <element signature="e#110812#110813#0" expanded="true" />
+                <element signature="e#110841#110842#0" expanded="true" />
+                <element signature="e#110925#110926#0" expanded="true" />
+                <element signature="e#110955#110956#0" expanded="true" />
+                <element signature="e#111038#111039#0" expanded="true" />
+                <element signature="e#111072#111073#0" expanded="true" />
+                <element signature="e#111140#111141#0" expanded="true" />
+                <element signature="e#111184#111185#0" expanded="true" />
+                <element signature="e#111763#111764#0" expanded="true" />
+                <element signature="e#111796#111797#0" expanded="true" />
+                <element signature="e#111860#111861#0" expanded="true" />
+                <element signature="e#111893#111894#0" expanded="true" />
+                <element signature="e#111985#111986#0" expanded="true" />
+                <element signature="e#112018#112019#0" expanded="true" />
+                <element signature="e#113559#113560#0" expanded="true" />
+                <element signature="e#113596#113597#0" expanded="true" />
+                <element signature="e#114304#114305#0" expanded="true" />
+                <element signature="e#114334#114335#0" expanded="true" />
+                <element signature="e#114418#114419#0" expanded="true" />
+                <element signature="e#114451#114452#0" expanded="true" />
+                <element signature="e#114538#114539#0" expanded="true" />
+                <element signature="e#114567#114568#0" expanded="true" />
+                <element signature="e#114654#114655#0" expanded="true" />
+                <element signature="e#114687#114688#0" expanded="true" />
+                <element signature="e#114787#114788#0" expanded="true" />
+                <element signature="e#114821#114822#0" expanded="true" />
+                <element signature="e#115320#115321#0" expanded="true" />
+                <element signature="e#115367#115368#0" expanded="true" />
+                <element signature="e#115441#115442#0" expanded="true" />
+                <element signature="e#115516#115517#0" expanded="true" />
+                <element signature="e#116520#116521#0" expanded="true" />
+                <element signature="e#116558#116559#0" expanded="true" />
+                <element signature="e#117430#117431#0" expanded="true" />
+                <element signature="e#117469#117470#0" expanded="true" />
+                <element signature="e#117569#117570#0" expanded="true" />
+                <element signature="e#117609#117610#0" expanded="true" />
+                <element signature="e#117699#117700#0" expanded="true" />
+                <element signature="e#117731#117732#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1844#1845#0" expanded="true" />
+                <element signature="e#1997#1998#0" expanded="true" />
+                <element signature="e#2041#2042#0" expanded="true" />
+                <element signature="e#2110#2111#0" expanded="true" />
+                <element signature="e#2157#2158#0" expanded="true" />
+                <element signature="e#2413#2414#0" expanded="true" />
+                <element signature="e#2457#2458#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,8 +179,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state relative-caret-position="272">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -137,8 +188,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="268" column="12" selection-start-line="268" selection-start-column="12" selection-end-line="268" selection-end-column="12" />
+            <state relative-caret-position="3434">
+              <caret line="267" column="12" selection-start-line="267" selection-start-column="12" selection-end-line="267" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
@@ -152,8 +203,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="397" column="15" selection-start-line="397" selection-start-column="15" selection-end-line="397" selection-end-column="15" />
+            <state relative-caret-position="4590">
+              <caret line="397" column="10" selection-start-line="397" selection-start-column="10" selection-end-line="397" selection-end-column="10" />
               <folding>
                 <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
                 <element signature="method#canAutomaticCompletion#0;class#PluginUI#0" />
@@ -176,10 +227,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Tap</find>
-      <find>Position</find>
-      <find>Position2</find>
-      <find>getText</find>
       <find>goto</find>
       <find>onD</find>
       <find>{@hide}</find>
@@ -206,6 +253,10 @@
       <find>onSc</find>
       <find>{@deprecated}</find>
       <find>onScr</find>
+      <find>COMM</find>
+      <find>ONsCR</find>
+      <find>MbITMAPsCR</find>
+      <find>MbITMAPsCROLL</find>
     </findStrings>
     <replaceStrings>
       <replace>\n\n</replace>
@@ -288,11 +339,11 @@
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/TAG.java" />
         <option value="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/language/JavaScript.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/CodeCompletion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" />
       </list>
     </option>
@@ -380,51 +431,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="codeview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="codeview" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="codeview" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -831,7 +838,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588501499699</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="修复错误，加入垂直滚动条。">
+      <created>1588501782016</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1588501782016</updated>
+    </task>
+    <task id="LOCAL-00030" summary="修复错误，加入垂直滚动条。">
+      <created>1588501930290</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1588501930290</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1004,12 +1025,12 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/main_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/utils/FileTypeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1027,12 +1048,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/recent_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1076,10 +1097,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/menu/main_actions.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51" />
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../sources/android-28/android/widget/TextView.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1135,20 +1156,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/xml/pre_set.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AppCompatPreferenceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1316,39 +1337,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/CodeCompletion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="397" column="15" selection-start-line="397" selection-start-column="15" selection-end-line="397" selection-end-column="15" />
-          <folding>
-            <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
-            <element signature="method#canAutomaticCompletion#0;class#PluginUI#0" />
-            <element signature="method#showRecord#0;class#PluginUI#0" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/MainEditActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="268" column="12" selection-start-line="268" selection-start-column="12" selection-end-line="268" selection-end-column="12" />
+        <state relative-caret-position="3434">
+          <caret line="267" column="12" selection-start-line="267" selection-start-column="12" selection-end-line="267" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onNavigationItemSelected#0;class#MainEditActivity#0" />
@@ -1358,48 +1367,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/Kit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/PluginUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        <state relative-caret-position="4590">
+          <caret line="397" column="10" selection-start-line="397" selection-start-column="10" selection-end-line="397" selection-end-column="10" />
+          <folding>
+            <element signature="method#dismissMagnifier#0;class#PluginUI#0" />
+            <element signature="method#canAutomaticCompletion#0;class#PluginUI#0" />
+            <element signature="method#showRecord#0;class#PluginUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/tools/InputCompletion/JavaScriptCompletion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1844#1845#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2157#2158#0" expanded="true" />
+            <element signature="e#2413#2414#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="3803" column="16" selection-start-line="3803" selection-start-column="16" selection-end-line="3803" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="353" column="4" selection-start-line="353" selection-start-column="4" selection-end-line="353" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#24287#26281#0" />
-            <element signature="e#27883#27884#0" expanded="true" />
-            <element signature="e#27980#27981#0" expanded="true" />
-            <element signature="e#28087#28088#0" expanded="true" />
-            <element signature="e#28335#28336#0" expanded="true" />
-            <element signature="e#28797#33308#0" />
-            <element signature="e#33318#39154#0" />
-            <element signature="e#50760#50761#0" expanded="true" />
-            <element signature="e#56515#71157#0" />
-            <element signature="e#109981#109982#0" expanded="true" />
-            <element signature="e#110093#110094#0" expanded="true" />
-            <element signature="e#110207#110208#0" expanded="true" />
-            <element signature="e#110324#110325#0" expanded="true" />
-            <element signature="e#110436#110437#0" expanded="true" />
-            <element signature="e#111048#111049#0" expanded="true" />
-            <element signature="e#111145#111146#0" expanded="true" />
-            <element signature="e#111270#111271#0" expanded="true" />
-            <element signature="e#112848#112849#0" expanded="true" />
-            <element signature="e#113586#113587#0" expanded="true" />
-            <element signature="e#113703#113704#0" expanded="true" />
-            <element signature="e#113819#113820#0" expanded="true" />
-            <element signature="e#113939#113940#0" expanded="true" />
-            <element signature="e#114073#114074#0" expanded="true" />
-            <element signature="e#114619#114620#0" expanded="true" />
-            <element signature="e#114768#114769#0" expanded="true" />
-            <element signature="e#115810#115811#0" expanded="true" />
-            <element signature="e#116721#116722#0" expanded="true" />
-            <element signature="e#116861#116862#0" expanded="true" />
-            <element signature="e#116983#116984#0" expanded="true" />
+            <element signature="e#28026#28027#0" expanded="true" />
+            <element signature="e#28068#28069#0" expanded="true" />
+            <element signature="e#28141#28142#0" expanded="true" />
+            <element signature="e#28165#28166#0" expanded="true" />
+            <element signature="e#28238#28239#0" expanded="true" />
+            <element signature="e#28272#28273#0" expanded="true" />
+            <element signature="e#28493#28494#0" expanded="true" />
+            <element signature="e#28520#28521#0" expanded="true" />
+            <element signature="e#50919#50920#0" expanded="true" />
+            <element signature="e#50946#50947#0" expanded="true" />
+            <element signature="e#110682#110683#0" expanded="true" />
+            <element signature="e#110729#110730#0" expanded="true" />
+            <element signature="e#110812#110813#0" expanded="true" />
+            <element signature="e#110841#110842#0" expanded="true" />
+            <element signature="e#110925#110926#0" expanded="true" />
+            <element signature="e#110955#110956#0" expanded="true" />
+            <element signature="e#111038#111039#0" expanded="true" />
+            <element signature="e#111072#111073#0" expanded="true" />
+            <element signature="e#111140#111141#0" expanded="true" />
+            <element signature="e#111184#111185#0" expanded="true" />
+            <element signature="e#111763#111764#0" expanded="true" />
+            <element signature="e#111796#111797#0" expanded="true" />
+            <element signature="e#111860#111861#0" expanded="true" />
+            <element signature="e#111893#111894#0" expanded="true" />
+            <element signature="e#111985#111986#0" expanded="true" />
+            <element signature="e#112018#112019#0" expanded="true" />
+            <element signature="e#113559#113560#0" expanded="true" />
+            <element signature="e#113596#113597#0" expanded="true" />
+            <element signature="e#114304#114305#0" expanded="true" />
+            <element signature="e#114334#114335#0" expanded="true" />
+            <element signature="e#114418#114419#0" expanded="true" />
+            <element signature="e#114451#114452#0" expanded="true" />
+            <element signature="e#114538#114539#0" expanded="true" />
+            <element signature="e#114567#114568#0" expanded="true" />
+            <element signature="e#114654#114655#0" expanded="true" />
+            <element signature="e#114687#114688#0" expanded="true" />
+            <element signature="e#114787#114788#0" expanded="true" />
+            <element signature="e#114821#114822#0" expanded="true" />
+            <element signature="e#115320#115321#0" expanded="true" />
+            <element signature="e#115367#115368#0" expanded="true" />
+            <element signature="e#115441#115442#0" expanded="true" />
+            <element signature="e#115516#115517#0" expanded="true" />
+            <element signature="e#116520#116521#0" expanded="true" />
+            <element signature="e#116558#116559#0" expanded="true" />
+            <element signature="e#117430#117431#0" expanded="true" />
+            <element signature="e#117469#117470#0" expanded="true" />
+            <element signature="e#117569#117570#0" expanded="true" />
+            <element signature="e#117609#117610#0" expanded="true" />
+            <element signature="e#117699#117700#0" expanded="true" />
+            <element signature="e#117731#117732#0" expanded="true" />
           </folding>
         </state>
       </provider>

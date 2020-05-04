@@ -28,7 +28,7 @@ import com.frms.lexer.Token;
  */
 public abstract class CodeCompletion
 {
-    public abstract void input(char[] chars, Token mToken, int position, String inputString);
+    public abstract String input(char[] chars, Token mToken, int position, String inputString, int[] lines, int nowLine);
     
     public abstract void delete();
 }

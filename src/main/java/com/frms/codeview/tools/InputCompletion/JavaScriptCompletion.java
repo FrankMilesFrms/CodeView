@@ -16,9 +16,11 @@
 
 package com.frms.codeview.tools.InputCompletion;
 
+import com.frms.lexer.TAG;
 import com.frms.lexer.Token;
 
 /**
+ * {暂停开发，预计在2020年8月维护。}
  * 项目名称 ： app
  * 创建人 ： Frms
  * 创建人邮箱 ： 3505826836@qq.com
@@ -33,9 +35,18 @@ public class JavaScriptCompletion extends CodeCompletion
     private boolean mLineAutoAnnotation;
     
     @Override
-    public void input(char[] chars, Token mToken, int position, String inputString)
+    public String input(char[] chars, Token mToken, int position, String inputString, int[] lines, int nowLine)
     {
-    
+        if(inputString.equals("\n"))
+        {
+            for(int l= lines[nowLine]; l < position - 1 - lines[nowLine]; l++)
+            {
+                if(chars[l] !=TAG.BLANK || chars[l] != TAG.TAB)
+                    break;
+                inputString = chars[l] + inputString;
+            }
+        }
+        return inputString;
     }
     
     @Override

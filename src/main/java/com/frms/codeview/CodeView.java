@@ -62,6 +62,7 @@ import android.widget.OverScroller;
 import android.widget.ProgressBar;
 import android.support.v7.view.ActionMode;
 
+import com.frms.codeview.tools.InputCompletion.JavaScriptCompletion;
 import com.frms.codeview.tools.Kit;
 import com.frms.codeview.tools.PluginUI;
 import com.frms.codeview.tools.Theme;
@@ -72,6 +73,18 @@ import com.frms.lexer.TAG;
 import com.frms.lexer.language.Java;
 import com.frms.lexer.language.JavaScript;
 
+
+/**
+ * 由于疫情原因，本项目暂停维护，预计下次维护时间在疫情过后或者是6月中旬，
+ * 在此期间不在开发新的功能，如果存在100%复原错误，请发送邮件给我以便妥善解决。
+ *
+ * Because of the outbreak, the project is suspended for maintenance,
+ * expect the next maintenance time or is in the middle of June,
+ * after the outbreak during this period is not in the development of new functions,
+ * if there is a 100% error recovery, please send email to me in order to properly solve.
+ *                                                                                    by Frms
+ *                                                                                    2020年5月5日00:07:16
+ */
 
 /**
  * 只有在光标存在可视范围之内，他才会和编辑同步。
@@ -238,6 +251,7 @@ public class CodeView extends View implements
     private Typeface typeface;
     private JavaScript mTokenJavaScript;
     private Java mTokenJava;
+    private JavaScriptCompletion mjavaScriptCompletion;
     
     private boolean mScannerLock = true;
     private boolean isUseLanguage = false;
@@ -308,6 +322,7 @@ public class CodeView extends View implements
         mGestureDetector = new GestureDetector(cx, this);
         mDrawClip = new Rect();
         mInputMethodManager = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        mjavaScriptCompletion = new JavaScriptCompletion();
         
         mClipboardManager = (ClipboardManager) cx.getSystemService(Context.CLIPBOARD_SERVICE);
         
@@ -335,6 +350,11 @@ public class CodeView extends View implements
         mBitmapCursor      = Kit.getBitmap(cx, R.raw.text_select_handle_middle, 0.7f);
         mBitmapLeftCursor  = Kit.getBitmap(cx, R.raw.text_select_handle_left, 0.7f);
         mBitmapRightCursor = Kit.getBitmap(cx, R.raw.text_select_handle_right, 0.7f);
+        mBitmapScrollBar = Kit.getBitmap(getContext(), R.drawable.a_ve, 0.07f);
+    
+        
+        
+        
         mBitmapSize = mBitmapCursor.getWidth()/2;
         mBitmapSelectSize = mBitmapLeftCursor.getWidth();
         initChangeTextSize();
@@ -392,6 +412,8 @@ public class CodeView extends View implements
     
     private int mClickCursor = UNKNOWN;  // 点击的光标位置
     
+    private boolean isInScrollBarRange = false; // 判断触控位置是否在滑动条范围。
+    
     /**
      * 这里控制滑动的范围，如果范围有大规模改变，要重新调用。
      */
@@ -410,6 +432,7 @@ public class CodeView extends View implements
             onClickCursor = false;
             mClickCursor = UNKNOWN;
             lastDist = 0;
+            isInScrollBarRange = false;
             
             mPluginUI.dismissMagnifier();
         }
@@ -460,6 +483,8 @@ public class CodeView extends View implements
     public boolean onDown(MotionEvent e)
     {
         if(e.getPointerCount() > 1)return false;
+        
+        isInScrollBarRange = e.getX() >= getWidth() - mBitmapScrollBar.getWidth();
         
         // 点击立刻停止滑动状态。
         if(!mOverScroller.isFinished()) { mOverScroller.forceFinished(true);}
@@ -521,7 +546,7 @@ public class CodeView extends View implements
         if(e.getPointerCount() == 1)
         {
             // mPluginUI.dismissVerticalScrollBar();
-            if(isShowBar = (e.getX() >= getWidth() - mBitmapScrollBar.getWidth() && e.getY() > 0))
+            if(isShowBar && (isInScrollBarRange && e.getY() > 0))
             {
                 scrollTo(getScrollX(), (int) (e.getY() / getHeight() * getViewHeigth()));
             }
@@ -581,7 +606,7 @@ public class CodeView extends View implements
         
         if(mSelectMode == SELECT_NONE)
         {
-            if(e.getX() >= getWidth() - mBitmapScrollBar.getWidth())
+            if(isInScrollBarRange)
             {
                 // 为了更好的体验，所以取消了放在上一个if内。
                 if(e.getY() <= 0)return false;
@@ -595,7 +620,8 @@ public class CodeView extends View implements
                 gotoPosition(x, y);
                 gotoCursor(x, y);
                 mPluginUI.showMagnifier(x -= mDrawClip.left, y -= mDrawClip.top, getScreenshot(x, y));
-            } else {
+            }
+            else {
                 scrollBy((int)distanceX, (int)distanceY);
                 isShowBar = true;
                 // mPluginUI.setUpdateVerticalScrollBar(Math.round(scrollY));
@@ -1192,7 +1218,7 @@ public class CodeView extends View implements
      * @param CLine1 光标行位置，（如果是光标操作，可填 {@link #UNKNOWN})。
      * @param addUndoStack 操作是否放入栈堆
      */
-    public void insert(int position, String text, boolean aboutCursor, int CLine1, int CLine2,boolean addUndoStack)
+    public void insert(int position, String text, boolean aboutCursor, int CLine1, int CLine2, boolean addUndoStack)
     {
         if(text.length() < 1 || setOnlyRead)return;
     
@@ -2281,6 +2307,19 @@ public class CodeView extends View implements
                        mCodeView.hideClipboardPanel();
                    }
                    mCodeView.isShowCursor = false;
+//                   mCodeView.insert(mCodeView.mCursor[1],
+//                       mCodeView.mjavaScriptCompletion.input(
+//                           mCodeView.mChar,
+//                           null,
+//                           mCodeView.mCursor[1],
+//                           "\n",
+//                           mCodeView.mRowStartCounts,
+//                           mCodeView.mCursor[0]),
+//            true,
+//                       UNKNOWN,
+//                       UNKNOWN,
+//                       true);
+                   //mCodeView.mjavaScriptCompletion.input(mCodeView.mChar, null, mCodeView.mCursor[1], "\n", mCodeView.mRowStartCounts, mCodeView.mCursor[0]);
                    mCodeView.insertChar(mCodeView.mCursor[1], TAG.EOL, true, UNKNOWN, true);
                    break;
                    
