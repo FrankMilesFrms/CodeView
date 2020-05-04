@@ -351,9 +351,6 @@ public class CodeView extends View implements
         mBitmapLeftCursor  = Kit.getBitmap(cx, R.raw.text_select_handle_left, 0.7f);
         mBitmapRightCursor = Kit.getBitmap(cx, R.raw.text_select_handle_right, 0.7f);
         mBitmapScrollBar = Kit.getBitmap(getContext(), R.drawable.a_ve, 0.07f);
-    
-        
-        
         
         mBitmapSize = mBitmapCursor.getWidth()/2;
         mBitmapSelectSize = mBitmapLeftCursor.getWidth();
