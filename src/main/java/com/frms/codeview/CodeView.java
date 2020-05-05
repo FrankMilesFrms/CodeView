@@ -75,13 +75,19 @@ import com.frms.lexer.language.JavaScript;
 
 
 /**
- * 由于疫情原因，本项目暂停维护，预计下次维护时间在疫情过后或者是6月中旬，
- * 在此期间不在开发新的功能，如果存在100%复原错误，请发送邮件给我以便妥善解决。
+ * 由于新冠病毒造成的疫情爆发，本项目暂停维护。
  *
- * Because of the outbreak, the project is suspended for maintenance,
- * expect the next maintenance time or is in the middle of June,
- * after the outbreak during this period is not in the development of new functions,
- * if there is a 100% error recovery, please send email to me in order to properly solve.
+ * 预计下次维护时间在疫情过后或者是6月中旬，在此期间不再开发新的功能。
+ *
+ * 如果存在可以100%复原错误，请发送邮件给我以便妥善解决。
+ *
+ * Due to the outbreak caused by Corona Virus, the maintenance of this project is suspended.
+ *
+ * It is expected that the next maintenance will be after the outbreak or in the middle of June,
+ *
+ * and no new functions will be developed during this period.
+ *
+ * If there are errors, please send me an email for proper solution.
  *                                                                                    by Frms
  *                                                                                    2020年5月5日00:07:16
  */
