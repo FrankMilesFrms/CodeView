@@ -77,19 +77,27 @@ import com.frms.lexer.language.JavaScript;
 /**
  * 由于新冠病毒造成的疫情爆发，本项目暂停维护。
  *
- * 预计下次维护时间在疫情过后或者是6月中旬，在此期间不再开发新的功能。
+ * 预计下次维护时间在疫情过后或者是7月中旬，在此期间不再开发新的功能。
  *
  * 如果存在可以100%复原错误，请发送邮件给我以便妥善解决。
  *
  * Due to the outbreak caused by Corona Virus, the maintenance of this project is suspended.
  *
- * It is expected that the next maintenance will be after the outbreak or in the middle of June,
+ * It is expected that the next maintenance will be after the outbreak or in the middle of July,
  *
  * and no new functions will be developed during this period.
  *
  * If there are errors, please send me an email for proper solution.
  *                                                                                    by Frms
  *                                                                                    2020年5月5日00:07:16
+ * 开发日志：
+ * 2020/6/8
+ * 修复滑动条超过屏幕错误
+ * 修复无法关闭滑动条错误
+ * 待定：创建onKeyDown 替代 sendKeyEvent 的部分事件，详细参照#setPasteInClipboardManager();
+ * 其他：修复部分错误。
+ * 可能存在的错误：无法在 ‘QQ输入法’ 实现光标移动（其他非EditText类或子类均有类似情况，其他输入法未做测试）
+ * 延迟开发，后退一月。
  */
 
 /**
@@ -279,31 +287,31 @@ public class CodeView extends View implements
         init(activity);
     }
     
-    
-    public CodeView(Context context,  AttributeSet attrs, Activity mActivity)
-    {
-        super(context, attrs);
-        this.mActivity = null;
-        Kit.printout("无法使用布局 ： 需要调用 init(Activity) 方法");
-    }
-    
-    
-    public CodeView(Context context, AttributeSet attrs, int defStyleAttr)
-    {
-        super(context, attrs, defStyleAttr);
-        this.mActivity = null;
-        Kit.printout("无法使用布局 ： 需要调用 init(Activity) 方法");
-    }
-    
-    
-    @SuppressLint("NewApi")
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public CodeView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes)
-    {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        this.mActivity = null;
-        Kit.printout("无法使用布局 ： 需要调用 init(Activity) 方法");
-    }
+//
+//    public CodeView(Context context,  AttributeSet attrs, Activity mActivity)
+//    {
+//        super(context, attrs);
+//        this.mActivity = null;
+//        Kit.printout("无法使用布局 ： 需要调用 init(Activity) 方法");
+//    }
+//
+//
+//    public CodeView(Context context, AttributeSet attrs, int defStyleAttr)
+//    {
+//        super(context, attrs, defStyleAttr);
+//        this.mActivity = null;
+//        Kit.printout("无法使用布局 ： 需要调用 init(Activity) 方法");
+//    }
+//
+//
+//    @SuppressLint("NewApi")
+//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+//    public CodeView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes)
+//    {
+//        super(context, attrs, defStyleAttr, defStyleRes);
+//        this.mActivity = null;
+//        Kit.printout("无法使用布局 ： 需要调用 init(Activity) 方法");
+//    }
     
     /**
      * 内包含初始化数据、释放资源，在启用控件其他方法前，如果不是使用构造函数
@@ -488,6 +496,7 @@ public class CodeView extends View implements
         if(e.getPointerCount() > 1)return false;
         
         isInScrollBarRange = e.getX() >= getWidth() - mBitmapScrollBar.getWidth();
+        isShowBar = isInScrollBarRange;
         
         // 点击立刻停止滑动状态。
         if(!mOverScroller.isFinished()) { mOverScroller.forceFinished(true);}
@@ -581,6 +590,10 @@ public class CodeView extends View implements
             }
             
             
+        }
+        else
+        {
+            isShowBar = false;
         }
         return true;
     }
@@ -1937,6 +1950,38 @@ public class CodeView extends View implements
     }
     
     /**
+     * 粘贴-从剪切板上。
+     */
+    public void setPasteInClipboardManager()
+    {
+        if(mClipboardManager == null || mClipboardManager.getPrimaryClip() == null)
+            return;
+        String str =  mClipboardManager.getPrimaryClip().getItemAt(0).getText().toString();
+        if(str.length() < 1)return;
+    
+        if(mSelectMode == SELECT_ING && mCursor[1] < mCursor[3])
+        {
+            delete(mCursor[1], mCursor[3], true, UNKNOWN, UNKNOWN, true);
+            if(str.length() == 1)
+            {
+                insertChar(mCursor[1], str.charAt(0), true, UNKNOWN, true);
+            } else
+            {
+                insert(mCursor[1], str, true, UNKNOWN, UNKNOWN, true);
+            }
+        } else
+        {
+            mSelectMode = SELECT_NONE;
+            if(str.length() == 1)
+            {
+                insertChar(mCursor[1], str.charAt(0), true, UNKNOWN, true);
+            } else
+            {
+                insert(mCursor[1], str, true, UNKNOWN, UNKNOWN, true);
+            }
+        }
+    }
+    /**
      * 返回输入操作的实例
      */
     @SuppressLint("all")
@@ -2237,11 +2282,17 @@ public class CodeView extends View implements
         @Override
         public boolean performContextMenuAction(int id)
         {
+            // 粘贴
+            if(id == 16908322)
+            {
+                mCodeView.setPasteInClipboardManager();
+            }else
+                Kit.printout("performContextMenuAction", id);
 //            switch (id)
 //            {
 //                case InputConnection.
 //            }
-            Kit.printout("performContextMenuAction", id);
+            
             return false;
         }
     
@@ -2326,20 +2377,21 @@ public class CodeView extends View implements
                    mCodeView.insertChar(mCodeView.mCursor[1], TAG.EOL, true, UNKNOWN, true);
                    break;
                    
-               case KeyEvent.KEYCODE_DPAD_LEFT :
-                   mCodeView.gotoCursorLeft();
-                   break;
-                   
-               case KeyEvent.KEYCODE_DPAD_RIGHT:
-                   mCodeView.gotoCursorRight();
-                   break;
-                   
-               case KeyEvent.KEYCODE_DPAD_UP:
-                   mCodeView.gotoCursorUp();
-                   break;
-                case KeyEvent.KEYCODE_DPAD_DOWN:
-                    mCodeView.gotoCursorDown();
-                   break;
+// Todo 这个暂时由全局方法onKeyDown里实现，本段暂时作废。
+//               case KeyEvent.KEYCODE_DPAD_LEFT :
+//                   mCodeView.gotoCursorLeft();
+//                   break;
+//
+//               case KeyEvent.KEYCODE_DPAD_RIGHT:
+//                   mCodeView.gotoCursorRight();
+//                   break;
+//
+//               case KeyEvent.KEYCODE_DPAD_UP:
+//                   mCodeView.gotoCursorUp();
+//                   break;
+//                case KeyEvent.KEYCODE_DPAD_DOWN:
+//                    mCodeView.gotoCursorDown();
+//                   break;
                default:
                {
                   Kit.printout("Unknown : sendKeyEvent =" + event.toString());
@@ -2511,6 +2563,7 @@ public class CodeView extends View implements
         isDrawLine = mDrawClip.left < Xoffset;
         cacheLeft  = mDrawClip.left - mCharChineseWidth;
         
+        // 绘制滑动条
         if(mVerticalScrollBar && isShowBar)
         {
             
@@ -2518,7 +2571,7 @@ public class CodeView extends View implements
                 mBitmapScrollBar,
                 getWidth() - mBitmapScrollBar.getWidth() + getScrollX(),
                 //Math.min(
-                    mDrawClip.top + (mDrawClip.top + 1) * getHeight()  / getViewHeigth(),
+                    mDrawClip.top + (mDrawClip.top + 1) * (getHeight() - mBitmapScrollBar.getHeight()) / getViewHeigth(),
                 null);
         }
         
@@ -3853,6 +3906,34 @@ public class CodeView extends View implements
             mBitmapScrollBar = Kit.getBitmap(getContext(), R.drawable.a_ve, 0.07f);
         }
     }
+    
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)
+    {
+        switch (event.getKeyCode())
+        {
+            case KeyEvent.KEYCODE_DPAD_LEFT :
+                gotoCursorLeft();
+                break;
+    
+            case KeyEvent.KEYCODE_DPAD_RIGHT:
+                gotoCursorRight();
+                break;
+    
+            case KeyEvent.KEYCODE_DPAD_UP:
+                gotoCursorUp();
+                break;
+            case KeyEvent.KEYCODE_DPAD_DOWN:
+                gotoCursorDown();
+                break;
+            default:
+            {
+                Kit.printout("Unknown KeyDown = ", event.getKeyCode());
+            }
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+    
     //    public int[][] searchAll(String str)
 //    {
 //        if(str == null || str.length() < 1)return null;

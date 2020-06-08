@@ -67,7 +67,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static android.os.ParcelFileDescriptor.MODE_WORLD_READABLE;
 
 /**
  * 创建人 ： Frms
@@ -174,77 +173,73 @@ public class MainEditActivity extends AppCompatActivity
                                     collectionList
                                );
         
-        fileBrowser.setOnClickFile(new FileBrowser.OnClickFile()
+        fileBrowser.setOnClickFile(file ->
         {
-            @Override
-            public void onClick(File file)
+            int index = nowFiles.indexOf(file.getAbsolutePath());
+            
+            if(index >= 0)
             {
-                int index = nowFiles.indexOf(file.getAbsolutePath());
-                
-                if(index >= 0)
+                viewPager.setCurrentItem(index);
+                Snackbar.make(drawerLayout, "这个文件已被打开过了", Snackbar.LENGTH_SHORT).show();
+                return;
+            } else
+            {
+                nowFiles.add(file.getAbsolutePath());
+            }
+            
+            if( (index = recentFiles.indexOf(file.getAbsolutePath())) < 0)
+            {
+                recentFiles.add(file.getAbsolutePath());
+            }
+            
+            tabFileName.add(file.getName());
+            
+            CodeView codeView = new CodeView(MainEditActivity.this);
+            codeView.setTheme(mTheme);
+            codeView.setTypeface(CodeView.DEJAVUSANSMONO + mTypeface);
+            codeView.setTextSize(mTextSize);
+            if(mAuto)
+            {
+                String type = file.getName();
+                if(type.contains("."))
                 {
-                    viewPager.setCurrentItem(index);
-                    Snackbar.make(drawerLayout, "这个文件已被打开过了", Snackbar.LENGTH_SHORT).show();
-                    return;
-                } else
-                {
-                    nowFiles.add(file.getAbsolutePath());
-                }
-                
-                if( (index = recentFiles.indexOf(file.getAbsolutePath())) < 0)
-                {
-                    recentFiles.add(file.getAbsolutePath());
-                }
-                
-                tabFileName.add(file.getName());
-                
-                CodeView codeView = new CodeView(MainEditActivity.this);
-                codeView.setTheme(mTheme);
-                codeView.setTypeface(CodeView.DEJAVUSANSMONO + mTypeface);
-                codeView.setTextSize(mTextSize);
-                if(mAuto)
-                {
-                    String type = file.getName();
-                    if(type.contains("."))
-                    {
-                        type = type.substring(type.lastIndexOf('.') + 1);
-    
-                        switch (type) {
-                            case "java":
-                                codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_JAVA);
-                                break;
-                            case "js":
-                                codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_JAVASCRIPT);
-                                break;
-                            case "txt":
-                            case "TXT":
-                                codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_NONE);
-                                break;
-                            default:
-                                codeView.setShowAuto(mDefaultLanguage);
-                        }
+                    type = type.substring(type.lastIndexOf('.') + 1);
+
+                    switch (type) {
+                        case "java":
+                            codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_JAVA);
+                            break;
+                        case "js":
+                            codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_JAVASCRIPT);
+                            break;
+                        case "txt":
+                        case "TXT":
+                            codeView.setShowAuto(CodeView.LANGUAGE_NATIVE_NONE);
+                            break;
+                        default:
+                            codeView.setShowAuto(mDefaultLanguage);
                     }
                 }
-                
-                
-                codeView.setText("", false);
-                codeView.setEditMode(false);
-                codeView.setVerticalScrollBar(true);
-                //codeView.getPluginUI().canVerticalScrollBar();
-                
-                if(mMagnifier)
-                {
-                    codeView.showMagnifier();
-                }
-                
-                tabEditView.add(codeView);
-                drawerLayout1.closeDrawers();
-                viewPagerAdapter.notifyDataSetChanged();
-                viewPager.setCurrentItem(index);
-                
-                closeIndex = tabEditView.size() - 1;
-                asyncLoader.doInBackground("read", file.getAbsolutePath());
             }
+            
+            
+            codeView.setText("", false);
+            codeView.setEditMode(false);
+            codeView.setVerticalScrollBar(true);
+            //codeView.getPluginUI().canVerticalScrollBar();
+            
+            if(mMagnifier)
+            {
+                codeView.showMagnifier();
+            }
+            
+            tabEditView.add(codeView);
+            drawerLayout1.closeDrawers();
+            viewPagerAdapter.notifyDataSetChanged();
+            viewPager.setCurrentItem(index);
+            
+            closeIndex = tabEditView.size() - 1;
+            asyncLoader.doInBackground("read", file.getAbsolutePath());
         });
         
         //if(tabFileName == null)
@@ -427,6 +422,8 @@ public class MainEditActivity extends AppCompatActivity
                 return false;
             }
         });
+        
+        
     }
     
     /**
@@ -655,5 +652,26 @@ public class MainEditActivity extends AppCompatActivity
         }
         
     }
+//
+//    @Override
+//    public boolean onKeyDown(int keyCode, KeyEvent event)
+//    {
+//        Kit.printout("b");
+//        return false;
+//    }
+//
+//    @Override
+//    public boolean dispatchKeyEvent(KeyEvent event)
+//    {
+//        Kit.printout("a");
+//        return super.dispatchKeyEvent(event);
+//    }
+//
+//    @Override
+//    public boolean superDispatchKeyEvent(KeyEvent event)
+//    {
+//        Kit.printout("c");
+//        return super.superDispatchKeyEvent(event);
+//    }
     
 }
