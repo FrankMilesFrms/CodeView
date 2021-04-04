@@ -17,7 +17,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +30,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="LP015062002701" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -96,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="54" column="89" selection-start-line="54" selection-start-column="89" selection-end-line="54" selection-end-column="89" />
+              <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -884,7 +883,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617508674028</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="仅短暂更新修复BUGs-Only a brief update to fix bugs.">
+      <created>1617513309843</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1617513309843</updated>
+    </task>
+    <task id="LOCAL-00037" summary="仅短暂更新修复BUGs-Only a brief update to fix bugs.">
+      <created>1617513325247</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1617513325248</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView">
@@ -914,10 +927,10 @@
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5037994" side_tool="true" weight="0.6032787" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49620062" weight="0.6032787" />
-      <window_info active="true" anchor="bottom" id="Build" order="5" sideWeight="0.49620062" visible="true" weight="0.39508197" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49620062" weight="0.39508197" />
       <window_info anchor="bottom" id="Android Profiler" order="6" sideWeight="0.49924013" weight="0.44590163" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49620062" weight="0.6" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.49620062" visible="true" weight="0.6" />
       <window_info anchor="bottom" id="Thumbnails" order="9" weight="0.5" />
       <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.5007599" side_tool="true" weight="0.49836066" />
       <window_info anchor="right" id="StringPreview" order="0" />
@@ -1443,7 +1456,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/activity/AboutActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="54" column="89" selection-start-line="54" selection-start-column="89" selection-end-line="54" selection-end-column="89" />
+          <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
