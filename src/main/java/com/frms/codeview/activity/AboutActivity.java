@@ -52,7 +52,9 @@ public class AboutActivity extends AppCompatActivity
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
         
         setContentView(R.layout.about_layout);
-        ((TextView)findViewById(R.id.about_tv)).setText("\n\n当前版本：\nCode Editor2020.3.21\n\n开发人员\n" +
+        ((TextView)findViewById(R.id.about_tv)).setText("\n\n当前版本：\nCode Editor2021.4.4\n" +
+                                                        "(CodeView D)" +
+                                                        "\n\n开发人员\n" +
                                                         "\n" +
                                                         "Frms（3505-8268-36@qq.com）\n" +
                                                         "\n" +
