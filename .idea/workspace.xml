@@ -83,12 +83,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+            <state relative-caret-position="393">
+              <caret line="3996" column="52" selection-start-line="3996" selection-start-column="52" selection-end-line="3996" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#122040#122041#0" expanded="true" />
-                <element signature="e#122092#122093#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -914,7 +912,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617514301166</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="仅短暂更新修复BUGs-Only a brief update to fix bugs.">
+      <created>1617516096354</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1617516096354</updated>
+    </task>
+    <task id="LOCAL-00041" summary="仅短暂更新修复BUGs-Only a brief update to fix bugs.">
+      <created>1617516288422</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1617516288422</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1472,12 +1484,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
+        <state relative-caret-position="393">
+          <caret line="3996" column="52" selection-start-line="3996" selection-start-column="52" selection-end-line="3996" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#122040#122041#0" expanded="true" />
-            <element signature="e#122092#122093#0" expanded="true" />
           </folding>
         </state>
       </provider>

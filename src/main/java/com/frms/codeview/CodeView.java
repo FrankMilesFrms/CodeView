@@ -3994,6 +3994,7 @@ public class CodeView extends View implements
     public void nativeListenEvent()
     {
         Kit.printout(Arrays.toString(mChar));
+        Kit.printout("-------------Text-------------");
     }
     
 }
