@@ -71,22 +71,53 @@ import com.frms.lexer.language.Java;
 import com.frms.lexer.language.JavaScript;
 
 /**
- * 注意（你可能认为的错误）
- * 1、在这个Demo中，我没有处理键盘弹起时顶起CodeView的操作。
- * 因此，你需要注意并及时纠正这个错误来避免文本选择范围不全。
+ * 因为入不敷出，所以我们不打算持续更新此项目，但我们会修复你们反映的Bugs。
+ * 所以，在这里感谢你们长久以来的支持。
+ * 如果你喜欢这个项目，不妨给颗星星支持我吧！
  *
- * 2、只有在光标存在可视范围之内，他才会和编辑同步。
+ *     We do not plan to update this project continuously because we cannot make ends meet,
+ * but we will fix the Bugs you have reported.
+ * So thank you for your continued support.
+ * If you like this project, please collect it, thanks! :)
+ *
  */
 
 /**
+ * 我们也许会实现的：
+ * 1."如何自定义语法高亮规则？.pdf"
+ * 2."CodeView的原理.pdf"
+ * 3.查找、替换功能的增加。
+ * 4.过大文本无法打开问题。
+ * 5."\t" 和 空格符号 的区分
+ * 6.代码输入自动添补规则
+ *
+ * 1." How do I customize syntax highlighting rules?.pdf"
+ * 2." Principles of CodeView.pdf"
+ * 3. The addition of search and replace functions.
+ * 4. Too big texts does not open.
+ * 5. The distinction between "\t" and space symbols
+ * 6. Code input automatically fill rules
+ *
+ * 注意（你可能认为的错误）
+ *
+ * 1、在这个Demo中，我们没有处理键盘弹起时顶起CodeView的操作。
+ * 因此，你需要注意并及时纠正这个错误来避免文本选择范围不全。
+ *
+ * 2、只有在光标存在可视范围之内，他才会和编辑同步。
+ *
+ * 3、屏幕切换、视图重启等因为未保存导致部分数据丢失问题。
+ *
  * Matters Needing Attentions (what you might think are errors)
  * 1. In this Demo, I didn't handle jacking up CODEVIEW when the keyboard is played.
  * Therefore, you need to be aware of and correct this error to avoid an incomplete selection of text.
  *
- * 2. Only when the cursor is in visible range will it synchronize with the CodeEdit.
+ * 2. Only when the cursor is in visible range will it synchronize with the CodeView
+ *
+ * 3. screens-change view-restart because not saved cause data loss problem.
  */
 
 /**
+ *开发日志（Development of Logs）：
  *
  * 仅短暂更新，修复BUGs。
  * Only a brief update to fix bugs.
@@ -3965,24 +3996,4 @@ public class CodeView extends View implements
         Kit.printout(Arrays.toString(mChar));
     }
     
-    //    public int[][] searchAll(String str)
-//    {
-//        if(str == null || str.length() < 1)return null;
-//
-//        char[] chars = str.toCharArray();
-//        char c = chars[0];
-//        int line = 1;
-//        int position = 0;
-//
-//        while (position < length)
-//        {
-//            if(chars[position] == c)
-//            {
-//
-//            }
-//            position++;
-//        }
-//        return null;
-//    }
-//
 }
