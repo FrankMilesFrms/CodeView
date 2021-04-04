@@ -12,6 +12,7 @@
     <permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
 
     <application
+        android:windowSoftInputMode="adjustPan|stateHidden"
         android:allowBackup="true"
         android:icon="@drawable/ic_codeedit"
         android:label="Code Editor"
@@ -33,6 +34,7 @@
 
         <activity android:name=".OtherActivity" />
         <activity
+            android:windowSoftInputMode="adjustPan|stateHidden"
             android:name=".EditActivity"
             android:label="@string/app_name" />
         <activity android:name=".MainActivity" />

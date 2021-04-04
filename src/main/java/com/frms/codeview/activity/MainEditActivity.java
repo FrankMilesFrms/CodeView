@@ -121,7 +121,8 @@ public class MainEditActivity extends AppCompatActivity
         
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                              WindowManager.LayoutParams.FLAG_FULLSCREEN);
-    
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+        
         verifyStoragePermissions(this);
      
         asyncLoader = new AsyncLoader();

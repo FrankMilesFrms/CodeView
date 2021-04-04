@@ -20,7 +20,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ClipData;
@@ -34,13 +33,11 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.text.TextPaint;
-import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -73,8 +70,28 @@ import com.frms.lexer.TAG;
 import com.frms.lexer.language.Java;
 import com.frms.lexer.language.JavaScript;
 
+/**
+ * 注意（你可能认为的错误）
+ * 1、在这个Demo中，我没有处理键盘弹起时顶起CodeView的操作。
+ * 因此，你需要注意并及时纠正这个错误来避免文本选择范围不全。
+ *
+ * 2、只有在光标存在可视范围之内，他才会和编辑同步。
+ */
 
 /**
+ * Matters Needing Attentions (what you might think are errors)
+ * 1. In this Demo, I didn't handle jacking up CODEVIEW when the keyboard is played.
+ * Therefore, you need to be aware of and correct this error to avoid an incomplete selection of text.
+ *
+ * 2. Only when the cursor is in visible range will it synchronize with the CodeEdit.
+ */
+
+/**
+ *
+ * 仅短暂更新，修复BUGs。
+ * Only a brief update to fix bugs.
+ *                                                                                   2021年4月4日09:43:14
+ *
  * 由于新冠病毒造成的疫情爆发，本项目暂停维护。
  *
  * 预计下次维护时间在疫情过后或者是7月中旬，在此期间不再开发新的功能。
@@ -91,6 +108,11 @@ import com.frms.lexer.language.JavaScript;
  *                                                                                    by Frms
  *                                                                                    2020年5月5日00:07:16
  * 开发日志：
+ * 2021/4/4
+ * 修复多行删除撤回失败问题
+ * 选择范围过小的问题
+ * 部分文字没绘制的问题
+ *
  * 2020/6/8
  * 修复滑动条超过屏幕错误
  * 修复无法关闭滑动条错误
@@ -101,7 +123,7 @@ import com.frms.lexer.language.JavaScript;
  */
 
 /**
- * 只有在光标存在可视范围之内，他才会和编辑同步。
+ * 部分操作说明：
  * 手势说明：
  * 单指：
  *  非选择状态：
@@ -116,7 +138,7 @@ import com.frms.lexer.language.JavaScript;
  * 双指：
  *     放缩字体大小。
  *
- * 项目名称 ： APProject
+ * 项目名称 ： CodeView
  * @author  ： Frms, 3505826836@qq.com
  * 创建时间 ： 2020/2/8 16:26(ydt)
  */
@@ -126,7 +148,7 @@ public class CodeView extends View implements
     /**
      *  控件标识
      */
-    private static final String Tag = "CodeView C";
+    private static final String Tag = "CodeView D";
     
     /**
      * 控件版本
@@ -472,8 +494,8 @@ public class CodeView extends View implements
     {
         mDrawClip.left = 0;
         mDrawClip.top = 0;
-        mDrawClip.right = w + mCharChineseWidth;
-        mDrawClip.bottom = h + drawRowHeight;
+        mDrawClip.right = w;
+        mDrawClip.bottom = h;
         
         initScroll();
     }
@@ -1544,12 +1566,13 @@ public class CodeView extends View implements
         if(addUndoStack)
         {
             char[] chars = new char[dLength];
-            String str = String.valueOf(chars);
+            System.arraycopy(mChar, start - 1, chars, 0, dLength);
+            String str = String.valueOf(chars, 0, chars.length);
             if(mOnEditListener != null)
             {
                 mOnEditListener.deleteText(start, end, str);
             }
-            System.arraycopy(mChar, start - 1, chars, 0, dLength);
+            
             mUndoStack.addCommand(start, str, startLine, endLine, System.currentTimeMillis(), false);
         }
         
@@ -2953,7 +2976,7 @@ public class CodeView extends View implements
                    }
                    
                    //可视的绘制部分
-                   if(drawShowX <= getWidth() && drawChar != TAG.EOL)
+                   if(drawShowX <= getWidth() + mCharChineseWidth && drawChar != TAG.EOL)
                    {
                        if(dWidth < 0)
                        {
@@ -3932,6 +3955,14 @@ public class CodeView extends View implements
             }
         }
         return super.onKeyDown(keyCode, event);
+    }
+    
+    /**
+     * 仅用作测试。
+     */
+    public void nativeListenEvent()
+    {
+        Kit.printout(Arrays.toString(mChar));
     }
     
     //    public int[][] searchAll(String str)
