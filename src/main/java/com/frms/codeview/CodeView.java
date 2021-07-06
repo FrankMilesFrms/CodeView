@@ -627,7 +627,7 @@ public class CodeView extends View implements
             
             if(mSelectMode == SELECT_NONE)
             {
-                gotoPosition(x, y);
+                gotoPosition(x, y, false);
                 if(x > Xoffset) {
                     showKeyboard();
                     invalidate(mDrawClip);
@@ -691,8 +691,7 @@ public class CodeView extends View implements
             if(onClickCursor)
             {
                 // 移动光标
-                y += drawRowHeight;
-                gotoPosition(x, y);
+                gotoPosition(x, y, true);
                 gotoCursor(x, y);
                 mPluginUI.showMagnifier(x -= mDrawClip.left, y -= mDrawClip.top, getScreenshot(x, y));
             }
@@ -708,7 +707,7 @@ public class CodeView extends View implements
             y += drawRowHeight;
             if(mClickCursor == CURSOR_LEFT)
             {
-                gotoPosition(x, y);
+                gotoPosition(x, y, true);
             } else
             {
                 gotoPosition2(x, y);
@@ -973,9 +972,11 @@ public class CodeView extends View implements
      *@param x 屏幕坐标x
      *@param y 屏幕坐标y
      */
-    private void gotoPosition(int x, int y)
+    private void gotoPosition(int x, int y, boolean isMove)
     {
-            y = (int) Math.max(Math.min(y, Math.round(mHeight)) - drawRowHeight * 1.5, drawRowHeight);
+            y = (int) Math.max(Math.min(y, Math.round(mHeight))
+                               - drawRowHeight * (isMove?1.5:1),
+                    drawRowHeight);
         int line = Math.min(y/drawRowHeight, mRowCounts);
         
         
