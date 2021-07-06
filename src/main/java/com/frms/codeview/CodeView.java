@@ -139,6 +139,9 @@ import com.frms.lexer.language.JavaScript;
  *                                                                                    by Frms
  *                                                                                    2020年5月5日00:07:16
  * 开发日志：
+ * 2021年7月6日10:26:44
+ * 修复选择文本光标触控位置靠前问题
+ * 添加方法：#setShowBar
  * 2021/4/4
  * 修复多行删除撤回失败问题
  * 选择范围过小的问题
@@ -179,7 +182,7 @@ public class CodeView extends View implements
     /**
      *  控件标识
      */
-    private static final String Tag = "CodeView D";
+    private static final String Tag = "CodeView E";
     
     /**
      * 控件版本
@@ -330,7 +333,8 @@ public class CodeView extends View implements
     private int selectLanguage = 0;
     
     private boolean mVerticalScrollBar; // 是否绘制垂直条
-    private boolean isShowBar; // 是否显示滚动条
+    private boolean isShowBar; // 是否显示滚动条（注意，如果需要关闭请见#setShowBar）
+    private boolean isShowBarControl = true;
     
     public CodeView(AppCompatActivity activity)
     {
@@ -549,21 +553,22 @@ public class CodeView extends View implements
         if(e.getPointerCount() > 1)return false;
         
         isInScrollBarRange = e.getX() >= getWidth() - mBitmapScrollBar.getWidth();
-        isShowBar = isInScrollBarRange;
+        isShowBar = isInScrollBarRange & isShowBarControl;
         
         // 点击立刻停止滑动状态。
         if(!mOverScroller.isFinished()) { mOverScroller.forceFinished(true);}
         
         
         int x = (int)e.getX() + mDrawClip.left;
-        int y = (int)e.getY() + mDrawClip.top + drawRowHeight;
+        int y = (int)e.getY() + mDrawClip.top;
         
         if(mSelectMode == SELECT_NONE)
         {
-            onClickCursor = (Math.abs(y - drawCursorY) < drawRowHeight * 1.5f)
-                          && Math.abs(x - drawCursorX)  < mCharLitterWidth/2;
+            onClickCursor = (Math.abs(y - drawCursorY) < drawRowHeight)
+                         && Math.abs(x - drawCursorX) < mCharLitterWidth/2;
         } else
         {
+            y += drawRowHeight;
             boolean p;
             if(mCursor[0] == mCursor[2])
             {
@@ -680,26 +685,27 @@ public class CodeView extends View implements
                 // 为了更好的体验，所以取消了放在上一个if内。
                 if(e.getY() <= 0)return false;
                 
-                isShowBar = true;
+                isShowBar = true & isShowBarControl;
                 scrollTo(getScrollX(), (int) (e.getY() / getHeight() * getViewHeigth()));
             } else
             if(onClickCursor)
             {
-                // 移动关标
+                // 移动光标
+                y += drawRowHeight;
                 gotoPosition(x, y);
                 gotoCursor(x, y);
                 mPluginUI.showMagnifier(x -= mDrawClip.left, y -= mDrawClip.top, getScreenshot(x, y));
             }
             else {
                 scrollBy((int)distanceX, (int)distanceY);
-                isShowBar = true;
+                isShowBar = true & isShowBarControl;
                 // mPluginUI.setUpdateVerticalScrollBar(Math.round(scrollY));
             }
         }
         else if(mClickCursor > 0)
         {
             x = Math.max(x, Xoffset);
-            
+            y += drawRowHeight;
             if(mClickCursor == CURSOR_LEFT)
             {
                 gotoPosition(x, y);
@@ -713,7 +719,7 @@ public class CodeView extends View implements
             
         } else {
             scrollBy((int)distanceX, (int)distanceY);
-            isShowBar = true;
+            isShowBar = true & isShowBarControl;
         }
         return false;
     }
@@ -755,7 +761,7 @@ public class CodeView extends View implements
             0, Math.round(scrollX), 0, Math.round(scrollY));
     
         // mPluginUI.setUpdateVerticalScrollBar(Math.round(scrollY));
-        if(!isShowBar)isShowBar = true;
+        if(!isShowBar)isShowBar = true & isShowBarControl;
         
         invalidate(mDrawClip);
         return true;
@@ -923,7 +929,7 @@ public class CodeView extends View implements
      */
     private void gotoPosition2(int x, int y)
     {
-            y = Math.max(Math.min(y, Math.round(mHeight)), drawRowHeight);
+            y = (int) Math.max(Math.min(y, Math.round(mHeight)) - drawRowHeight * 1.5, drawRowHeight);
         int line = Math.min(y/drawRowHeight, mRowCounts);
         
         mCursor[2] = line;
@@ -969,7 +975,7 @@ public class CodeView extends View implements
      */
     private void gotoPosition(int x, int y)
     {
-                y = Math.max(Math.min(y, Math.round(mHeight)), drawRowHeight);
+            y = (int) Math.max(Math.min(y, Math.round(mHeight)) - drawRowHeight * 1.5, drawRowHeight);
         int line = Math.min(y/drawRowHeight, mRowCounts);
         
         
@@ -3997,4 +4003,12 @@ public class CodeView extends View implements
         Kit.printout("-------------Text-------------");
     }
     
+    /**
+     * 是否显示滑动条，默认显示
+     * @param isShow
+     */
+    public void setShowBar(boolean isShow)
+    {
+        isShowBarControl = isShow;
+    }
 }
