@@ -16,12 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9778ddd6-1664-4c3a-bf51-8dcdedc2901e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_android_29.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lexer/src/main/java/com/frms/lexer/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frms/codeview/CodeView.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,32 +98,32 @@
               <caret line="89" column="53" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#28392#28393#0" expanded="true" />
-                <element signature="e#28489#28490#0" expanded="true" />
-                <element signature="e#28596#28597#0" expanded="true" />
-                <element signature="e#28844#28845#0" expanded="true" />
-                <element signature="e#51300#51301#0" expanded="true" />
-                <element signature="e#112485#112486#0" expanded="true" />
-                <element signature="e#112597#112598#0" expanded="true" />
-                <element signature="e#112711#112712#0" expanded="true" />
-                <element signature="e#112828#112829#0" expanded="true" />
-                <element signature="e#112940#112941#0" expanded="true" />
-                <element signature="e#113552#113553#0" expanded="true" />
-                <element signature="e#113649#113650#0" expanded="true" />
-                <element signature="e#113774#113775#0" expanded="true" />
-                <element signature="e#115352#115353#0" expanded="true" />
-                <element signature="e#116090#116091#0" expanded="true" />
-                <element signature="e#116207#116208#0" expanded="true" />
-                <element signature="e#116323#116324#0" expanded="true" />
-                <element signature="e#116443#116444#0" expanded="true" />
-                <element signature="e#116577#116578#0" expanded="true" />
-                <element signature="e#117123#117124#0" expanded="true" />
-                <element signature="e#117272#117273#0" expanded="true" />
-                <element signature="e#118314#118315#0" expanded="true" />
-                <element signature="e#119225#119226#0" expanded="true" />
-                <element signature="e#119365#119366#0" expanded="true" />
-                <element signature="e#119487#119488#0" expanded="true" />
-                <element signature="e#120843#120844#0" expanded="true" />
+                <element signature="e#28394#28395#0" expanded="true" />
+                <element signature="e#28491#28492#0" expanded="true" />
+                <element signature="e#28598#28599#0" expanded="true" />
+                <element signature="e#28846#28847#0" expanded="true" />
+                <element signature="e#51302#51303#0" expanded="true" />
+                <element signature="e#112487#112488#0" expanded="true" />
+                <element signature="e#112599#112600#0" expanded="true" />
+                <element signature="e#112713#112714#0" expanded="true" />
+                <element signature="e#112830#112831#0" expanded="true" />
+                <element signature="e#112942#112943#0" expanded="true" />
+                <element signature="e#113554#113555#0" expanded="true" />
+                <element signature="e#113651#113652#0" expanded="true" />
+                <element signature="e#113776#113777#0" expanded="true" />
+                <element signature="e#115354#115355#0" expanded="true" />
+                <element signature="e#116092#116093#0" expanded="true" />
+                <element signature="e#116209#116210#0" expanded="true" />
+                <element signature="e#116325#116326#0" expanded="true" />
+                <element signature="e#116445#116446#0" expanded="true" />
+                <element signature="e#116579#116580#0" expanded="true" />
+                <element signature="e#117125#117126#0" expanded="true" />
+                <element signature="e#117274#117275#0" expanded="true" />
+                <element signature="e#118316#118317#0" expanded="true" />
+                <element signature="e#119227#119228#0" expanded="true" />
+                <element signature="e#119367#119368#0" expanded="true" />
+                <element signature="e#119489#119490#0" expanded="true" />
+                <element signature="e#120845#120846#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -282,7 +277,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="frms" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="codeview" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -884,7 +912,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625577164804</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="局部调整，终止更新。Local adjustment,terminate update.">
+      <created>1627988497864</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1627988497865</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TodoView">
@@ -898,9 +933,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47868854" weight="0.3116883" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47868854" visible="true" weight="0.31155014" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.1762918" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.1762918" />
       <window_info id="Captures" order="3" sideWeight="0.50163937" side_tool="true" weight="0.1762918" />
@@ -1029,7 +1063,8 @@
     <MESSAGE value="暂停维护通告-Suspend Maintenance Notification" />
     <MESSAGE value="错误修复-维护推迟-Maintenance of Delay" />
     <MESSAGE value="仅短暂更新修复BUGs-Only a brief update to fix bugs." />
-    <option name="LAST_COMMIT_MESSAGE" value="仅短暂更新修复BUGs-Only a brief update to fix bugs." />
+    <MESSAGE value="局部调整，终止更新。Local adjustment,terminate update." />
+    <option name="LAST_COMMIT_MESSAGE" value="局部调整，终止更新。Local adjustment,terminate update." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1441,32 +1476,32 @@
           <caret line="89" column="53" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#28392#28393#0" expanded="true" />
-            <element signature="e#28489#28490#0" expanded="true" />
-            <element signature="e#28596#28597#0" expanded="true" />
-            <element signature="e#28844#28845#0" expanded="true" />
-            <element signature="e#51300#51301#0" expanded="true" />
-            <element signature="e#112485#112486#0" expanded="true" />
-            <element signature="e#112597#112598#0" expanded="true" />
-            <element signature="e#112711#112712#0" expanded="true" />
-            <element signature="e#112828#112829#0" expanded="true" />
-            <element signature="e#112940#112941#0" expanded="true" />
-            <element signature="e#113552#113553#0" expanded="true" />
-            <element signature="e#113649#113650#0" expanded="true" />
-            <element signature="e#113774#113775#0" expanded="true" />
-            <element signature="e#115352#115353#0" expanded="true" />
-            <element signature="e#116090#116091#0" expanded="true" />
-            <element signature="e#116207#116208#0" expanded="true" />
-            <element signature="e#116323#116324#0" expanded="true" />
-            <element signature="e#116443#116444#0" expanded="true" />
-            <element signature="e#116577#116578#0" expanded="true" />
-            <element signature="e#117123#117124#0" expanded="true" />
-            <element signature="e#117272#117273#0" expanded="true" />
-            <element signature="e#118314#118315#0" expanded="true" />
-            <element signature="e#119225#119226#0" expanded="true" />
-            <element signature="e#119365#119366#0" expanded="true" />
-            <element signature="e#119487#119488#0" expanded="true" />
-            <element signature="e#120843#120844#0" expanded="true" />
+            <element signature="e#28394#28395#0" expanded="true" />
+            <element signature="e#28491#28492#0" expanded="true" />
+            <element signature="e#28598#28599#0" expanded="true" />
+            <element signature="e#28846#28847#0" expanded="true" />
+            <element signature="e#51302#51303#0" expanded="true" />
+            <element signature="e#112487#112488#0" expanded="true" />
+            <element signature="e#112599#112600#0" expanded="true" />
+            <element signature="e#112713#112714#0" expanded="true" />
+            <element signature="e#112830#112831#0" expanded="true" />
+            <element signature="e#112942#112943#0" expanded="true" />
+            <element signature="e#113554#113555#0" expanded="true" />
+            <element signature="e#113651#113652#0" expanded="true" />
+            <element signature="e#113776#113777#0" expanded="true" />
+            <element signature="e#115354#115355#0" expanded="true" />
+            <element signature="e#116092#116093#0" expanded="true" />
+            <element signature="e#116209#116210#0" expanded="true" />
+            <element signature="e#116325#116326#0" expanded="true" />
+            <element signature="e#116445#116446#0" expanded="true" />
+            <element signature="e#116579#116580#0" expanded="true" />
+            <element signature="e#117125#117126#0" expanded="true" />
+            <element signature="e#117274#117275#0" expanded="true" />
+            <element signature="e#118316#118317#0" expanded="true" />
+            <element signature="e#119227#119228#0" expanded="true" />
+            <element signature="e#119367#119368#0" expanded="true" />
+            <element signature="e#119489#119490#0" expanded="true" />
+            <element signature="e#120845#120846#0" expanded="true" />
           </folding>
         </state>
       </provider>
