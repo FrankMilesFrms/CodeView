@@ -71,118 +71,23 @@ import com.frms.lexer.language.Java;
 import com.frms.lexer.language.JavaScript;
 
 /**
- * 因为入不敷出，所以我们不打算持续更新此项目，但我们会修复你们反映的Bugs。
- * 所以，在这里感谢你们长久以来的支持。
- * 如果你喜欢这个项目，不妨给颗星星支持我吧！
  *
- *     We do not plan to update this project continuously because we cannot make ends meet,
- * but we will fix the Bugs you have reported.
- * So thank you for your continued support.
- * If you like this project, please collect it, thanks! :)
- *
+ * 修改内容：修改了点击文本的灵敏度
+ * Changed: Changed the sensitivity of clicking text.
  */
 
 /**
- * 我们也许会实现的：
- * 1."如何自定义语法高亮规则？.pdf"
- * 2."CodeView的原理.pdf"
- * 3.查找、替换功能的增加。
- * 4.过大文本无法打开问题。
- * 5."\t" 和 空格符号 的区分
- * 6.代码输入自动添补规则
- *
- * 1." How do I customize syntax highlighting rules?.pdf"
- * 2." Principles of CodeView.pdf"
- * 3. The addition of search and replace functions.
- * 4. Too big texts does not open.
- * 5. The distinction between "\t" and space symbols
- * 6. Code input automatically fill rules
- *
- * 注意（你可能认为的错误）
- *
- * 1、在这个Demo中，我们没有处理键盘弹起时顶起CodeView的操作。
- * 因此，你需要注意并及时纠正这个错误来避免文本选择范围不全。
- *
- * 2、只有在光标存在可视范围之内，他才会和编辑同步。
- *
- * 3、屏幕切换、视图重启等因为未保存导致部分数据丢失问题。
- *
- * Matters Needing Attentions (what you might think are errors)
- * 1. In this Demo, I didn't handle jacking up CODEVIEW when the keyboard is played.
- * Therefore, you need to be aware of and correct this error to avoid an incomplete selection of text.
- *
- * 2. Only when the cursor is in visible range will it synchronize with the CodeView
- *
- * 3. screens-change view-restart because not saved cause data loss problem.
+ * 停止一切更新。准备重写代码编辑器控件。
+ * Stop all updates.Prepare to rewrite the CodeView.
  */
 
-/**
- *开发日志（Development of Logs）：
- *
- * 仅短暂更新，修复BUGs。
- * Only a brief update to fix bugs.
- *                                                                                   2021年4月4日09:43:14
- *
- * 由于新冠病毒造成的疫情爆发，本项目暂停维护。
- *
- * 预计下次维护时间在疫情过后或者是7月中旬，在此期间不再开发新的功能。
- *
- * 如果存在可以100%复原错误，请发送邮件给我以便妥善解决。
- *
- * Due to the outbreak caused by Corona Virus, the maintenance of this project is suspended.
- *
- * It is expected that the next maintenance will be after the outbreak or in the middle of July,
- *
- * and no new functions will be developed during this period.
- *
- * If there are errors, please send me an email for proper solution.
- *                                                                                    by Frms
- *                                                                                    2020年5月5日00:07:16
- * 开发日志：
- * 2021年7月6日10:26:44
- * 修复选择文本光标触控位置靠前问题
- * 添加方法：#setShowBar
- * 2021/4/4
- * 修复多行删除撤回失败问题
- * 选择范围过小的问题
- * 部分文字没绘制的问题
- *
- * 2020/6/8
- * 修复滑动条超过屏幕错误
- * 修复无法关闭滑动条错误
- * 待定：创建onKeyDown 替代 sendKeyEvent 的部分事件，详细参照#setPasteInClipboardManager();
- * 其他：修复部分错误。
- * 可能存在的错误：无法在 ‘QQ输入法’ 实现光标移动（其他非EditText类或子类均有类似情况，其他输入法未做测试）
- * 延迟开发，后退一月。
- */
-
-/**
- * 部分操作说明：
- * 手势说明：
- * 单指：
- *  非选择状态：
- *    点击行号触发断点标记的启用或取消。
- *    点击文本会光标定位，并显示辅助光标，点击处若无文本，则自动选取最近文本，后再启用输入法。
- *    滑动时，若点击位置在辅助光标或光标附近，则视为滑动光标，此时若允许显示放大镜，则启用之。
- *
- * 选择:
- *      长按文本处，先计算抓取一个词组（能被Java允许的字符,不包括符号），
- *      如果词组超过屏幕（不论两边或一边），屏幕位置移动到第一个光标处。
- *      此时若处于滑动时，且点击位置在辅助光标或光标附近，则视为滑动光标，此时若允许显示放大镜，则启用之。
- * 双指：
- *     放缩字体大小。
- *
- * 项目名称 ： CodeView
- * @author  ： Frms, 3505826836@qq.com
- * 创建时间 ： 2020/2/8 16:26(ydt)
- */
 public class CodeView extends View implements 
     GestureDetector.OnGestureListener
 {
     /**
      *  控件标识
      */
-    private static final String Tag = "CodeView E";
+    private static final String Tag = "CodeView Final";
     
     /**
      * 控件版本
@@ -564,8 +469,9 @@ public class CodeView extends View implements
         
         if(mSelectMode == SELECT_NONE)
         {
-            onClickCursor = (Math.abs(y - drawCursorY) < drawRowHeight)
-                         && Math.abs(x - drawCursorX) < mCharLitterWidth/2;
+            // 这里点击灵敏度操作
+            onClickCursor = (Math.abs(y - drawCursorY) < drawRowHeight/4)
+                         && Math.abs(x - drawCursorX) < mCharLitterWidth/4;
         } else
         {
             y += drawRowHeight;
@@ -4013,3 +3919,110 @@ public class CodeView extends View implements
         isShowBarControl = isShow;
     }
 }
+
+/**
+ * 因为入不敷出，所以我们不打算持续更新此项目，但我们会修复你们反映的Bugs。
+ * 所以，在这里感谢你们长久以来的支持。
+ * 如果你喜欢这个项目，不妨给颗星星支持我吧！
+ *
+ *     We do not plan to update this project continuously because we cannot make ends meet,
+ * but we will fix the Bugs you have reported.
+ * So thank you for your continued support.
+ * If you like this project, please collect it, thanks! :)
+ *
+ */
+
+/**
+ * 我们也许会实现的：
+ * 1."如何自定义语法高亮规则？.pdf"
+ * 2."CodeView的原理.pdf"
+ * 3.查找、替换功能的增加。
+ * 4.过大文本无法打开问题。
+ * 5."\t" 和 空格符号 的区分
+ * 6.代码输入自动添补规则
+ *
+ * 1." How do I customize syntax highlighting rules?.pdf"
+ * 2." Principles of CodeView.pdf"
+ * 3. The addition of search and replace functions.
+ * 4. Too big texts does not open.
+ * 5. The distinction between "\t" and space symbols
+ * 6. Code input automatically fill rules
+ *
+ * 注意（你可能认为的错误）
+ *
+ * 1、在这个Demo中，我们没有处理键盘弹起时顶起CodeView的操作。
+ * 因此，你需要注意并及时纠正这个错误来避免文本选择范围不全。
+ *
+ * 2、只有在光标存在可视范围之内，他才会和编辑同步。
+ *
+ * 3、屏幕切换、视图重启等因为未保存导致部分数据丢失问题。
+ *
+ * Matters Needing Attentions (what you might think are errors)
+ * 1. In this Demo, I didn't handle jacking up CODEVIEW when the keyboard is played.
+ * Therefore, you need to be aware of and correct this error to avoid an incomplete selection of text.
+ *
+ * 2. Only when the cursor is in visible range will it synchronize with the CodeView
+ *
+ * 3. screens-change view-restart because not saved cause data loss problem.
+ */
+
+/**
+ *开发日志（Development of Logs）：
+ *
+ * 仅短暂更新，修复BUGs。
+ * Only a brief update to fix bugs.
+ *                                                                                   2021年4月4日09:43:14
+ *
+ * 由于新冠病毒造成的疫情爆发，本项目暂停维护。
+ *
+ * 预计下次维护时间在疫情过后或者是7月中旬，在此期间不再开发新的功能。
+ *
+ * 如果存在可以100%复原错误，请发送邮件给我以便妥善解决。
+ *
+ * Due to the outbreak caused by Corona Virus, the maintenance of this project is suspended.
+ *
+ * It is expected that the next maintenance will be after the outbreak or in the middle of July,
+ *
+ * and no new functions will be developed during this period.
+ *
+ * If there are errors, please send me an email for proper solution.
+ *                                                                                    by Frms
+ *                                                                                    2020年5月5日00:07:16
+ * 开发日志：
+ * 2021年7月6日10:26:44
+ * 修复选择文本光标触控位置靠前问题
+ * 添加方法：#setShowBar
+ * 2021/4/4
+ * 修复多行删除撤回失败问题
+ * 选择范围过小的问题
+ * 部分文字没绘制的问题
+ *
+ * 2020/6/8
+ * 修复滑动条超过屏幕错误
+ * 修复无法关闭滑动条错误
+ * 待定：创建onKeyDown 替代 sendKeyEvent 的部分事件，详细参照#setPasteInClipboardManager();
+ * 其他：修复部分错误。
+ * 可能存在的错误：无法在 ‘QQ输入法’ 实现光标移动（其他非EditText类或子类均有类似情况，其他输入法未做测试）
+ * 延迟开发，后退一月。
+ */
+
+/**
+ * 部分操作说明：
+ * 手势说明：
+ * 单指：
+ *  非选择状态：
+ *    点击行号触发断点标记的启用或取消。
+ *    点击文本会光标定位，并显示辅助光标，点击处若无文本，则自动选取最近文本，后再启用输入法。
+ *    滑动时，若点击位置在辅助光标或光标附近，则视为滑动光标，此时若允许显示放大镜，则启用之。
+ *
+ * 选择:
+ *      长按文本处，先计算抓取一个词组（能被Java允许的字符,不包括符号），
+ *      如果词组超过屏幕（不论两边或一边），屏幕位置移动到第一个光标处。
+ *      此时若处于滑动时，且点击位置在辅助光标或光标附近，则视为滑动光标，此时若允许显示放大镜，则启用之。
+ * 双指：
+ *     放缩字体大小。
+ *
+ * 项目名称 ： CodeView
+ * @author  ： Frms, 3505826836@qq.com
+ * 创建时间 ： 2020/2/8 16:26(ydt)
+ */
