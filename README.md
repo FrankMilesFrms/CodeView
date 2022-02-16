@@ -4,7 +4,7 @@
 
     它支持放大镜、代码高亮、自定义代码、大文本编辑、断点调试、滑动条、主题切换等等。  
 请配合**lexer**一起使用。  
-或者直接使用[整合版本](https://github.com/FrmsClY/CodeViewDemo)
+或者直接使用[整合版本](https://github.com/FrmsClY/CodeViewDemo)，[本项目演示视频](https://b23.tv/ASmagSf)
 
 ## 注意
 
