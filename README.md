@@ -16,7 +16,7 @@ Please add project ["lexer"](https://github.com/FrankMilesFrms/lexer)  before yo
 或者直接使用[整合版本](https://github.com/FrmsClY/CodeViewDemo)，[本项目演示视频](https://b23.tv/ASmagSf)
 or Just Add [this](https://github.com/FrmsClY/CodeViewDemo) Project.
 
-You can watch this [video(BiliBili)](www.player.bilibili.com/player.html?aid=254099591&bvid=BV1aY411V74n&cid=510473526&p=1)
+You can watch this [video(BiliBili)](https://player.bilibili.com/player.html?aid=254099591&bvid=BV1aY411V74n&cid=510473526&p=1)
 
 ## 注意
 ## Note
