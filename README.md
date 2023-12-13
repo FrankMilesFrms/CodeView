@@ -16,13 +16,13 @@ Please add project ["lexer"](https://github.com/FrankMilesFrms/lexer)  before yo
 或者直接使用[整合版本](https://github.com/FrmsClY/CodeViewDemo)，[本项目演示视频](https://b23.tv/ASmagSf)
 or Just Add [this](https://github.com/FrmsClY/CodeViewDemo) Project.
 
-You can watch this [video(BiliBili)](https://player.bilibili.com/player.html?aid=254099591&bvid=BV1aY411V74n&cid=510473526&p=1)
+You can watch this [video(BiliBili)](https://player.bilibili.com/player.html?aid=509124879&bvid=BV1Zu411Q7Lm&cid=510495628&p=1)
 
 ## 注意
 ## Note
 
     这里仅提供一个较为完善的例子，我们将停止对它的维护
-    I do not add new functions anymore, and not support it.
+    I do not add new functions anymore, and not support it. But it works well.
 
 # 重要说明
 # Important
@@ -32,7 +32,7 @@ You can watch this [video(BiliBili)](https://player.bilibili.com/player.html?aid
 >         3.实现了锁帧技术（在快速绘制的情况下，对内容进行优化以提高帧率）  
 >         4.对光标操作和交互有了更深的判断，更加灵活。
 > 
-> Based on it, I updated the smoother editor control Pro version, you can see [demo video](https://www.bilibili.com/video/BV1aY411V74n?share_source=copy_web)
+> Based on it, I updated the smoother editor control Pro version, you can see [demo video](https://player.bilibili.com/player.html?aid=254099591&bvid=BV1aY411V74n&cid=510473526&p=1)
 > 
 > It focuses on the user experience, more powerful extension plug-in capabilities and optimization capabilities.
 > 
@@ -41,6 +41,6 @@ You can watch this [video(BiliBili)](https://player.bilibili.com/player.html?aid
 > Deeper judgment and flexibility in cursor operation and interaction.
 
 # 如果你想开发一款能在手机上的编辑器，可与我取得联系。
-# If you want to develop an editor for mobile phones, please contact me.
+# If you want to develop an editor for Android, please contact me.
 
 Email: FrankMiles@qq.com
